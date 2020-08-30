@@ -19,7 +19,7 @@ Live version: http://anappleaday.rf.gd/
 * xxxx
 
 ## Contributors
-Shri Hari
-Isobel Rowe
-Kai Wang
-Xinyu Xue
+* Shri Hari
+* Isobel Rowe
+* Kai Wang
+* Xinyu Xue
