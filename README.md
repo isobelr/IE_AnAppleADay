@@ -5,6 +5,7 @@ This project was created for the FIT5120 Industry Experience Studio Project. It 
 
 ## Features
 The project encompasses a tool that will help to reduce instances of PPH through early intervention and treatment by creating a tool (which is available in five languages) whereby users can establish whether their particular demographic is at risk of various chronic conditions, and if so, should follow various lifestyle changes and/or seek medical advice from a primary care clinic. Proven lifestyle changes to reduce the likelihood of ongoing conditions will be suggested, bespoke and dynamic data visualisation-based infographics will aim to convey the important information many aren’t aware of, and a helpful map of where the nearest doctors’ offices which provide services in the user’s language will be shown. 
+
 In this repository there is:
 * HTML/CSS code for enhancing the WordPress website;
 * Python code for evaluating users questionnaire responses; and
