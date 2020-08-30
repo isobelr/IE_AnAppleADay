@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<style> 
+  .frm_opt_container { 
+      color: #D3EDFC
+} 
+</style> 
+
+
+<!--before fields-->
+<legend class="frm_screen_reader">[form_name]</legend>
+[if form_name]<h3 class="frm_form_title">[form_name]</h3>[/if form_name]
+[if form_description]<div class="frm_description">[form_description]</div>[/if form_description]
+
+
+<!--the options for the questons-->
+<div id="frm_field_[id]_container" class="frm_form_field form-field [required_class][error_class]">
+    <div  id="field_[key]_label" class="frm_primary_label">[field_name]
+        <span class="frm_required">[required_label]</span>
+    </div>
+    <div class="frm_opt_container" aria-labelledby="field_[key]_label" role="group">[input]</div>
+    [if description]<div class="frm_description" id="frm_desc_field_[key]">[description]</div>[/if description]
+    [if error]<div class="frm_error" id="frm_error_field_[key]">[error]</div>[/if error]
+</div>
+
+</html>
+
