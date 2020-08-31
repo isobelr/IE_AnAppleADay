@@ -14,8 +14,8 @@ In this repository there is:
 Live version: https://anappleaday.azurewebsites.net/
 
 ## Dependencies
-* xxxx;
-* xxxx
+* Includes a dataset of 150 symptoms and 44 diseases downloaded from kaggle
+  https://www.kaggle.com/kaushil268/disease-prediction-using-machine-learning;
 
 ## Contributors
 * Shri Hari
