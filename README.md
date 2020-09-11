@@ -11,8 +11,8 @@ In this repository there is:
 * Python code for evaluating users questionnaire responses.
 
 ## Running the Project
-Iteration 1 Live version: https://anappleaday.azurewebsites.net/
-Iteration 2 Live version: https://www.anappleaday.codes/Iteration_2/index.html
+* Iteration 1 Live version: https://anappleaday.azurewebsites.net/
+* Iteration 2 Live version: https://www.anappleaday.codes/Iteration_2/index.html
 
 ## Dependencies
 * Includes a dataset of 150 symptoms and 44 diseases downloaded from kaggle
