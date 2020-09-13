@@ -101,68 +101,162 @@ jQuery(document).ready(function($) {
 });
 
 var arr = [];
-exercise = '0';
+exercise = 0;
 diet = 0;
 health = 0;
 lifestyle = 0;
 impregnability = 0;
+hypertension = 0;
+heart = 0;
+copd = 0;
 
-function storeVar(el) {
+
+function q1(el) {
   var amount = el.getAttribute('value');
   arr.push(amount);
 
   console.log(arr);
-}
-
-if (arr[0] === '1') {
-  exercise = '100';
-  health = 25;
-  lifestyle = 25;
-  impregnability = 25;
-} else if (arr[1] === '2') {
-  exercise = '75';
-  health = 15;
-  lifestyle = 15;
-  impregnability = 15;
-} else if (arr[1] === '3') {
-  exercise = '50';
-  health = 10;
-  lifestyle = 10;
-  impregnability = 10;
-} else if (arr[1] === '4') {
-  exercise = '0';
-  health = 10;
-  lifestyle = 10;
-  impregnability = 10;
-}
-
-
-
-function displayVar(variable) {
   if (arr[0] === '1') {
-    exercise = '100';
+    exercise = 100;
     health = 25;
     lifestyle = 25;
     impregnability = 25;
-  } else if (arr[1] === '2') {
-    exercise = '75';
+  } else if (arr[0] === '2') {
+    exercise = 75;
     health = 15;
     lifestyle = 15;
     impregnability = 15;
-  } else if (arr[1] === '3') {
-    exercise = '50';
+  } else if (arr[0] === '3') {
+    exercise = 50;
     health = 10;
     lifestyle = 10;
     impregnability = 10;
-  } else if (arr[1] === '4') {
-    exercise = '0';
+  } else if (arr[0] === '4') {
+    exercise = 0;
     health = 10;
     lifestyle = 10;
     impregnability = 10;
   }
-  document.getElementById(variable).innerHTML = exercise;
-  console.log(exercise)
 }
+
+function q2(el) {
+
+  var amount = el.getAttribute('value');
+  arr.push(amount);
+
+  console.log(arr);
+
+  if (arr[1] === '1') {
+    diet += 100;
+  } else if (arr[1] === '2') {
+    diet += 75;
+  } else if (arr[1] === '3') {
+    diet += 50;
+  } else if (arr[1] === '4') {
+    diet += 25;
+    heart += 25;
+  }
+}
+
+function q3(el) {
+  var amount = el.getAttribute('value');
+  arr.push(amount);
+
+  console.log(arr);
+  if (arr[2] === '1') {
+    hypertension += 25;
+  } else if (arr[2] === '2') {
+    health += 25;
+  }
+}
+
+function q4(el) {
+  var amount = el.getAttribute('value');
+  arr.push(amount);
+
+  console.log(arr);
+  if (arr[3] === '1') {
+    heart += 25;
+  } else if (arr[3] === '2') {
+    health += 25;
+  }
+}
+
+function q5(el) {
+  var amount = el.getAttribute('value');
+  arr.push(amount);
+
+  console.log(arr);
+  if (arr[4] === '1') {
+    heart += 25;
+    hypertension +=  25;
+    copd += 25
+  } else if (arr[4] === '2') {
+    health += 25;
+  }
+}
+
+function q6(el) {
+  var amount = el.getAttribute('value');
+  arr.push(amount);
+
+  console.log(arr);
+  if (arr[5] === '1') {
+    hypertension += 25;
+  } else if (arr[5] === '2') {
+    health += 25;
+  }
+}
+
+function q7(el) {
+  var amount = el.getAttribute('value');
+  arr.push(amount);
+
+  console.log(arr);
+  if (arr[6] === '1') {
+    heart += 25;
+  } else if (arr[6] === '2') {
+    health += 25;
+  }
+}
+
+function q8(el) {
+  var amount = el.getAttribute('value');
+  arr.push(amount);
+
+  console.log(arr);
+  if (arr[7] === '1') {
+    heart += 25;
+  } else if (arr[7] === '2') {
+    health += 25;
+  }
+}
+
+function displayVar(variable) {
+  
+  document.getElementById(variable).innerHTML = exercise;
+
+  var marksCanvas = document.getElementById("marksChart");
+
+  var marksData = {
+    labels: ['Exercise', 'Diet', 'Health', 'Lifestyle', 'Impregnability'],
+    datasets: [{
+      label: "Your Health",
+      backgroundColor: "rgba(0,200,200,0.2)",
+
+      data: [exercise, diet, health, lifestyle, impregnability]
+    }]
+  };
+
+  var radarChart = new Chart(marksCanvas, {
+    type: 'radar',
+    data: marksData
+  });
+
+  console.log(exercise);
+}
+
+
 
 
 
