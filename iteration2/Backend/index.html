@@ -103,23 +103,37 @@ https://templatemo.com/tm-506-tinker
                 <h2 id="question">What describes most of your diet?</h2>
                     <div class="choice-container">
                         <p class="choice-prefix">A</p>
-                        <button href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="testimonial" onclick='storeVar(this)' value='1'>Fruits and Vegetable</button>
+                        <button href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="results" onclick='storeVar(this)' value='1'>Fruits and Vegetable</button>
                     </div>
                     <div class="choice-container">
                         <p class="choice-prefix">B</p>
-                        <button href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="testimonial" onclick='storeVar(this)' value='2'>Milk, Eggs, Meet and Diary products</button>
+                        <button href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="results" onclick='storeVar(this)' value='2'>Milk, Eggs, Meet and Diary products</button>
                     </div>
                     <div class="choice-container">
                         <p class="choice-prefix">C</p>
-                        <button href="#" class="choice-text scroll-link" data-number="3" style='font-size:25px' data-id="testimonial" onclick='storeVar(this)' value='3'>Biscuits, cakes and other high sugar products</button>
+                        <button href="#" class="choice-text scroll-link" data-number="3" style='font-size:25px' data-id="results" onclick='storeVar(this)' value='3'>Biscuits, cakes and other high sugar products</button>
                     </div>
                     <div class="choice-container">
                         <p class="choice-prefix">D</p>
-                        <button href="#" class="choice-text scroll-link" data-number="4" style='font-size:25px' data-id="testimonial" onclick='storeVar(this)' value='4'>Pizza, Burgers and other fast food alternatives</button>
+                        <button href="#" class="choice-text scroll-link" data-number="4" style='font-size:25px' data-id="results" onclick='storeVar(this)' value='4'>Pizza, Burgers and other fast food alternatives</button>
                     </div>
             </div>
   <script src="js/main.js"></script>
         </div>
+    </section>
+
+    <section id="results">
+        <div class="container">
+            <div class="primary-white-button" onclick="displayVar('target');">
+                <p>Refresh Results</p>
+            </div>
+                <script type="text/javascript" src=js/main.js></script>
+                <h2> Your Score is
+                    <body onload="displayVar('target');">
+                        <span id="target"></span>
+                    </body>
+                </h2>
+            </div>
     </section>
 
 
