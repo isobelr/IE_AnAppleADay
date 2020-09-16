@@ -203,24 +203,65 @@ https://templatemo.com/tm-506-tinker
                 <h2 id="question">What best describes your relationship with smoking?</h2>
                     <div class="choice-container">
                         <p class="choice-prefix">A</p>
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="results" onclick='q8(this)' value='1'>2-4 times a day</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="q9" onclick='q8(this)' value='1'>2-4 times a day</p>
                     </div>
                     <div class="choice-container">
                         <p class="choice-prefix">B</p>
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="results" onclick='q8(this)' value='2'>6-10 times a day</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="q9" onclick='q8(this)' value='2'>6-10 times a day</p>
                     </div>
                     <div class="choice-container">
                         <p class="choice-prefix">C</p>
-                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:25px' data-id="results" onclick='q8(this)' value='3'>A few times a week</p>
+                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:25px' data-id="q9" onclick='q8(this)' value='3'>A few times a week</p>
                     </div>
                     <div class="choice-container">
                         <p class="choice-prefix">D</p>
-                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:25px' data-id="results" onclick='q8(this)' value='4'>Never</p>
+                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:25px' data-id="q9" onclick='q8(this)' value='4'>Never</p>
                     </div>
             </div>
             <script src="js/main.js"></script>
         </div>
     </section>
+
+  <section id="q9" class="page-section">
+        <div class="container">
+            <div id="game" class="justify-center flex-column">
+                <h2 id="question">How is your alcohol consumption?</h2>
+                    <div class="choice-container">
+                        <p class="choice-prefix">A</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="q10" onclick='q9(this)' value='1'>Social</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">B</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="q10" onclick='q9(this)' value='2'>A few times a week</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">C</p>
+                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:25px' data-id="q10" onclick='q9(this)' value='3'>Frequent</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">D</p>
+                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:25px' data-id="q10" onclick='q9(this)' value='4'>I don't drink</p>
+                    </div>
+            </div>
+            <script src="js/main.js"></script>
+        </div>
+    </section>
+
+    <section id="q10" class="page-section">
+        <div class="container">
+            <div id="game" class="justify-center flex-column">
+                <h2 id="question">Do you have high blood pressure?</h2>
+                    <div class="choice-container">
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="results" onclick='q10(this)' value='1'>Yes</p>
+                    </div>
+                    <div class="choice-container">
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="results" onclick='q10(this)' value='2'>No</p>
+                    </div>
+            </div>
+            <script src="js/main.js"></script>
+        </div>
+    </section>
+
 
     <section id="results">
         <div class="container">
@@ -239,7 +280,14 @@ https://templatemo.com/tm-506-tinker
     <section id="graph">
         <div class='container'>
             <script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-            <canvas id="marksChart" width="250" height="100"></canvas>
+            <canvas id="marksChart" width="250" height="100" style="border:1px solid #000000;"></canvas>
+        </div>
+    </section>
+
+     <section id="graph2">
+        <div class='container' >
+            <script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+            <canvas id="barChart" width="250" height="100" style="border:1px solid #000000;"></canvas>
         </div>
     </section>
 
