@@ -365,7 +365,7 @@ function displayVar(variable) {
     document.getElementById(variable).innerHTML = text2;
   } else if (copd > heart && copd > hypertension && copd > COPD >= 50) {
     document.getElementById(variable).innerHTML = text3;
-  } else if (lifestyle > 85) {
+  } else if (lifestyle >= 80) {
     document.getElementById(variable).innerHTML = text4;
   } else {
     document.getElementById(variable).innerHTML = text5;
