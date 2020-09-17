@@ -413,7 +413,22 @@ function displayVar(variable) {
 
   var barChart = new Chart(riskCanvas, {
     type: 'horizontalBar',
-    data: riskData,
+    data: {
+      labels: ["您的风险"],
+      datasets: [{
+         label: "高血压",
+         backgroundColor: "#0c8195",
+         data: [hypertension],
+      },{
+         label: "心力衰竭",
+         backgroundColor: "#f89624",
+         data: [heart],
+      },{
+         label: "COPD",
+         backgroundColor: "#33c1cf",
+         data: [copd],
+      }]
+   },
     options: {
       scales: {
         xAxes: [{
