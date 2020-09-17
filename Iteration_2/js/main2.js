@@ -374,9 +374,9 @@ function displayVar(variable) {
   var marksCanvas = document.getElementById("marksChart");
 
   var marksData = {
-    labels: ['Exercise', 'Diet', 'Health', 'Lifestyle', 'Impregnability'],
+    labels: ['锻炼身体', '平衡膳食', '健康的', '生活方式', '不可渗透性'],
     datasets: [{
-      label: "Your Health",
+      label: "你的健康",
       backgroundColor: "rgba(0,200,200,0.2)",
 
       data: [exercise, diet, health, lifestyle, impregnability]
@@ -402,9 +402,9 @@ function displayVar(variable) {
   
 
   var riskData = {
-    labels: ['hypertension', 'heart failure', 'COPD'],
+    labels: ['高血压', '心力衰竭', 'COPD'],
     datasets: [{
-      label: "Your Risks",
+      label: ['高血压', '心力衰竭', 'COPD'],
       backgroundColor: ['cyan', 'orange', 'lightgreen'],
 
       data: [hypertension, heart, copd]
