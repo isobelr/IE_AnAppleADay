@@ -417,15 +417,15 @@ function displayVar(variable) {
       labels: ["Your Risks"],
       datasets: [{
          label: "Hypertension",
-         backgroundColor: "cyan",
+         backgroundColor: "#0c8195",
          data: [hypertension],
       },{
          label: "Heart Failure",
-         backgroundColor: "orange",
+         backgroundColor: "#f89624",
          data: [heart],
       },{
          label: "COPD",
-         backgroundColor: "lightgreen",
+         backgroundColor: "#33c1cf",
          data: [copd],
       }]
    },
