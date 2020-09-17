@@ -39,7 +39,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="symptom-checker.html" class="nav-link">Symptom Checker</a>
+                        <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="symtpom-explainer.html" class="nav-link">Symptom Explainer</a>
@@ -265,43 +265,60 @@
                         <img src="images/pressure2.png" class="img-fluid" alt="pressure" height=800 width=400>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="results" onclick='q10(this)' value='1'>Yes</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="check-results" onclick='q10(this)' value='1'>Yes</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="results" onclick='q10(this)' value='2'>No</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="check-results" onclick='q10(this)' value='2'>No</p>
                     </div>
             </div>
             <script src="js/main.js"></script>
         </div>
     </section>
 
-
-    <section id="results">
+    <section id="check-results" class="parallax-content baner-content2" >
         <div class="container">
-            <div class="primary-white-button" onclick="displayVar('target');">
-                <p>Refresh Results</p>
+                  <div class="text-content ">
+                    <h2><em>Quiz</em> <span>Completed!</span></h2>
+                    <p style='font-size:25px'>Click the button below to find your results.</p>
+                    <div class="primary-white-button" >
+                      <script type="text/javascript" src=js/main.js></script>
+                      <a href="#" class="scroll-link" data-id="graph" onclick="displayVar('target');">Show results</a>
+                    </div>
+                  </div>
+          </div>
+    </section>
+
+    <section id="graph" class="parallax-content baner-content3">
+        <div class='container'>
+        <script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+          <div style="width: 100%; ">
+            <div style="width: 50%; height: 100px; float: left; " class = 'text-content'>
+            <h1>Your Health Metrics</h1> 
+              <canvas id="marksChart" width="250" height="100" style="background-color: #ffffff" ></canvas>
             </div>
-                <script type="text/javascript" src=js/main.js></script>
-                <h2 style='font-size:25px'> Your Results
+            <div style="margin-left: 50%; height: 100px;"> 
+            <h1>Your Risks</h1> 
+              <canvas id="barChart" width="250" height="100" style="background-color: #ffffff"></canvas>
+            </div>
+          </div>
+        </div>
+    </section>
+
+<section id="results" class="parallax-content baner-content4" >
+        <div class="container">
+                        <h1>Your Health Status</h1>
+                        <script type="text/javascript" src=js/main.js></script>
+        <div class="full-image text-center" data-aos="zoom-in">
+                        <img src="images/questionnaire.png" class="img-fluid" alt="breath" height=600 width=500>
+                    </div>
+        <div width=500>
+                <p align='justify' style='font-size:25px;'>
                     <body onload="displayVar('target');">
                         <span id="target"></span>
                     </body>
-                </h2>
-            </div>
-    </section>
-
-    <section id="graph">
-        <div class='container'>
-            <script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-            <canvas id="marksChart" width="250" height="100" style="border:1px solid #000000;"></canvas>
+                </p>
         </div>
-    </section>
-
-     <section id="graph2">
-        <div class='container' >
-            <script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-            <canvas id="barChart" width="250" height="100" style="border:1px solid #000000;"></canvas>
-        </div>
+          </div>
     </section>
 
 
@@ -341,7 +358,7 @@
         // scroll to top action
         $('.scroll-top').on('click', function(event) {
             event.preventDefault();
-            $('html, body').animate({scrollTop:0}, 'slow');         
+            $('html, body').animate({scrollTop:0}, 'slow');
         });
         // mobile nav toggle
         $('#nav-toggle').on('click', function (event) {
