@@ -1,0 +1,9 @@
+.simplified_chinese {
+display:block;
+}
+li .simplified_chinese {
+display:inline;
+}
+.english {
+display:none;
+}
