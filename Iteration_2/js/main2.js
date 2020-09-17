@@ -377,7 +377,7 @@ function displayVar(variable) {
     labels: ['锻炼身体', '平衡膳食', '健康的', '生活方式', '不可渗透性'],
     datasets: [{
       label: "你的健康",
-      backgroundColor: "#0c8195",
+      backgroundColor: "rgba(0,200,200,0.2)",
 
       data: [exercise, diet, health, lifestyle, impregnability]
     }]
