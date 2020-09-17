@@ -359,11 +359,11 @@ var text5 = "Your health needs more work ! The key to a healthy lifestyle includ
 
 function displayVar(variable) {
 
-  if (heart >= hypertension && heart >= copd && heart > health) {
+  if (heart >= hypertension && heart >= copd && heart >= 50) {
     document.getElementById(variable).innerHTML = text1;
-  } else if (hypertension > heart && hypertension > copd && hypertension > health) {
+  } else if (hypertension > heart && hypertension > copd && hypertension >= 50 ) {
     document.getElementById(variable).innerHTML = text2;
-  } else if (copd > heart && copd > hypertension && copd > health) {
+  } else if (copd > heart && copd > hypertension && copd > COPD >= 50) {
     document.getElementById(variable).innerHTML = text3;
   } else if (lifestyle > 85) {
     document.getElementById(variable).innerHTML = text4;
