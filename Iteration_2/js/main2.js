@@ -359,11 +359,11 @@ var text5 = "您的健康需要进步！健康生活方式的关键包括: 1.健
 
 function displayVar(variable) {
 
-  if (heart >= hypertension && heart >= copd && heart > health) {
+  if (heart >= hypertension && heart >= copd && heart > 50) {
     document.getElementById(variable).innerHTML = text1;
-  } else if (hypertension > heart && hypertension > copd && hypertension > health) {
+  } else if (hypertension > heart && hypertension > copd && hypertension > 50) {
     document.getElementById(variable).innerHTML = text2;
-  } else if (copd > heart && copd > hypertension && copd > health) {
+  } else if (copd > heart && copd > hypertension && copd >= 50) {
     document.getElementById(variable).innerHTML = text3;
   } else if (lifestyle > 85) {
     document.getElementById(variable).innerHTML = text4;
