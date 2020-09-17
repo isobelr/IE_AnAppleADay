@@ -329,7 +329,7 @@ https://templatemo.com/tm-538-digital-trend
   width: 100%;
   	padding-top: 20vh;
   	text-align: center;
-  	background-color: #ffffff;
+  	background-color: #FFF;
     vertical-align: middle;
     overflow: hidden;
 }
@@ -412,8 +412,10 @@ https://templatemo.com/tm-538-digital-trend
 
 
   #q1 {
-  padding: 150px 0px;
+  padding: 0px 0px;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
 	text-align: center;
 	background-color: #f89624;
 	background-repeat: no-repeat;
@@ -468,7 +470,9 @@ https://templatemo.com/tm-538-digital-trend
 }
 
 #q2 {
-  padding: 150px 0px;
+  padding: 0px 0px;
+  display: flex;
+  align-items: center;
   min-height: 100vh;
 	text-align: center;
 	background-color: #33c1cf;
@@ -727,7 +731,9 @@ https://templatemo.com/tm-538-digital-trend
 }
 
 #q8 {
-  padding: 150px 0px;
+  padding: 0px 0px;
+  display: flex;
+  align-items: center;
   min-height: 100vh;
 	text-align: center;
 	background-color: #0c8195;
@@ -776,7 +782,9 @@ https://templatemo.com/tm-538-digital-trend
 }
 
 #q9 {
-  padding: 150px 0px;
+  padding: 0px 0px;
+  display: flex;
+  align-items: center;
   min-height: 100vh;
 	text-align: center;
 	background-color: #f89624;
