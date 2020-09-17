@@ -358,6 +358,7 @@ var text4 = "You are in good shape ! Great work ! The key to a healthy lifestyle
 var text5 = "Your health needs more work ! The key to a healthy lifestyle includes: 1. Healthy Diet - A healthy diet includes good consumption of fresh fruits, vegetables, whole grains and proteins.Restrict consumption of foods with saturated fats or high sodium to as minimum as possible. 2. Healthy Physical Activity - Regularly engage in some form of physical activity.Include exercises such as running, jogging and cycling as part of your daily routine.Exercise 30 minutes everyday or make sure you have at least four hours of physical exercise every week. 3. Healthy Body weight - Maintain a Body mass index(BMI) of 18 - 25 to stay healthy.Staying fit is really important to your health. 4. Moderate or no Alcohol intake - Moderate alcohol consumption is measured to be between 5 to 5 grams per day.One drink contains 14 grams of alcohol.Reduce the amount of alcohol consumption to occasional or even avoid consumption if possible. Continue to our Symptom Explainer Page to learn more about potential preventable diseases and what you can do to avoid them."
 
 function displayVar(variable) {
+
   if (heart >= hypertension && heart >= copd && heart > health) {
     document.getElementById(variable).innerHTML = text1;
   } else if (hypertension > heart && hypertension > copd && hypertension > health) {
