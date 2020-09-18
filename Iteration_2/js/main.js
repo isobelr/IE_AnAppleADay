@@ -370,6 +370,9 @@ function displayVar(variable) {
   } else {
     document.getElementById(variable).innerHTML = text5;
   };
+var marksCanvas = document.getElementById("marksChart");
+var riskCanvas = document.getElementById("barChart");
+	
 var marksData = {
     labels: ['Exercise', 'Diet', 'Health', 'Lifestyle', 'Impregnability'],
     datasets: [{
@@ -380,6 +383,7 @@ var marksData = {
     }]
   };
 	
+	
 var riskData = {
     labels: ['hypertension', 'heart failure', 'COPD'],
     datasets: [{
@@ -389,14 +393,20 @@ var riskData = {
       data: [hypertension, heart, copd]
     }]
   };
-  var marksCanvas = document.getElementById("marksChart");
-  var riskCanvas = document.getElementById("barChart");
+  
+
+radarChart.update();
+barChart.update();
+  
 	
 }
 
   
 
-  var radarChart = new Chart(marksCanvas, {
+  
+
+
+var radarChart = new Chart(marksCanvas, {
     type: 'radar',
     data: marksData,
     options: {
@@ -410,9 +420,6 @@ var riskData = {
       }
     }
   });
-
-
-
   
   
 
@@ -447,8 +454,6 @@ var riskData = {
 
   });
 
-radarChart.update;
-barChart.update;
 
 function refresh(){
   i = 0;	
