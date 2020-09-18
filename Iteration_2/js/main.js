@@ -101,14 +101,14 @@ jQuery(document).ready(function($) {
 });
 
 var arr = [];
-var exercise = 0;
-var diet = 0;
-var health = 0;
-var lifestyle = 0;
-var impregnability = 0;
-var hypertension = 0;
-var heart = 0;
-var copd = 0;
+exercise = 0;
+diet = 0;
+health = 0;
+lifestyle = 0;
+impregnability = 0;
+hypertension = 0;
+heart = 0;
+copd = 0;
 var i1 = 0;
 var i2 = 0;
 var i3 = 0;
@@ -125,7 +125,7 @@ function q1(el) {
   i1++;
   if (i1 === 1) {
     var amount = el.getAttribute('value');
-    arr[0] = amount;
+    arr.push(amount);
     el.style.background = '#56a5eb';
     
     console.log(arr);
@@ -167,7 +167,7 @@ function q2(el) {
   i2++;
   if (i2 === 1) {
     var amount = el.getAttribute('value');
-    arr[1] = amount;
+    arr.push(amount);
     el.style.backgroundColor = '#56a5eb';
 
     if (arr[1] === '1') {
@@ -202,7 +202,7 @@ function q3(el) {
   i3++;
   if (i3 === 1) {
     var amount = el.getAttribute('value');
-    arr[2] = amount;
+    arr.push(amount);
     el.style.backgroundColor = '#56a5eb';
     if (arr[2] === '1') {
       health += 7.14;
@@ -219,7 +219,7 @@ function q4(el) {
   i4++;
   if (i4 === 1) {
     var amount = el.getAttribute('value');
-    arr[3] = amount;
+    arr.push(amount);
     el.style.backgroundColor = '#56a5eb';
     if (arr[3] === '1') {
       heart += 12.5;
@@ -234,7 +234,7 @@ function q5(el) {
   i5++;
   if (i5 === 1) {
     var amount = el.getAttribute('value');
-    arr[4] =amount);
+    arr.push(amount);
     el.style.backgroundColor = '#56a5eb';
     if (arr[4] === '1') {
       hypertension +=  16.66;
@@ -250,7 +250,7 @@ function q6(el) {
   i6++;
   if (i6 === 1) {
     var amount = el.getAttribute('value');
-    arr[5] = amount;
+    arr.push(amount);
     el.style.backgroundColor = '#56a5eb';
     if (arr[5] === '1') {
       hypertension += 16.66;
@@ -265,7 +265,7 @@ function q7(el) {
   i7++;
   if (i7 === 1) {
     var amount = el.getAttribute('value');
-    arr[6] = amount;
+    arr.push(amount);
     el.style.backgroundColor = '#56a5eb';
     if (arr[6] === '1') {
       heart += 12.5;
@@ -280,7 +280,7 @@ function q8(el) {
   i8++;
   if (i8 === 1) {
     var amount = el.getAttribute('value');
-    arr[7] =amount;
+    arr.push(amount);
     el.style.backgroundColor = '#56a5eb';
     if (arr[7] === '1') {
       lifestyle += 0;
@@ -311,7 +311,7 @@ function q9(el) {
   i9++;
   if (i9 === 1) {
     var amount = el.getAttribute('value');
-    arr[8]=amount;
+    arr.push(amount);
     el.style.backgroundColor = '#56a5eb';
     if (arr[8] === '1') {
       lifestyle += 25;
@@ -336,12 +336,12 @@ function q10(el) {
   i10++;
   if (i10 === 1) {
     var amount = el.getAttribute('value');
-    arr[9]=amount;
+    arr.push(amount);
     el.style.backgroundColor = '#56a5eb';
-    if (arr[9] === '1') {
+    if (arr[6] === '1') {
       heart += 12.5;
       health += 7.14;
-    } else if (arr[9] === '2') {
+    } else if (arr[6] === '2') {
       health += 14.28;
     }
   }
@@ -369,11 +369,11 @@ function displayVar(variable) {
     document.getElementById(variable).innerHTML = text4;
   } else {
     document.getElementById(variable).innerHTML = text5;
-  };
-var marksCanvas = document.getElementById("marksChart");
-var riskCanvas = document.getElementById("barChart");
-	
-var marksData = {
+  }
+
+  var marksCanvas = document.getElementById("marksChart");
+
+  var marksData = {
     labels: ['Exercise', 'Diet', 'Health', 'Lifestyle', 'Impregnability'],
     datasets: [{
       label: "Your Health",
@@ -382,31 +382,8 @@ var marksData = {
       data: [exercise, diet, health, lifestyle, impregnability]
     }]
   };
-	
-	
-var riskData = {
-    labels: ['hypertension', 'heart failure', 'COPD'],
-    datasets: [{
-      label: "Your Risks",
-      backgroundColor: ['cyan', 'orange', 'lightgreen'],
 
-      data: [hypertension, heart, copd]
-    }]
-  };
-  
-
-radarChart.update();
-barChart.update();
-  
-	
-}
-
-  
-
-  
-
-
-var radarChart = new Chart(marksCanvas, {
+  var radarChart = new Chart(marksCanvas, {
     type: 'radar',
     data: marksData,
     options: {
@@ -420,8 +397,19 @@ var radarChart = new Chart(marksCanvas, {
       }
     }
   });
+
+  var riskCanvas = document.getElementById("barChart");
   
-  
+
+  var riskData = {
+    labels: ['hypertension', 'heart failure', 'COPD'],
+    datasets: [{
+      label: "Your Risks",
+      backgroundColor: ['cyan', 'orange', 'lightgreen'],
+
+      data: [hypertension, heart, copd]
+    }]
+  };
 
   var barChart = new Chart(riskCanvas, {
     type: 'horizontalBar',
@@ -454,18 +442,16 @@ var radarChart = new Chart(marksCanvas, {
 
   });
 
+  // exercise = 0;
+  // diet = 0;
+  // health = 0;
+  // lifestyle = 0;
+  // impregnability = 0;
+  // hypertension = 0;
+  // heart = 0;
+  // copd = 0;
 
-function refresh(){
-  i = 0;	
-  exercise = 0;
-  diet = 0;
-  health = 0;
-  lifestyle = 0;
-  impregnability = 0;
-  hypertension = 0;
-  heart = 0;
-  copd = 0;
-};
+}
 
 
 
