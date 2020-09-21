@@ -125,7 +125,8 @@ function q1(el) {
   i1++;
   if (i1 === 1) {
     var amount = el.getAttribute('value');
-    el.style.background = '#f1c111';
+    el.style.background = '#f1c111';  
+	  
     arr[0] = amount;
 
     console.log(arr);
@@ -168,6 +169,7 @@ function q2(el) {
     var amount = el.getAttribute('value');
     
     el.style.backgroundColor = '#057a8d';
+	el.style.color = '#fff';
     arr[1] = amount;
 
     if (arr[1] === '1') {
@@ -223,6 +225,7 @@ function q4(el) {
   if (i4 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#057a8d';
+	  el.style.color = '#fff';
 
     arr[3] = amount;
 
@@ -241,6 +244,7 @@ function q5(el) {
   if (i5 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#f1c111';
+	  
     arr[4] = amount;
 
     if (arr[4] === '1') {
@@ -259,6 +263,7 @@ function q6(el) {
   if (i6 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#057a8d';
+	  el.style.color = '#fff';
 
     arr[5] = amount;
     if (arr[5] === '1') {
@@ -293,6 +298,7 @@ function q8(el) {
   if (i8 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#057a8d';
+	  el.style.color = '#fff';
 
     arr[7] = amount;
     if (arr[7] === '1') {
@@ -326,6 +332,7 @@ function q9(el) {
   if (i9 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#f1c111';
+	  
 
     arr[8] = amount;
     if (arr[8] === '1') {
@@ -353,6 +360,7 @@ function q10(el) {
   if (i10 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#057a8d';
+	  el.style.color = '#fff';
     arr[9] = amount;
     if (arr[9] === '1') {
       heart += 12.5;
