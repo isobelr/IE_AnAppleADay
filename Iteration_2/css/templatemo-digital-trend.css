@@ -1552,20 +1552,20 @@
          outline-color: #057a8d;
          }
          .open {
-         height: 250px;
-         width: 250px;
+         height: 200px;
+         width: 350px;
          margin-bottom: 200px;
          margin-top: 200px;
-           bottom: 0;
-           top: 0;
-          left: 0;
-          width: 300px;
+         bottom: 0;
+         top: 0;
+         left: 0;
+         width: 300px;
          }
          /* Styling for place details */
          .hero2 {
          width: 100%;
          height: auto;
-         max-height: 500px;
+         max-height: 300px;
          display: block;
          }
          .place,
