@@ -126,6 +126,7 @@ function q1(el) {
   if (i1 === 1) {
     var amount = el.getAttribute('value');
     el.style.background = '#f1c111';
+	  el.style.color = '#fff';
     arr[0] = amount;
 
     console.log(arr);
@@ -168,6 +169,7 @@ function q2(el) {
     var amount = el.getAttribute('value');
     
     el.style.backgroundColor = '#057a8d';
+	  el.style.color = '#fff';
     el.style.color = '#fff';
     arr[1] = amount;
     document.querySelectorAll('.dummy').forEach(function (el) {
@@ -214,6 +216,7 @@ function q3(el) {
   if (i3 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#f1c111';
+	  el.style.color = '#fff';
     arr[2] = amount;
 
     if (arr[2] === '1') {
@@ -233,7 +236,7 @@ function q4(el) {
   if (i4 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#057a8d';
-
+	el.style.color = '#fff';
     arr[3] = amount;
 
     if (arr[3] === '1') {
@@ -251,6 +254,7 @@ function q5(el) {
   if (i5 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#f1c111';
+	  el.style.color = '#fff';
     arr[4] = amount;
 
     if (arr[4] === '1') {
@@ -269,7 +273,7 @@ function q6(el) {
   if (i6 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#057a8d';
-
+	el.style.color = '#fff';
     arr[5] = amount;
     if (arr[5] === '1') {
       hypertension += 16.66;
@@ -286,7 +290,7 @@ function q7(el) {
   if (i7 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#f1c111';
-
+	el.style.color = '#fff';
     arr[6] = amount;
     if (arr[6] === '1') {
       heart += 12.5;
@@ -303,7 +307,7 @@ function q8(el) {
   if (i8 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#057a8d';
-
+	el.style.color = '#fff';
     arr[7] = amount;
     if (arr[7] === '1') {
       lifestyle += 0;
@@ -336,7 +340,7 @@ function q9(el) {
   if (i9 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#f1c111';
-
+	el.style.color = '#fff';
     arr[8] = amount;
     if (arr[8] === '1') {
       lifestyle += 25;
@@ -363,6 +367,7 @@ function q10(el) {
   if (i10 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#057a8d';
+	  el.style.color = '#fff';
     arr[9] = amount;
     if (arr[9] === '1') {
       heart += 12.5;
