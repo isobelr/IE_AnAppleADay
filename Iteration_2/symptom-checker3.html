@@ -19,58 +19,71 @@
      <link rel="shortcut icon" href="images/favicon.png">
 
      <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/templatemo-digital-trend2.css">
+     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+     <!-- <link rel="stylesheet" href="css/templatemo-digital-trend2.css"> -->
 
 </head>
 <body>
 
-     <!-- MENU BAR -->
-     <nav class="navbar navbar-expand-lg">
-        <div class="container">
+      <!-- MENU BAR -->
+      <nav class="navbar navbar-expand-lg">
+         <div class="container">
             <a class="navbar-brand" href="index.html">
-              AN APPLE A DAY
+               AN APPLE A DAY
+                  <h4>Let’s keep the hospital away</h4>
             </a>
-
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+               aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">主页</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="symptom-explainer.html" class="nav-link">疾病说明</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="map-chinese.html" class="nav-link">医生查找工具</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link smoothScroll">关于</a>
-                    </li>
-                    </li>
+               <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                     <a href="symptom-checker2.html" class="nav-link smoothScroll">English</a>
+                     <a href="index.html" class="nav-link smoothScroll">主页</a>
                   </li>
-                </ul>
+                  <li class="nav-item">
+                     <a href="symptom-explainer.html" class="nav-link smoothScroll">疾病说明</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="map.html" class="nav-link smoothScroll">医生查找工具</a>
+                </li>
+                  <li class="nav-item">
+                     <a href="about.html" class="nav-link smoothScroll">关于</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="symptom-checker3.html" class="nav-link smoothScroll">English</a>
+                  </li>
+               </ul>
             </div>
-        </div>
-    </nav>
+         </div>
+      </nav>
 
-     <!-- PROJECT DETAIL -->
-     <div id="home" class="parallax-content baner-content" >
-        <div class="container">
-            <div class="text-content">
-                <h2><em>欢迎</em> <span>来到我们的</span> 症状检查器</h2>
-                <p style='font-size:25px'>想知道您目前的生活方式是否会导致某些威胁生命的症状吗？想检查您的症状以了解您是否有患慢性病的风险吗？开始测验来找出答案吧。</p>
-                <div class="primary-white-button">
-                    <a href="#" class="scroll-link" data-id="q1" onclick="displayVar('target');">开始测试</a>
-                </div>
+
+
+
+      <!-- HERO -->
+      <section class="hero hero-bg d-flex justify-content-center align-items-center">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                  <div class="hero-text">
+                        <h1 class="text-white" data-aos="fade-up">症状检查器</h1>
+                        <p class="text-white" data-aos="fade-up">是否想检查症状以了解是否有患慢性病的风险？</p>
+                        <!-- <a href="#q1" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Start the Quiz!</a> -->
+                        <a href="#" data-id='q1' class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-aos="fade-up" data-aos-delay="100">开始测试</a>
+
+                  </div>
+               </div>
+               <div class="col-lg-6 col-12">
+                  <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+                     <img src="images/symtpom-checker-transparent.png" class="img-fluid" alt="working girl">
+                  </div>
+               </div>
             </div>
-        </div>
-      </div>
+         </div>
+      </section>
+  <br><br>  <br><br>  <br><br>
+
 
 
      <!-- PROJECT DETAIL -->
@@ -78,45 +91,46 @@
      <section id="q1" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <h2 id="question">您一周健身几次？</h2>
+                <h2 id="question" style="color:white;">您一周健身几次？<strong>(1/10)</strong></h2>
                     <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/running.png" class="img-fluid" alt="running" height=800 width=400>
+                        <img src="images/running.png" class="img-fluid" alt="running" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="q2" onclick='q1(this)' value='1'>每天</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q2" onclick='q1(this)' value='1'>每天</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="q2" onclick='q1(this)' value='2'>每周4次</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q2" onclick='q1(this)' value='2'>每周4次</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:25px' data-id="q2" onclick='q1(this)' value='3'>每周2次</p>
+                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:20px' data-id="q2" onclick='q1(this)' value='3'>每周2次</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:25px' data-id="q2" onclick='q1(this)' value='4'>从不</p>
+                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:20px' data-id="q2" onclick='q1(this)' value='4'>从不</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
         </div>
     </section>
-
-    <section id="q2" class = page-section>
+     
+    <section id="q2" class = "page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <h2 id="question">如何描述您大部分的饮食？</h2>
+                <br><br>
+                <h2 id="question" style="color:white;">如何描述您大部分的饮食？ <span style="color: #ffffff">(2/10)</span></h2>
                     <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/food.png" class="img-fluid" alt="running" height=800 width=400>
+                        <img src="images/food2.png" class="img-fluid" alt="running" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="q3" onclick='q2(this)' value='1'>水果和蔬菜</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q3" onclick='q2(this)' value='1'>水果和蔬菜</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="q3" onclick='q2(this)' value='2'>奶，蛋，肉和奶制品</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q3" onclick='q2(this)' value='2'>奶，蛋，肉和奶制品</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:25px' data-id="q3" onclick='q2(this)' value='3'>饼干，蛋糕和其他高糖类产品</p>
+                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:20px' data-id="q3" onclick='q2(this)' value='3'>饼干，蛋糕和其他高糖类产品</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:25px' data-id="q3" onclick='q2(this)' value='4'>比萨饼，汉堡包和其他快餐类食品</p>
+                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:20px' data-id="q3" onclick='q2(this)' value='4'>比萨饼，汉堡包和其他快餐类食品</p>
                     </div>
             </div>
   <script src="js/main2.js"></script>
@@ -126,15 +140,15 @@
     <section id="q3" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <h2 id="question">您上个月有头晕的迹象吗？</h2>
+                <h2 id="question" style="color:white;">您上个月有头晕的迹象吗？<strong>(3/10)</strong></h2>
                     <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/dizzy2.png" class="img-fluid" alt="dizzy" height=800 width=400>
+                        <img src="images/dizzy2.png" class="img-fluid" alt="dizzy" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="q4" onclick='q3(this)' value='1'>是</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q4" onclick='q3(this)' value='1'>是</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="q4" onclick='q3(this)' value='2'>否</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q4" onclick='q3(this)' value='2'>否</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
@@ -144,15 +158,15 @@
 <section id="q4" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <h2 id="question">通常会感到疲倦或虚弱吗？</h2>
+                <h2 id="question" style="color:white;">通常会感到疲倦或虚弱吗？<span style="color: #ffffff">(4/10)</span></h2>
                 <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/tired.png" class="img-fluid" alt="dizzy" height=800 width=400>
+                        <img src="images/tired.png" class="img-fluid" alt="dizzy" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="q5" onclick='q4(this)' value='1'>是</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q5" onclick='q4(this)' value='1'>是</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="q5" onclick='q4(this)' value='2'>否</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q5" onclick='q4(this)' value='2'>否</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
@@ -162,15 +176,15 @@
     <section id="q5" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <h2 id="question">在进行日常活动时您是否感到呼吸急促？</h2>
+                <h2 id="question" style="color:white;">在进行日常活动时您是否感到呼吸急促？<strong>(5/10)</strong></h2>
                     <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/breath.png" class="img-fluid" alt="breath" height=800 width=400>
+                        <img src="images/breath.png" class="img-fluid" alt="breath" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="q6" onclick='q5(this)' value='1'>是</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q6" onclick='q5(this)' value='1'>是</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="q6" onclick='q5(this)' value='2'>否</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q6" onclick='q5(this)' value='2'>否</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
@@ -180,15 +194,15 @@
     <section id="q6" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <h2 id="question">您近期有感到严重的头痛？</h2>
+                <h2 id="question" style="color:white;">您近期有感到严重的头痛？<span style="color: #ffffff">(6/10)</span></h2>
                     <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/headache2.png" class="img-fluid" alt="breath" height=800 width=400>
+                        <img src="images/headache2.png" class="img-fluid" alt="breath" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="q7" onclick='q6(this)' value='1'>是</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q7" onclick='q6(this)' value='1'>是</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="q7" onclick='q6(this)' value='2'>否</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q7" onclick='q6(this)' value='2'>否</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
@@ -198,15 +212,15 @@
     <section id="q7" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <h2 id="question">您有感觉脚，腿，脚踝或胃部的体重增加了吗？</h2>
+                <h2 id="question" style="color:white;">您有感觉脚，腿，脚踝或胃部的体重增加了吗？<strong>(7/10)</strong></h2>
                     <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/weight.png" class="img-fluid" alt="breath" height=800 width=400>
+                        <img src="images/weight.png" class="img-fluid" alt="breath" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="q8" onclick='q7(this)' value='1'>是</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q8" onclick='q7(this)' value='1'>是</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="q8" onclick='q7(this)' value='2'>否</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q8" onclick='q7(this)' value='2'>否</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
@@ -216,21 +230,21 @@
   <section id="q8" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <h2 id="question">如何评价您的抽烟习惯？</h2>
+                <h2 id="question" style="color:white;">如何评价您的抽烟习惯？<span style="color: #ffffff">(8/10)</span></h2>
                     <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/smoke2.png" class="img-fluid" alt="smoke" height=800 width=400>
+                        <img src="images/smoke2.png" class="img-fluid" alt="smoke" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="q9" onclick='q8(this)' value='1'>每天2-4次</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q9" onclick='q8(this)' value='1'>每天2-4次</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="q9" onclick='q8(this)' value='2'>每天6-10次</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q9" onclick='q8(this)' value='2'>每天6-10次</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:25px' data-id="q9" onclick='q8(this)' value='3'>一周偶尔几次</p>
+                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:20px' data-id="q9" onclick='q8(this)' value='3'>一周偶尔几次</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:25px' data-id="q9" onclick='q8(this)' value='4'>从不</p>
+                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:20px' data-id="q9" onclick='q8(this)' value='4'>从不</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
@@ -240,21 +254,21 @@
   <section id="q9" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <h2 id="question">如何评价您的喝酒程度？</h2>
+                <h2 id="question" style="color:white;">如何评价您的喝酒程度？<strong>(9/10)</strong></h2>
                     <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/drinks.png" class="img-fluid" alt="drinks" height=800 width=400>
+                        <img src="images/drinks.png" class="img-fluid" alt="drinks" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="q10" onclick='q9(this)' value='1'>只在社交时</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q10" onclick='q9(this)' value='1'>只在社交时</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="q10" onclick='q9(this)' value='2'>一周偶尔几次</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q10" onclick='q9(this)' value='2'>一周偶尔几次</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:25px' data-id="q10" onclick='q9(this)' value='3'>经常喝</p>
+                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:20px' data-id="q10" onclick='q9(this)' value='3'>经常喝</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:25px' data-id="q10" onclick='q9(this)' value='4'>我不喝酒</p>
+                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:20px' data-id="q10" onclick='q9(this)' value='4'>我不喝酒</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
@@ -264,62 +278,110 @@
     <section id="q10" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <h2 id="question">您有高血压吗？</h2>
+                <h2 id="question" style="color:white;">您有高血压吗？<span style="color: #ffffff">(10/10)</span></h2>
                     <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/pressure2.png" class="img-fluid" alt="pressure" height=800 width=400>
+                        <img src="images/pressure2.png" class="img-fluid" alt="pressure" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:25px' data-id="check-results" onclick='q10(this)' value='1'>有</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="check-results" onclick='q10(this)' value='1'>有</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:25px' data-id="check-results" onclick='q10(this)' value='2'>无</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="check-results" onclick='q10(this)' value='2'>无</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
         </div>
     </section>
 
+
+
     <section id="check-results" class="parallax-content baner-content2" >
         <div class="container">
                   <div class="text-content ">
-                    <h2><em>测验</em> <span>完成!</span></h2>
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <h2 class="mb-4 text-center" data-aos="fade-up"><strong> 测验 完成! </strong></h2>
                     <p style='font-size:25px'>单击下面的按钮以查找结果.</p>
+                    <br><br>
+                        <a href="#graph" class="custom-btn2 btn2-bg btn2 mt-3" data-aos="fade-up" data-aos-delay="100" onclick="displayVar('target')">显示结果</a>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- 
                     <div class="primary-white-button" >
-                      <script type="text/javascript" src=js/main2.js></script>
-                      <a href="#" class="scroll-link" data-id="graph" onclick="displayVar('target');">显示结果</a>
-                    </div>
+                      <script type="text/javascript" src=js/main.js></script>
+                      <a href="#" class="scroll-link" data-id="graph" onclick="displayVar('target');">Show results</a>
+                    </div> -->
                   </div>
           </div>
     </section>
+
 
     <section id="graph" class="parallax-content baner-content3">
         <div class='container'>
              <div class="text-content">
                <div class='container'>
-          
                     <script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
                     <div style="width: 100%; ">
                          <div style="width: 50%; height: 100px; float: left; " class = 'text-content'>
-                         <h1>您的健康指标</h1> 
+                            <h2 class="mb-4 text-center" data-aos="fade-up"><strong> 您的健康指标 </strong></h2>
+                         <!-- <h1>Health Metrics</h1> --> 
                          <canvas id="marksChart" width="250" height="100" style="background-color: #ffffff" ></canvas>
                          </div>
                          <div style="margin-left: 50%; height: 100px;"> 
-                         <h1>您的风险</h1> 
+                         <!-- <h1>Your Risks</h1>  -->
+                         <h2 class="mb-4 text-center" data-aos="fade-up"><strong> 您的风险 </strong></h2> 
+
                          <canvas id="barChart" width="250" height="100" style="background-color: #ffffff"></canvas>
                          </div>
-                         <div style="margin-top:33%;" class="primary-white-button" >
-                         <a href="#" class="scroll-link" data-id="results">向下滚动</a>
-                   </div>
+                        <div style="margin-top:33%;">
+                         <!-- <a href="#" class="scroll-link" data-id="results">Scroll Down</a> -->
+                         <a href="#" data-id='results' class="custom-btn3 btn3-bg btn3 mt-3 scroll-link" data-aos="fade-up" data-aos-delay="100">点击这里</a>
+                        </div>
                     </div>
                 </div>
              </div>
         </div>
-    </section>
+     </section>
 
-<section id="results" class="parallax-content baner-content4" >
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+     
+<!-- RESULTS -->
+      <section class="about section-padding pb-0" id="results">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-7 mx-auto col-md-10 col-12">
+<!--                   <div class="about-info text-center" >
+ -->                        <h2 class="mb-4 text-center" data-aos="fade-up"><strong>您的健康状况和预防措施</strong></h2>
+                              <p align='justify' style='font-size:15px;'>
+                                    <body onload="displayVar('target');">
+                                        <span id="target"></span>
+                                    </body>
+                                </p>
+                        <br>
+                         <script type="text/javascript" src=js/main2.js></script>
+<!--                         <div class="full-image text-center" data-aos="zoom-in">
+                                        <img src="images/questionnaire.png" class="img-fluid" alt="breath" height=600 width=500>
+                                    </div> -->
+                        <div width=500>
+                                <p align='justify' style='font-size:15px;'>
+                                    <body onload="displayVar('target');">
+                                        <span id="target"></span>
+                                    </body>
+                                </p>
+                        </div>
+<!--                   </div>
+ -->               </div>
+            </div>
+         </div>
+      </section>
+
+
+
+<!-- <section id="results" class="parallax-content baner-content4" >
         <div class="container">
-                        <h1>您的健康状况</h1>
-                        <script type="text/javascript" src=js/main2.js></script>
+                        <h1>Your Health Status</h1>
+                        <script type="text/javascript" src=js/main.js></script>
         <div class="full-image text-center" data-aos="zoom-in">
                         <img src="images/questionnaire.png" class="img-fluid" alt="breath" height=600 width=500>
                     </div>
@@ -333,25 +395,47 @@
           </div>
     </section>
 
+ -->
 
-    <footer class="site-footer">
-      <div class="container">
+      <!-- FIND A DOCTOR -->
+      <section class="hero2 hero2-bg d-flex justify-content-center align-items-center">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                  <div class="hero-text">
+                        <h1 class="text-white" data-aos="fade-up">想找到更多关于这些条件的信息？</h1>
+                        <a href="symptom-explainer.html" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">看看我们的病情解释器！</a>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-12">
+                  <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+                     <img src="images/hero_image_transparent.png" class="img-fluid" alt="working girl">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+         <div class="container">
          <div class="row">
          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
             <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">
             一天一个苹果
-            <h3 class="text-white" data-aos="fade-up" data-aos-delay="100">让我们远离医院</h3>
+               <h3 class="text-white" data-aos="fade-up" data-aos-delay="100">让我们远离医院</h3>
+
          </div>
          <div class="col-lg-5 mx-lg-auto col-md-8 col-10" data-aos="fade-up" data-aos-delay="100">
             <br>
-            <span class="simplified_chinese">
                <li><a href="index.html">主页</a></li>
-               <li><a href="symptom-explainer.html">疾病说明</a></li>
-               <li><a href="map-chinese.html">医生查找工具</a></li>
+               <li><a href="symptom-checker2.html">疾病说明</a></li>
+               <li><a href="symptom-explainer.html">医生查找工具</a></li>
                <li><a href="about.html">关于</a></li>
-            </span>
          </div>
-    </footer>
+      </footer>
 
 
      <!-- SCRIPTS -->
