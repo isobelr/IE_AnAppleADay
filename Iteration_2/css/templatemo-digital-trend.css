@@ -1515,14 +1515,14 @@
 
 
 /* Center content horizontally  */
-         .center {
+/*         .center {
          text-align: center;
          font-family: var(--title-font-family);
          color: var(--primary-color);
          font-size: 35;
          font-style: normal;
          }
-
+*/
          #map {
          height: 80%;
          background-color: var(--primary-color);
@@ -1545,17 +1545,21 @@
          width: null;
          background-color: white;
          position: fixed;
-         z-index: 1;
+         /*z-index: 1;*/
          overflow-x: hidden;
-         transition: all .8s ease-out;
+         /*transition: all .8s ease-out;*/
          outline-style: solid;
          outline-color: #057a8d;
          }
          .open {
-         height: 250%;
+         height: 250px;
          width: 250px;
-         margin-bottom: 100px;
-         margin-top: 100px;
+         margin-bottom: 200px;
+         margin-top: 200px;
+           bottom: 0;
+           top: 0;
+          left: 0;
+          width: 300px;
          }
          /* Styling for place details */
          .hero2 {
