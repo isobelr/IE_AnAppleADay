@@ -126,6 +126,7 @@ function q1(el) {
   if (i1 === 1) {
     var amount = el.getAttribute('value');
     el.style.background = '#f1c111';  
+	  el.style.color = '#fff';
 	  
     arr[0] = amount;
 
@@ -206,6 +207,7 @@ function q3(el) {
   if (i3 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#f1c111';
+	  el.style.color = '#fff';
     arr[2] = amount;
 
     if (arr[2] === '1') {
@@ -244,6 +246,7 @@ function q5(el) {
   if (i5 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#f1c111';
+	  el.style.color = '#fff';
 	  
     arr[4] = amount;
 
@@ -281,6 +284,7 @@ function q7(el) {
   if (i7 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#f1c111';
+	  el.style.color = '#fff';
 
     arr[6] = amount;
     if (arr[6] === '1') {
@@ -332,7 +336,7 @@ function q9(el) {
   if (i9 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#f1c111';
-	  
+	  el.style.color = '#fff';	  
 
     arr[8] = amount;
     if (arr[8] === '1') {
