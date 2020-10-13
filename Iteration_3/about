@@ -142,7 +142,7 @@
                <li><a href="index.html">Home</a></li>
                <li><a href="symptom-checker2.html">Symptom Checker</a></li>
                <li><a href="symptom-explainer.html">Condition Explainer</a></li>
-               <li><a href="about.html">About</a></li>
+               <li><a href="about">About</a></li>
             </span>
             <span class="simplified_chinese">
                <li><a href="index.html">主页</a></li>
