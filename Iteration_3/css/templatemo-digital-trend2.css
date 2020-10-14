@@ -1415,4 +1415,15 @@ https://templatemo.com/tm-538-digital-trend
 
   }
 
+.icon:hover {
+  fill: #DA4567;
+}
 
+
+
+[id^=switch] + *{
+  display:none;
+}
+[id^=switch]:target + *{
+  display:block;
+}

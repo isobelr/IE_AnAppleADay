@@ -148,7 +148,7 @@
     background: var(--white-color);
     color: var(--primary-color);
     border-color: transparent;
-	transition: all .3s ease;
+  transition: all .3s ease;
   }
   
   .custom-btn:hover,
@@ -599,6 +599,7 @@
      CONTACT              
   -----------------------------------------*/
 
+
   .newsletter-form .form-control,
   .contact-form .form-control {
     box-shadow: none;
@@ -622,6 +623,46 @@
   .newsletter-form button {
     background: var(--secondary-color);
   }
+
+
+
+
+#result {
+    /*border: 1px solid black;*/
+    padding: 2px;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+  .submit {
+    background: transparent;
+    border: 2px solid var(--dark-color);
+    border-radius: var(--border-radius-large);
+    padding: 12px 26px 12px 26px;
+    color: var(--dark-color);
+    font-family: var(--title-font-family);
+    font-size: var(--p-font-size);
+    white-space: nowrap;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .submit.btn-bg {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    /*border-color: var(--dark-color);*/
+    transition: all .3s ease;
+  }
+  
+  .submit:hover,
+  .submit:focus {
+    background: var(--dark-color);
+    color: var(--white-color);
+    border-color: transparent;
+  }
+
 
 
 
@@ -1595,6 +1636,13 @@
 
 
 
+
+[id^=switch] + *{
+  display:none;
+}
+[id^=switch]:target + *{
+  display:block;
+}
 
 
 
