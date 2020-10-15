@@ -119,6 +119,10 @@ var i7 = 0;
 var i8 = 0;
 var i9 = 0;
 var i10 = 0;
+var i11 = 0;
+var i12 = 0;
+var i13 = 0;
+var i14 = 0;
 
 
 function q1(el) {
@@ -302,7 +306,76 @@ function q8(el) {
   if (i8 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#057a8d';
+    el.style.color = '#fff';
+    arr[9] = amount;
+    if (arr[9] === '1') {
+      heart += 12.5;
+      health += 7.14;
+    } else if (arr[9] === '2') {
+      health += 14.28;
+    }
+  }
+  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+}
+
+function q9(el) {
+  i9++;
+  if (i9 === 1) {
+    var amount = el.getAttribute('value');
+    el.style.backgroundColor = '#057a8d';
+    el.style.color = '#fff';
+    arr[9] = amount;
+    if (arr[9] === '1') {
+      heart += 12.5;
+      health += 7.14;
+    } else if (arr[9] === '2') {
+      health += 14.28;
+    }
+  }
+  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+}
+
+
+function q10(el) {
+  i10++;
+  if (i10 === 1) {
+    var amount = el.getAttribute('value');
+    el.style.backgroundColor = '#057a8d';
 	  el.style.color = '#fff';
+    arr[9] = amount;
+    if (arr[9] === '1') {
+      heart += 12.5;
+      health += 7.14;
+    } else if (arr[9] === '2') {
+      health += 14.28;
+    }
+  }
+  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+}
+
+function q11(el) {
+  i11++;
+  if (i11 === 1) {
+    var amount = el.getAttribute('value');
+    el.style.backgroundColor = '#057a8d';
+    el.style.color = '#fff';
+    arr[9] = amount;
+    if (arr[9] === '1') {
+      heart += 12.5;
+      health += 7.14;
+    } else if (arr[9] === '2') {
+      health += 14.28;
+    }
+  }
+  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+}
+
+function q12(el) {
+  i12++;
+  if (i12 === 1) {
+    var amount = el.getAttribute('value');
+    el.style.backgroundColor = '#057a8d';
+    el.style.color = '#fff';
 
     arr[7] = amount;
     if (arr[7] === '1') {
@@ -331,12 +404,12 @@ function q8(el) {
   console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
 }
 
-function q9(el) {
-  i9++;
-  if (i9 === 1) {
+function q13(el) {
+  i13++;
+  if (i13 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#f1c111';
-	  el.style.color = '#fff';	  
+    el.style.color = '#fff';
 
     arr[8] = amount;
     if (arr[8] === '1') {
@@ -359,23 +432,6 @@ function q9(el) {
   console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
 }
 
-function q10(el) {
-  i10++;
-  if (i10 === 1) {
-    var amount = el.getAttribute('value');
-    el.style.backgroundColor = '#057a8d';
-	  el.style.color = '#fff';
-    arr[9] = amount;
-    if (arr[9] === '1') {
-      heart += 12.5;
-      health += 7.14;
-    } else if (arr[9] === '2') {
-      health += 14.28;
-    }
-  }
-  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
-}
-
 var text1 = "<br>You maybe at risk of Congestive heart failure (CHF). <br><strong>What lifestyle changes you can include to improve your condition:</strong> <br>1. Stop smoking: Smoking is a major risk factor for heart disease. Quitting is the best way. <br>2. Eat a healthy diet: Include fresh fruits, vegetables and whole grains. Avoid eating a high fat and high sodium diet. <br>3. Limit your alcohol intake. <br>4. Tight blood sugar control can help reduce the risk of heart disease. <br>5. Be physical active: have regular exercise and maintain a healthy weight. <br>Navigate to our Symptom Explainer page to learn more about your condition. Navigate to our Doctor Finder page to find a doctor.";
 
 var text2 = "<br>You maybe at risk of hypertension. People who had similar conditions also suffered from Hypertension. <br><strong>What you could do:</strong> <br>1. Eat a Healthy Diet. Eat plenty of fresh fruits and vegetables. Have a variety of foods rich in potassium, fiber, protein and low in salt and saturated fat. <br>2. Have regular physical activity.Its recommend you engage in 1 hour of physical activity such as walking and bicycling everyday. Maintain your body mass index(BMI). <br> 3. Do not smoke: Smoking raises blood pressure and puts you at higher risk for heart attack and stroke. <br>4. Reduce Alcohol consumption: Drinking too much alcohol can raise your blood pressure. <br>5. Get enough sleep: Not getting enough sleep on a regular basis is linked to risk of heart disease, high blood pressure and stroke. <br>Navigate to our Condition Explainer page to learn more about your condition. Navigate to our Doctor Finder page to find a doctor."
@@ -388,7 +444,11 @@ var text5 = "<br><strong>Your health needs more work ! The key to a healthy life
 
 var text6 ="<br> Finish the quiz and get back here."
 
+
+
 function displayVar(variable) {
+
+  
 
   if (heart >= hypertension && heart >= copd && heart >= 50) {
     document.getElementById(variable).innerHTML = text1;
@@ -442,7 +502,150 @@ var radarChart = new Chart(marksCanvas, {
       data: [hypertension, heart, copd]
     }]
   };
+  var percent = 55;
 
+
+  var pie = d3.layout.pie()
+    .value(function (d) { return d })
+    .sort(null);
+
+  var w = 300, h = 320;
+
+  var outerRadius = (w / 2) - 10;
+  var innerRadius = outerRadius - 8;
+
+
+  var color = ['#ec1561', '#2a3a46', '#202b33'];
+
+  var arc = d3.svg.arc()
+    .innerRadius(innerRadius)
+    .outerRadius(outerRadius)
+    .startAngle(0)
+    .endAngle(2 * Math.PI);
+
+  //The circle is following this
+  var arcDummy = d3.svg.arc()
+    .innerRadius((outerRadius - innerRadius) / 2 + innerRadius)
+    .outerRadius((outerRadius - innerRadius) / 2 + innerRadius)
+    .startAngle(0);
+
+
+  var arcLine = d3.svg.arc()
+    .innerRadius(innerRadius)
+    .outerRadius(outerRadius)
+    .startAngle(0);
+
+  var svg = d3.select("#chart")
+    .append("svg")
+    .attr({
+      width: w,
+      height: h,
+      class: 'shadow'
+    }).append('g')
+    .attr({
+      transform: 'translate(' + w / 2 + ',' + h / 2 + ')'
+    });
+
+
+  //background
+  var path = svg.append('path')
+    .attr({
+      d: arc
+    })
+    .style({
+      fill: color[1]
+    });
+
+
+  var pathForeground = svg.append('path')
+    .datum({ endAngle: 0 })
+    .attr({
+      d: arcLine
+    })
+    .style({
+      fill: color[0]
+    });
+
+  //Dummy Arc for Circle
+  var pathDummy = svg.append('path')
+    .datum({ endAngle: 0 })
+    .attr({
+      d: arcDummy
+    }).style({
+      fill: color[0]
+    });
+
+  var endCircle = svg.append('circle')
+    .attr({
+      r: 12,
+      transform: 'translate(0,' + (-outerRadius + 15) + ')'
+    })
+    .style({
+      stroke: color[0],
+      'stroke-width': 8,
+      fill: color[2]
+    });
+
+  var middleTextCount = svg.append('text')
+    .datum(0)
+    .text(function (d) {
+      return d + '%';
+    })
+
+    .attr({
+      class: 'middleText',
+      'text-anchor': 'middle',
+      dy: 25,
+      dx: 0
+    })
+    .style({
+      fill: '#ec1561',
+      'font-size': '80px'
+
+    });
+
+
+  var arcTweenOld = function (transition, percent, oldValue) {
+    transition.attrTween("d", function (d) {
+
+      var newAngle = (percent / 100) * (2 * Math.PI);
+
+      var interpolate = d3.interpolate(d.endAngle, newAngle);
+
+      var interpolateCount = d3.interpolate(oldValue, percent);
+
+
+      return function (t) {
+        d.endAngle = interpolate(t);
+        var pathForegroundCircle = arcLine(d);
+
+        middleTextCount.text(Math.floor(interpolateCount(t)) + '%');
+
+        var pathDummyCircle = arcDummy(d);
+        var coordinate = pathDummyCircle.split("L")[1].split("A")[0];
+
+        endCircle.attr('transform', 'translate(' + coordinate + ')');
+
+        return pathForegroundCircle;
+      };
+    });
+  };
+
+  var oldValue = 0;
+
+  var animate = function () {
+    pathForeground.transition()
+      .duration(750)
+      .ease('cubic')
+      .call(arcTweenOld, percent, oldValue);
+
+    oldValue = percent;
+
+
+  };
+
+  setTimeout(animate, 0);
+  
   var barChart = new Chart(riskCanvas, {
     type: 'horizontalBar',
        data: {
@@ -472,7 +675,11 @@ var radarChart = new Chart(marksCanvas, {
       }
     }
 
+
+
   });
+
+
 
 }
 
