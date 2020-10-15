@@ -1645,10 +1645,38 @@
 }
 
 
+#proteininfo {
+    display: none;
+}
+#fandvinfo {
+    display: none;
+}
+#wholegrainsinfo {
+    display: none;
+}
+#oilsinfo {
+    display: none;
+}
+#drinksinfo {
+    display: none;
+}
 
 
 
 
+
+
+
+
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+}
 
 
 

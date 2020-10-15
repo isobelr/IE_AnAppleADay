@@ -8,23 +8,30 @@
 
 
         if(result < 18.5){
-         document.getElementById("result").innerHTML = "Your BMI score is:  <br>" + Math.round(result);
-          document.getElementById("resultexplanation").innerHTML = "Your BMI is classified as Underweight";
+         document.getElementById("result").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Your BMI score is:  <br></h2>" + Math.round(result);
+          document.getElementById("resultexplanation").innerHTML = "<br>Your BMI is classified as Underweight<br>";
+          var el = document.getElementById("resultpic");
+          el.innerHTML="<img src=\"images/result_underweight.svg\">";
         }else if (result < 25){
-         document.getElementById("result").innerHTML = "Your BMI score is:  <br>" + Math.round(result);
-          document.getElementById("resultexplanation").innerHTML = "Your BMI is classified as Normal";
+         document.getElementById("result").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Your BMI score is:  <br></h2>" + Math.round(result);
+          document.getElementById("resultexplanation").innerHTML = "<br>Your BMI is classified as Normal<br>";
+          var el = document.getElementById("resultpic");
+          el.innerHTML="<img src=\"images/result_normal.svg\">";
         }else if (result < 30){
-          document.getElementById("result").innerHTML = "Your BMI score is:  <br>" + result;
-          document.getElementById("resultexplanation").innerHTML = "Your BMI is classified as Overweight";
+          document.getElementById("result").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Your BMI score is:  <br></h2>" + Math.round(result);
+          document.getElementById("resultexplanation").innerHTML = "<br>Your BMI is classified as Overweight<br>";
+          var el = document.getElementById("resultpic");
+          el.innerHTML="<img src=\"images/result_overweight.svg\">";
         }else if (result > 30){
-          document.getElementById("result").innerHTML = "Your BMI score is:  <br>" + result;
-          document.getElementById("resultexplanation").innerHTML = "Your BMI is classified as Obese";
+          document.getElementById("result").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Your BMI score is:  <br></h2>" + Math.round(result);
+          document.getElementById("resultexplanation").innerHTML = "<br>Your BMI is classified as Obese<br>";
+          var el = document.getElementById("resultpic");
+          el.innerHTML="<img src=\"images/result_obese.svg\">";
         }else{
-          document.getElementById("resultexplanation").innerHTML = "Oops! Please enter your height and weight and then press submit.";
+          document.getElementById("resultexplanation").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Oops! Please enter your height and weight and then press submit.</h2>";
         }
 
 
 
    }
-
 
