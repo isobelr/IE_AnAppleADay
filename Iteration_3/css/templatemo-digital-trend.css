@@ -43,7 +43,7 @@
     --h1-font-size:         42px;
     --h2-font-size:         32px;
     --h3-font-size:         24px;
-    --p-font-size:          14px;
+    --p-font-size:          16px;
     --base-font-size:       16px;
     --menu-font-size:       14px;
 
@@ -72,6 +72,7 @@
   }
 
   h2 {
+    color: var(--primary-color);
     font-size: var(--h2-font-size);
     font-weight: 100;
   }
@@ -85,7 +86,7 @@
   h4 {
     color: var(--secondary-color);
     font-family: var(--base-font-family);
-    font-size: var(--p-font-size);
+    font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
@@ -1884,13 +1885,6 @@
 [id^=switch]:target + *{
   display:block;
 }
-
-
-
-
-
-
-
 
 
 
