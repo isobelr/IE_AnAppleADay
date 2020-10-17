@@ -105,6 +105,13 @@
   }
 
 
+  ul li { 
+    font-family: var(--base-font-family);
+  }
+
+
+
+
   /*  BLOCKQUOTES */
   .quote {
     position: relative;
@@ -1913,7 +1920,7 @@
 
 
 
-#symtomsinfo {
+#symptomsinfo {
     display: none;
 }
 #risksinfo {
