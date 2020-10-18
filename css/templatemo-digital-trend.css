@@ -43,7 +43,7 @@
     --h1-font-size:         42px;
     --h2-font-size:         32px;
     --h3-font-size:         24px;
-    --p-font-size:          14px;
+    --p-font-size:          16px;
     --base-font-size:       16px;
     --menu-font-size:       14px;
 
@@ -72,6 +72,7 @@
   }
 
   h2 {
+    color: var(--primary-color);
     font-size: var(--h2-font-size);
     font-weight: 100;
   }
@@ -85,7 +86,7 @@
   h4 {
     color: var(--secondary-color);
     font-family: var(--base-font-family);
-    font-size: var(--p-font-size);
+    font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
@@ -102,6 +103,13 @@
     letter-spacing: 0;
     color: var(--secondary-color);
   }
+
+
+  ul li { 
+    font-family: var(--base-font-family);
+  }
+
+
 
 
   /*  BLOCKQUOTES */
@@ -1626,10 +1634,11 @@
   width: 100%;
     padding-top: 20vh;
     text-align: center;
-    background-color: #FFF;
+    background-color: black;
     vertical-align: middle;
     overflow: hidden;
 }
+
 
 .baner-content3 .text-content {
   text-align: center;
@@ -1663,47 +1672,6 @@
   margin-top: 25px;
 }
 
-.baner-content3 .widget {
-    margin: 0 auto;
-    width:350px;
-    margin-top:50px;
-    background-color: #222D3A;
-    border-radius: 5px;
-    box-shadow: 0px 0px 1px 0px #06060d;
-
-}
-
-.baner-content3 .widget2 {
-    margin: 0 auto;
-    width:650px;
-    margin-top:50px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 1px 0px #06060d;
-
-}
-
-.baner-content3 .header{
-    background-color: #29384D;
-    height:40px;
-    color:#929DAF;
-    text-align: center;
-    line-height: 40px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    font-weight: 400;
-    font-size: 1.5em;
-    text-shadow: 1px 1px #06060d;
-}
-
-.baner-content3 .chart-container{
-    padding:25px;
-}
-
-.baner-content3 .shadow {
-    -webkit-filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.1) );
-    filter: drop-shadow( 0px 3px 3px rgba(0,0,0,.1) );
-}
 
 .baner-content4 {
   display: flex;
@@ -1884,6 +1852,59 @@
 [id^=switch]:target + *{
   display:block;
 }
+
+
+
+
+
+
+
+
+#proteininfo {
+    display: none;
+}
+#wholegrainsinfo {
+    display: none;
+}
+#fandvinfo {
+    display: none;
+}
+#oilsinfo {
+    display: none;
+}
+#drinksinfo {
+    display: none;
+}
+
+
+
+
+
+#symptomsinfo {
+    display: none;
+}
+#risksinfo {
+    display: none;
+}
+#mythsinfo { 
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
