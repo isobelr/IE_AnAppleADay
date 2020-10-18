@@ -125,16 +125,13 @@
                           </div>
                          </div>
                          <br><br>
-                        <img style="display:none;" id="bigpic" src="bigpic" />
-
-                        <input class="submit" type="button" button type="submit" style="text-align:center;" value="Show me my BMI" onclick="bmi()" onclick="showPicture()"/>
+                        <input class="submit" type="button" button type="submit" style="text-align:center;" value="Show me my BMI" onclick="bmi()"/>
                         <br>
                            <h4 id="result" style="text-align:center;"></h4>
                            <br>
                            <h4 id="resultexplanation" style="text-align:center;"></h4>
                            <br><br>
                            <h4 id="resultpic" style="text-align:center" class="img-fluid"></h4>
-
                         </div>
                       </form>
                     </div>
@@ -143,8 +140,6 @@
           </div>
      </section>
 
-<!--             <img src="images/plate.svg" alt="Image not found" width="696" height="411" class="img-fluid" >
- -->
 
 
       <!-- FOOTER -->
@@ -191,14 +186,6 @@
       <script src="js/bmi-calc.js" type="text/javascript"></script> 
 
 
-    <script type="text/javascript">
-      function showPicture() {
-        var sourceOfPicture = "images/bmi-result.svg";
-        var img = document.getElementById('bigpic')
-        img.src = sourceOfPicture.replace('90x90', '225x225');
-        img.style.display = "block";
-      } 
-    </script>
 
 
    </body>
