@@ -378,8 +378,8 @@ function displayVar(variable) {
   var x = lifestyle;
   var y = exercise;
   var z = diet;
-  if (i10 == 1) {	
-  
+
+  if (i10 == 1) {
   var testCanvas = document.getElementById('test1');
 
   var mainChart = new RadialProgressChart(testCanvas, {
@@ -392,7 +392,7 @@ function displayVar(variable) {
   }
   
   );
-  }
+}
 
   if (diabetes <= 33.34 && i10 ==1) {
     document.getElementById("resultexplanation2").innerHTML = "<br>You are at Low risk of Type 2 Diabetes<br>";
