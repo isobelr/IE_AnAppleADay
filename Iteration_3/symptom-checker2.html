@@ -29,11 +29,12 @@
 <body>
 
       <!-- MENU BAR -->
+     <!-- MENU BAR -->
       <nav class="navbar navbar-expand-lg">
          <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index">
                AN APPLE A DAY
-                  <h4>Let’s keep the hospital away</h4>
+              <h4>Let’s keep the hospital away</h4>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                aria-label="Toggle navigation">
@@ -42,25 +43,24 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                     <a href="index.html" class="nav-link smoothScroll">Home</a>
+                     <a href="index" class="nav-link smoothScroll">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a href="symptom-explainer.html" class="nav-link smoothScroll">Conditions Explainer</a>
+                     <a href="diabetes-primer" class="nav-link smoothScroll">Diabetes Primer</a>
                   </li>
                   <li class="nav-item">
-                     <a href="map.html" class="nav-link smoothScroll">Doctor Finder</a>
-                </li>
-                  <li class="nav-item">
-                     <a href="about.html" class="nav-link smoothScroll">About</a>
+                     <a href="map" class="nav-link smoothScroll">Doctor Finder</a>
                   </li>
                   <li class="nav-item">
-                     <a href="symptom-checker3.html" class="nav-link smoothScroll">中文</a>
+                     <a href="about" class="nav-link smoothScroll">About us</a>
                   </li>
+                  <li class="nav-item">
+                    <span onclick="chooseStyle('alternate', 1)"><a href="symptom-checker3" class="nav-link smoothScroll">中文</a>
+                   </li>
                </ul>
             </div>
          </div>
       </nav>
-
 
 
 
@@ -70,7 +70,7 @@
             <div class="row">
                <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                   <div class="hero-text">
-                        <h1 class="text-white" data-aos="fade-up">Symptom Checker</h1>
+                        <h1 class="text-white" data-aos="fade-up">Risk Checker</h1>
                         <p class="text-white" data-aos="fade-up">Want to check your symptoms to know if you are at risk of a chronic conditon?</p>
                         <!-- <a href="#q1" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Start the Quiz!</a> -->
                         <a href="#" data-id='q1' class="custom-btn btn-bg btn mt-3 scroll-link" data-aos="fade-up" data-aos-delay="100">Start the Quiz!</a>
@@ -92,7 +92,7 @@
 
      <!-- PROJECT DETAIL -->
 
-          <section id="q1" class="page-section">
+      <section id="q1" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
               <h2 style="color: #f1c111; font-size:25px;">(1/10)</h2>
@@ -248,16 +248,41 @@
                         <img src="images/injury.png" class="img-fluid" alt="wounds" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="bmi" onclick='q8(this)' value='1'>Yes</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q9" onclick='q8(this)' value='1'>Yes</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="bmi" onclick='q8(this)' value='2'>No</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q9" onclick='q8(this)' value='2'>No</p>
                     </div>
             </div>
             <script src="js/main.js"></script>
         </div>
     </section>
 
+
+  <section id="q9" class="page-section">
+        <div class="container">
+            <div id="game" class="justify-center flex-column">
+                <h2 style="color: #057a8d; font-size:25px;">(10/10)</h2>
+                <h2 id="question" style="color:white; font-size:25px;">What is your alcohol consumption?</h2>
+                    <div class="full-image text-center" data-aos="zoom-in">
+                        <img src="images/drinks.png" class="img-fluid" alt="drinks" height=800 width=350>
+                    </div>
+                    <div class="choice-container">
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='1'>Social</p>
+                    </div>
+                    <div class="choice-container">
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='2'>A few times a week</p>
+                    </div>
+                    <div class="choice-container">
+                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='3'>Frequent</p>
+                    </div>
+                    <div class="choice-container">
+                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='4'>I don't drink</p>
+                    </div>
+            </div>
+            <script src="js/main.js"></script>
+        </div>
+    </section>
     <!-- CALCULATOR -->
      <section id="bmi" class="contact section-padding">
           <div class="container">
@@ -283,7 +308,7 @@
                            <h4 id="resultexplanation" style="text-align:center;"></h4>
                            <br><br>
                            <h4 id="resultpic" style="text-align:center" class="img-fluid"></h4>
-                           <a href="#" data-id='q10' class="submit scroll-link" type="button" button type="submit" data-aos="fade-up" data-aos-delay="100">Next Question</a>
+                           <a href="#" data-id='check-results' class="submit scroll-link" type="button" button type="submit" data-aos="fade-up" data-aos-delay="100">Next Question</a>
 
                         </div>
                       </form>
@@ -294,32 +319,6 @@
           <script src="js/bmi-calc.js" type="text/javascript"></script>
      </section>
 
-
-
-  <section id="q10" class="page-section">
-        <div class="container">
-            <div id="game" class="justify-center flex-column">
-                <h2 style="color: #057a8d; font-size:25px;">(10/10)</h2>
-                <h2 id="question" style="color:white; font-size:25px;">What is your alcohol consumption?</h2>
-                    <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/drinks.png" class="img-fluid" alt="drinks" height=800 width=350>
-                    </div>
-                    <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="check-results" onclick='q10(this)' value='1'>Social</p>
-                    </div>
-                    <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="check-results" onclick='q10(this)' value='2'>A few times a week</p>
-                    </div>
-                    <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:20px' data-id="check-results" onclick='q10(this)' value='3'>Frequent</p>
-                    </div>
-                    <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:20px' data-id="check-results" onclick='q10(this)' value='4'>I don't drink</p>
-                    </div>
-            </div>
-            <script src="js/main.js"></script>
-        </div>
-    </section>
 
 
     <section id="check-results" class="parallax-content baner-content2" >
@@ -574,18 +573,36 @@
          <div class="container">
          <div class="row">
          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">
-            An Apple A Day
-               <h3 class="text-white" data-aos="fade-up" data-aos-delay="100">Let's keep the hospital away</h3>
-
+            <h1 class="text-white">
+            <span class="english">An Apple A Day</span>
+            <span class="simplified_chinese">一天一个苹果</span>
+            <span class="english">
+               <h3 class="text-white">Let's keep the hospital away</h3>
+            </span>
+            <span class="simplified_chinese">
+               <h3 class="text-white">让我们远离医院</h3>
+            </span>
          </div>
-         <div class="col-lg-5 mx-lg-auto col-md-8 col-10" data-aos="fade-up" data-aos-delay="100">
+         <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
             <br>
-               <li><a href="index.html">Home</a></li>
-               
-               <li><a href="symptom-explainer.html">Condition Explainer</a></li>
-              <li><a href="map.html">Doctor Finder</a></li>
-               <li><a href="about.html">About</a></li>
+            <span class="english">
+               <li><a href="index">Home</a></li>
+               <li><a href="symptom-checker2">Risk Checker</a></li>
+               <li><a href="symptom-explainer">Diabetes Primer</a></li>
+               <li><a href="nutritional-guidelines">Nutritional Guidelines</a></li>
+               <li><a href="healthcare-explainer">Healthcare Explainer</a></li>
+               <li><a href="map">Doctor Finder</a></li>
+               <li><a href="about">About us</a></li>
+            </span>
+            <span class="simplified_chinese">
+               <li><a href="index">主页</a></li>
+               <li><a href="symptom-checker2">风险检查器</a></li>
+               <li><a href="symptom-explainer">糖尿病入门</a></li>
+               <li><a href="nutritional-guidelines">营养指南</a></li>
+               <li><a href="healthcare-explainer">健康保健讲解器</a></li>
+               <li><a href="map-chinese">交互式医生查找工具</a></li>
+               <li><a href="about">关于我们</a></li>
+            </span>
          </div>
       </footer>
 
@@ -638,6 +655,7 @@
     }
     </script>
       <script src="js/backtotop.js"></script>
+
 
 </body>
 </html>
