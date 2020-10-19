@@ -101,11 +101,12 @@ jQuery(document).ready(function($) {
 });
 
 var arr = [];
-var exercise;
-var diet ;
+var exercise = 0;
+var diet = 0 ;
 var health ;
 var lifestyle;
 var impregnability;
+var diabetes = 0;
 var hypertension = 0;
 var heart = 0;
 var copd = 0;
@@ -119,48 +120,46 @@ var i7 = 0;
 var i8 = 0;
 var i9 = 0;
 var i10 = 0;
+var i11 = 0;
+var i12 = 0;
+var i13 = 0;
+var i14 = 0;
+var keyy = 0;
 
 
 function q1(el) {
   i1++;
   if (i1 === 1) {
     var amount = el.getAttribute('value');
-    el.style.background = '#f1c111';
+    el.style.background = '#f1c111';  
 	  el.style.color = '#fff';
+	  
     arr[0] = amount;
 
     console.log(arr);
     if (arr[0] === '1') {
       exercise = 100;
-      health = 14.28;
-      lifestyle = 25;
-      impregnability = 33.32;
-      hypertension += 4.16;
-      heart += 3.125;
+      lifestyle = 33.34;
+      diabetes = -12.5;
+
     } else if (arr[0] === '2') {
       exercise = 75;
-      health = 10.71;
-      lifestyle = 18.75;
-      impregnability = 24.99;
-      hypertension += 8.33;
-      heart += 6.25;
+      lifestyle = 25;
+      diabetes = -9.375;
+
     } else if (arr[0] === '3') {
       exercise = 50;
-      health = 7.14;
-      lifestyle = 12.5;
-      impregnability = 16.67;
-      hypertension += 12.5;
-      heart += 9.375;
+      lifestyle = 16.67;
+      diabetes = 9.375;
+
     } else if (arr[0] === '4') {
       exercise = 25;
-      health = 3.57;
-      lifestyle = 6.25;
-      impregnability = 8.33;
-      hypertension += 16.67;
-      heart = 12.5;
+      lifestyle = 8.335;
+      diabetes = 12.5;
+
     }
   }
-  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+  console.log(exercise, diet, lifestyle, diabetes);
 }
 
 function q2(el) {
@@ -169,46 +168,32 @@ function q2(el) {
     var amount = el.getAttribute('value');
     
     el.style.backgroundColor = '#057a8d';
-	  el.style.color = '#fff';
-    el.style.color = '#fff';
+	el.style.color = '#fff';
     arr[1] = amount;
-    document.querySelectorAll('.dummy').forEach(function (el) {
-      el.addEventListener('click', function () {
-        console.log(document.querySelectorAll('.dummy').forEach((e) => {
-          if (e !== this) {
-            el.style.color = 'red';
-          }
-        }));
-      });
-    });
 
     if (arr[1] === '1') {
       diet = 50;
-      lifestyle += 25;
-      impregnability += 33.3;
-      hypertension += 4.16;
-      heart += 3.125;
+      lifestyle += 33.34;
+      diabetes -= 12.5;
+
     } else if (arr[1] === '2') {
       diet = 37.5;
-      lifestyle += 18.75;
-      impregnability += 24.975;
-      hypertension += 8.33;
-      heart += 6.25;
+      lifestyle += 25;
+      diabetes -= 9.375;
+
     } else if (arr[1] === '3') {
       diet += 25;
-      lifestyle += 12.5;
-      impregnability += 16.65;
-      hypertension += 12.5;
-      heart += 9.375;
+      lifestyle += 16.67;
+      diabetes += 9.375;
+
     } else if (arr[1] === '4') {
       diet += 12.5;
-      lifestyle += 6.25;
-      impregnability += 8.325;
-      hypertension += 16.66;
-      heart += 12.5;
+      lifestyle += 8.335;
+      diabetes += 12.5;
+
     }
   }
-  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+  console.log(exercise, diet, lifestyle, diabetes);
 }
 
 function q3(el) {
@@ -220,15 +205,13 @@ function q3(el) {
     arr[2] = amount;
 
     if (arr[2] === '1') {
-      health += 7.14;
-      hypertension += 16.67;
-      heart += 12.5;
+      diabetes += 12.5;
 
     } else if (arr[2] === '2') {
-      health += 14.28;
+      diabetes += 0;
     }
   }
-  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+  console.log(exercise, diet, lifestyle, diabetes);
 }
 
 function q4(el) {
@@ -236,17 +219,17 @@ function q4(el) {
   if (i4 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#057a8d';
-	el.style.color = '#fff';
+	  el.style.color = '#fff';
+
     arr[3] = amount;
 
     if (arr[3] === '1') {
-      heart += 12.5;
-      health += 7.14;
+      diabetes += 12.5;
     } else if (arr[3] === '2') {
-      health += 14.28;
+      diabetes += 0;
     }
   }
-  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+  console.log(exercise, diet, lifestyle, diabetes);
 }
 
 function q5(el) {
@@ -255,17 +238,16 @@ function q5(el) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#f1c111';
 	  el.style.color = '#fff';
+	  
     arr[4] = amount;
 
     if (arr[4] === '1') {
-      hypertension +=  16.66;
-      health += 7.14;
-      copd += 50;
+      diabetes += 12.5;
     } else if (arr[4] === '2') {
-      health += 14.28;
+      diabetes += 0;
     }
   }
-  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+  console.log(exercise, diet, lifestyle, diabetes);
 }
 
 function q6(el) {
@@ -273,16 +255,16 @@ function q6(el) {
   if (i6 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#057a8d';
-	el.style.color = '#fff';
+	  el.style.color = '#fff';
+
     arr[5] = amount;
     if (arr[5] === '1') {
-      hypertension += 16.66;
-      health += 7.14;
+      diabetes += 12.5;
     } else if (arr[5] === '2') {
-      health += 14.28;
+      diabetes += 0;
     }
   }
-  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+  console.log(exercise, diet, lifestyle, diabetes);
 }
 
 function q7(el) {
@@ -290,16 +272,17 @@ function q7(el) {
   if (i7 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#f1c111';
-	el.style.color = '#fff';
+	  el.style.color = '#fff';
+
     arr[6] = amount;
     if (arr[6] === '1') {
-      heart += 12.5;
-      health += 7.14;
+      diabetes += 12.5;
+
     } else if (arr[6] === '2') {
-      health += 14.28;
+      diabetes += 0;
     }
   }
-  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+  console.log(exercise, diet, lifestyle, diabetes);
 }
 
 function q8(el) {
@@ -307,177 +290,218 @@ function q8(el) {
   if (i8 === 1) {
     var amount = el.getAttribute('value');
     el.style.backgroundColor = '#057a8d';
-	el.style.color = '#fff';
+    el.style.color = '#fff';
     arr[7] = amount;
     if (arr[7] === '1') {
-      lifestyle += 0;
-      impregnability += 8.335;
-      hypertension += 16.66;
-      heart += 12.5;
-      copd += 50;
+      diabetes += 12.5;
     } else if (arr[7] === '2') {
-      lifestyle += 6.25;
-      impregnability += 16.67;
-      hypertension += 12.5;
-      heart += 9.375;
-      copd += 37.5;
-    } else if (arr[7] === '3') {
-      lifestyle += 12.5;
-      impregnability += 20;
-      hypertension += 8.33;
-      heart += 6.25;
-      copd += 25;
-    } else if (arr[7] === '4') {
-      lifestyle += 25;
-      impregnability += 33.34;
+      diabetes += 0;
     }
   }
-  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+  console.log(exercise, diet, lifestyle, diabetes);
 }
 
-function q9(el) {
-  i9++;
-  if (i9 === 1) {
-    var amount = el.getAttribute('value');
-    el.style.backgroundColor = '#f1c111';
-	el.style.color = '#fff';
-    arr[8] = amount;
-    if (arr[8] === '1') {
-      lifestyle += 25;
-      diet += 40;
-      // heart += 3.125;
-    } else if (arr[8] === '2') {
-      lifestyle += 6.25;
-      diet += 25;
-      heart += 9.375;
-    } else if (arr[8] === '3') {
-      lifestyle += 3;
-      diet += 12.5;
-      heart += 12.5;
-    } else if (arr[8] === '4') {
-      lifestyle += 25;
-      diet += 50;
-    }
-  }
-  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
-}
+// function q9(el) {
+//   i9++;
+//   if (i9 === 1) {
+//     var amount = el.getAttribute('value');
+//     el.style.backgroundColor = '#057a8d';
+//     el.style.color = '#fff';
+//     arr[9] = amount;
+//     if (arr[9] === '1') {
+//       heart += 12.5;
+//       health += 7.14;
+//     } else if (arr[9] === '2') {
+//       health += 14.28;
+//     }
+//   }
+//   console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+// }
+
 
 function q10(el) {
   i10++;
   if (i10 === 1) {
     var amount = el.getAttribute('value');
-    el.style.backgroundColor = '#057a8d';
-	  el.style.color = '#fff';
-    arr[9] = amount;
-    if (arr[9] === '1') {
-      heart += 12.5;
-      health += 7.14;
-    } else if (arr[9] === '2') {
-      health += 14.28;
+    el.style.backgroundColor = '#f1c111';
+    el.style.color = '#fff';
+
+    arr[8] = amount;
+    if (arr[8] === '1') {
+      lifestyle += 33.34;
+      diet += 40;
+
+    } else if (arr[8] === '2') {
+      lifestyle += 25;
+      diet += 25;
+
+    } else if (arr[8] === '3') {
+      lifestyle += 16.67;
+      diet += 12.5;
+
+    } else if (arr[8] === '4') {
+      lifestyle += 8.335;
+      diet += 50;
     }
   }
-  console.log(exercise, health, diet, lifestyle, impregnability, hypertension, heart, copd);
+  
+  console.log(exercise, diet, lifestyle, diabetes);
 }
 
-var text1 = "<br>您可能有患充血性心力衰竭（CHF）的风险。<br><strong>如何改善生活方式以此来改善您的状况:</strong> <br>1. 戒烟。 吸烟是心脏病的主要危险因素，戒烟是最好的办法。 <br>2. 有一个健康的饮食: 包括新鲜水果，蔬菜和全谷物。避免吃高脂肪和高钠的食品。<br>3. 控制饮酒量。 <br>4. 严格控制血糖可以帮助降低患心脏病的风险。 <br>5. 进行体育锻炼，定期运动并保持健康的体重。 <br>请浏览我们的症状说明页面以了解有关您状况的更多信息。请浏览我们的医生查找页面以查找医生。";
+var text1 = "<br>You maybe at risk of Congestive heart failure (CHF). <br><strong>What lifestyle changes you can include to improve your condition:</strong> <br>1. Stop smoking: Smoking is a major risk factor for heart disease. Quitting is the best way. <br>2. Eat a healthy diet: Include fresh fruits, vegetables and whole grains. Avoid eating a high fat and high sodium diet. <br>3. Limit your alcohol intake. <br>4. Tight blood sugar control can help reduce the risk of heart disease. <br>5. Be physical active: have regular exercise and maintain a healthy weight. <br>Navigate to our Symptom Explainer page to learn more about your condition. Navigate to our Doctor Finder page to find a doctor.";
 
-var text2 = "<br>您可能有患高血压的风险。患有类似疾病的人也会患有高血压。<br><strong>您可以做什么:</strong> <br>1. 吃健康饮食。多吃新鲜水果和蔬菜。多吃富含多种钾，纤维，蛋白质，低盐和饱和脂肪的食物。 <br>2.进行有规律的身体锻炼。我们建议您每天进行1小时的身体锻炼，例如散步和骑自行车。保持你的体重指数（BMI）。<br> 3. 请勿吸烟：吸烟会导致血压升高，使您更容易罹患心脏病和中风。<br>4. 减少饮酒: 饮酒过多会增加血压。 <br>5. 获得充足的睡眠: 长时间睡眠不足与心脏病，高血压和中风密切相关。 <br>请浏览我们的症状说明页面以了解有关您状况的更多信息。请浏览我们的医生查找页面以查找医生。"
+var text2 = "<br>You maybe at risk of hypertension. People who had similar conditions also suffered from Hypertension. <br><strong>What you could do:</strong> <br>1. Eat a Healthy Diet. Eat plenty of fresh fruits and vegetables. Have a variety of foods rich in potassium, fiber, protein and low in salt and saturated fat. <br>2. Have regular physical activity.Its recommend you engage in 1 hour of physical activity such as walking and bicycling everyday. Maintain your body mass index(BMI). <br> 3. Do not smoke: Smoking raises blood pressure and puts you at higher risk for heart attack and stroke. <br>4. Reduce Alcohol consumption: Drinking too much alcohol can raise your blood pressure. <br>5. Get enough sleep: Not getting enough sleep on a regular basis is linked to risk of heart disease, high blood pressure and stroke. <br>Navigate to our Condition Explainer page to learn more about your condition. Navigate to our Doctor Finder page to find a doctor."
 
-var text3 = "<br>您可能处于患有慢性阻塞性肺疾病（COPD）的危险。 慢性阻塞性肺疾病是指引起气流阻塞和呼吸相关问题的一系列疾病。它包括肺气肿和慢性支气管炎。<br><strong>您可以采取哪些措施来改善自己的病情:</strong> <br>1. 戒烟。避免吸烟和吸入其他空气污染物。 <br>2. 咨询医生以进行肺部康复。咳嗽和气喘可以服用医生开的药物进行治疗。<br>3. 请浏览我们的症状说明页面以了解有关您状况的更多信息。请浏览我们的医生查找页面以查找医生。"
+var text3 = "<br>You maybe at risk of Chronic obstructive pulmonary disease(COPD). COPD refers to a group of diseases that cause airflow blockage and breathing-related problems. It includes emphysema and chronic bronchitis. <br><strong>What you can do to improve your condition:</strong> <br>1. Quit smoking. Avoid Tobacco Smoke and other air pollutants. <br>2. Visit a doctor for pulmonary rehabilitation. Coughing and wheezing can be treated with suitable medication prescribed by a doctor. <br>3. Navigate to our Condition Explainer page to learn more about your condition. Navigate to our Doctor Finder page to find a doctor."
 
-var text4 = "<br><strong>您身体状况良好！做得好 ！健康生活方式的关键包括:</strong> <br>1.健康饮食- 健康的饮食包括大量食用新鲜水果，蔬菜，全谷物和蛋白质。限制食用含饱和脂肪或高钠的食品。<br>2. 健康的身体锻炼- 定期进行某种形式的身体锻炼。日常锻炼包括跑步，慢跑和骑自行车等锻炼。每天运动30分钟或确保每周至少运动四个小时。<br>3.健康体重- 保持18-25的体重指数（BMI）以保持健康。保持身体状况对您的健康确实很重要。<br>4. 适度饮酒或不饮酒- 适度饮酒量为每天5至25毫升。一杯酒含14毫升酒精。尽可能减少饮酒量，甚至避免饮酒。 <br>继续浏览我们的症状说明页面以了解有关潜在的可预防性疾病的更多信息以及如何避免这些疾病。"
+var text4 = "<br>您身体状况良好！做得好 ！<br><strong>健康生活方式的关键包括:</strong> <br>1.健康饮食- 健康的饮食包括大量食用新鲜水果，蔬菜，全谷物和蛋白质。限制食用含饱和脂肪或高钠的食品。<br>2. 健康的身体锻炼- 定期进行某种形式的身体锻炼。日常锻炼包括跑步，慢跑和骑自行车等锻炼。每天运动30分钟或确保每周至少运动四个小时。<br>3. 适度饮酒或不饮酒- 适度饮酒量为每天5至25毫升。一杯酒含14毫升酒精。尽可能减少饮酒量，甚至避免饮酒。 "
 
-var text5 = "<br><strong>您的健康需要进步！健康生活方式的关键包括:</strong> <br>1.健康饮食- 健康的饮食包括大量食用新鲜水果，蔬菜，全谷物和蛋白质。限制食用含饱和脂肪或高钠的食品。<br>2. 健康的身体锻炼- 定期进行某种形式的身体锻炼。日常锻炼包括跑步，慢跑和骑自行车等锻炼。每天运动30分钟或确保每周至少运动四个小时。<br>3.健康体重- 保持18-25的体重指数（BMI）以保持健康。保持身体状况对您的健康确实很重要。<br>4. 适度饮酒或不饮酒- 适度饮酒量为每天5至25毫升。一杯酒含14毫升酒精。尽可能减少饮酒量，甚至避免饮酒。 <br>继续浏览我们的症状说明页面以了解有关潜在的可预防性疾病的更多信息以及如何避免这些疾病。"
+var text5 = "<br>您的健康需要进步！ <br><strong>健康生活方式的关键包括:</strong> <br>1.健康饮食- 健康的饮食包括大量食用新鲜水果，蔬菜，全谷物和蛋白质。限制食用含饱和脂肪或高钠的食品。<br>2. 健康的身体锻炼- 定期进行某种形式的身体锻炼。日常锻炼包括跑步，慢跑和骑自行车等锻炼。每天运动30分钟或确保每周至少运动四个小时。<br>3. 适度饮酒或不饮酒- 适度饮酒量为每天5至25毫升。一杯酒含14毫升酒精。尽可能减少饮酒量，甚至避免饮酒。 "
 
-var text6 ="<br> 完成测验，然后回到这里"
+var text6 = "<br> 完成测验，然后回到这里"
+
+
+
+
 
 function displayVar(variable) {
 
-  if (heart >= hypertension && heart >= copd && heart >= 50) {
-    document.getElementById(variable).innerHTML = text1;
-  } else if (hypertension > heart && hypertension > copd && hypertension >= 50 ) {
-    document.getElementById(variable).innerHTML = text2;
-  } else if (copd > heart && copd > hypertension && copd >= 50) {
-    document.getElementById(variable).innerHTML = text3;
-  } else if (lifestyle >= 80) {
+    if (lifestyle >= 75) {
     document.getElementById(variable).innerHTML = text4;
-  } else if (lifestyle < 80) {
+  } else if (lifestyle <75 ) {
     document.getElementById(variable).innerHTML = text5;
   } else {
     document.getElementById(variable).innerHTML = text6;
   }
-
-  var marksCanvas = document.getElementById("marksChart");
-
-var marksData = {
-  labels: ['锻炼身体', '平衡膳食', '健康的', '生活方式', '不可渗透性'],
-  datasets: [{
-    label: "你的分数",
-    backgroundColor: "rgba(0,200,200,0.2)",
-    data: [exercise, diet, health, lifestyle, impregnability]
-  }]
-};
-
-var radarChart = new Chart(marksCanvas, {
-  type: 'radar',
-  data: marksData,
-  options: {
-      scale: {
-          ticks: {
-            beginAtZero: true,
-            max: 100,
-            min: 0,
-            stepSize: 25
-          }
-      }
-    }
-});
-
-  var riskCanvas = document.getElementById("barChart");
   
+  var x = lifestyle;
+  var y = exercise;
+  var z = diet;
 
-  var riskData = {
-    labels: ['高血压', '心力衰竭', 'COPD'],
-    datasets: [{
-      label: "你的风险",
-      backgroundColor: ['cyan', 'orange', 'lightgreen'],
+  if (i10 == 1) {
 
-      data: [hypertension, heart, copd]
-    }]
-  };
+    var testCanvas = document.getElementById('test1');
 
-  var barChart = new Chart(riskCanvas, {
-    type: 'horizontalBar',
-       data: {
-         labels: ["你的风险"],
-      datasets: [{
-        label: "高血压",
-         backgroundColor: "#0c8195",
-         data: [hypertension],
-      },{
-          label: "心力衰竭",
-         backgroundColor: "#f89624",
-         data: [heart],
-      },{
-         label: "COPD",
-         backgroundColor: "#33c1cf",
-         data: [copd],
-      }]
-   },
-    options: {
-      scales: {
-        xAxes: [{
-          ticks: {
-            max: 100,
-            min: 0
-          }
-        }]
-      }
+    var data = [x, y, z];
+
+    var div1 = d3.select("body").append("div")
+      .attr("class", "tooltip")
+      .style("opacity", 0);
+
+    var mainChart = new RadialProgressChart(testCanvas, {
+      diameter: 120,
+      series: [
+        { labelStart: '\uF106', label: '饮食', value: z },
+        { labelStart: '\uF101', label: '行使', value: y },
+        { labelStart: '\uF105', label: '生活方式', value: x }
+      ]
     }
 
-  });
+    );
+
+    d3.selectAll('g').on('mouseover', function (d, i) {
+      var current = this;
+      var others = d3.selectAll("g").filter(function (el) {
+        return this != current
+      });
+      others.selectAll("g").style('opacity', '0.40');
+      d3.select(this).style('opacity', '1');
+
+      d3.select(this).transition()
+        .duration('50')
+        .attr('opacity', '.85');
+      div1.transition()
+        .duration(200)
+        .style("opacity", .8)
+        .style("visibility", "visible");
+
+
+
+    })
+      .on('mouseout', function (d, i) {
+        var current = this;
+        var others = d3.selectAll("g").filter(function (el) {
+          return this != current
+        });
+        others.selectAll("g").style('opacity', '1');
+        d3.select(this).style('opacity', '1');
+        div1.transition()
+          .duration(200)
+          .style("opacity", .8)
+          .style("visibility", "hidden")
+      })
+      .on("mousemove", function (d) {
+        div1.html(d.label + ` 得分了 :` + Math.round(d.value))
+          .style("left", (d3.event.pageX) + "px")
+          .style("top", (d3.event.pageY) + "px");
+
+      })
+
+
 
 }
+
+//   if (diabetes <= 33.34 && i10 ==1 || lifestyle >= 75) {
+//     document.getElementById("resultexplanation2").innerHTML = "<br>You are at Low risk of Type 2 Diabetes<br>";
+//     var el = document.getElementById("resultpic2");
+//     el.innerHTML = "<img src=\"images/questionnaire-low-risk.svg\">";
+//   } else if (diabetes < 75 && i10 == 1 && lifestyle < 75) {
+//     document.getElementById("resultexplanation2").innerHTML = "<br>You are at Moderate risk of Type 2 Diabetes<br>";
+//     var el = document.getElementById("resultpic2");
+//     el.innerHTML = "<img src=\"images/questionnaire-medium-risk.svg\">";
+//   } else if (diabetes >= 75 && i10 == 1 && lifestyle <75 ) {
+//     document.getElementById("resultexplanation2").innerHTML = "<br>You are at High risk of Type 2 Diabetes<br>";
+//     var el = document.getElementById("resultpic2");
+//     el.innerHTML = "<img src=\"images/questionnaire-high-risk.svg\">";
+//   } else {
+//     document.getElementById("resultexplanation2").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Oops! Please Finish the quiz and get back here.</h2>";
+//   }
+
+  if (diabetes <= 33.34 && i10 == 1 || lifestyle >= 75) {
+    document.getElementById("resultexplanation2").innerHTML = "<br>您患2型糖尿病的风险较低<br>";
+    var el = document.getElementById("resultpic2");
+
+    var div = document.createElement('div');
+    div.setAttribute('class', 'someClass');
+    div.innerHTML = document.getElementById('lowrisk').innerHTML;
+    document.getElementById('lowrisktarget').appendChild(div);
+
+    el.innerHTML = "<img src=\"images/questionnaire-low-risk.svg\">";
+  } else if (diabetes < 75 && i10 == 1 && lifestyle < 75) {
+    document.getElementById("resultexplanation2").innerHTML = "<br>您处于2型糖尿病的中等风险<br>";
+    var el = document.getElementById("resultpic2");
+    el.innerHTML = "<img src=\"images/questionnaire-medium-risk.svg\">";
+
+    var div = document.createElement('div');
+    div.setAttribute('class', 'someClass');
+    div.innerHTML = document.getElementById('moderaterisk').innerHTML;
+    document.getElementById('moderaterisktarget').appendChild(div);
+
+  } else if (diabetes >= 75 && i10 == 1 && lifestyle < 75 ) {
+    document.getElementById("resultexplanation2").innerHTML = "<br>您患有2型糖尿病的高风险<br>";
+    var el = document.getElementById("resultpic2");
+    el.innerHTML = "<img src=\"images/questionnaire-high-risk.svg\">";
+
+    var div = document.createElement('div');
+    div.setAttribute('class', 'someClass');
+    div.innerHTML = document.getElementById('highrisk').innerHTML;
+    document.getElementById('highrisktarget').appendChild(div);
+
+  } else {
+    document.getElementById("resultexplanation2").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">注意！ 请完成测验，然后回到这里。</h2>";
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
 
 
 
