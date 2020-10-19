@@ -28,14 +28,12 @@
 </head>
 <body>
 
-
-
-     <!-- MENU BAR -->
+      <!-- MENU BAR -->
       <nav class="navbar navbar-expand-lg">
          <div class="container">
-            <a class="navbar-brand" href="index">
+            <a class="navbar-brand" href="index.html">
                AN APPLE A DAY
-              <h4>Let’s keep the hospital away</h4>
+                  <h4>Let’s keep the hospital away</h4>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                aria-label="Toggle navigation">
@@ -44,20 +42,20 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
-                     <a href="index" class="nav-link smoothScroll">Home</a>
+                     <a href="index.html" class="nav-link smoothScroll">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a href="diabetes-primer" class="nav-link smoothScroll">Diabetes Primer</a>
+                     <a href="symptom-explainer.html" class="nav-link smoothScroll">Conditions Explainer</a>
                   </li>
-                 <li class="nav-item">
-                     <a href="map" class="nav-link smoothScroll">Doctor Finder</a>
+                  <li class="nav-item">
+                     <a href="map.html" class="nav-link smoothScroll">Doctor Finder</a>
                 </li>
                   <li class="nav-item">
-                     <a href="about" class="nav-link smoothScroll">About us</a>
+                     <a href="about.html" class="nav-link smoothScroll">About</a>
                   </li>
                   <li class="nav-item">
-                    <span onclick="chooseStyle('alternate', 1)"><a href="symptom-checker3" class="nav-link smoothScroll">中文</a>
-                   </li>
+                     <a href="symptom-checker3.html" class="nav-link smoothScroll">中文</a>
+                  </li>
                </ul>
             </div>
          </div>
@@ -225,7 +223,7 @@
     <section id="q7" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <h2 style="color: #f1c111; font-size:25px;">(7/14)</h2>
+                <h2 style="color: #f1c111; font-size:25px;">(7/10)</h2>
                 <h2 id="question" style="color:white; font-size:25px;">Has anyone in your family had diabetes in the past?</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
                         <img src="images/family.png" class="img-fluid" alt="family" height=800 width=350>
@@ -285,6 +283,7 @@
                            <h4 id="resultexplanation" style="text-align:center;"></h4>
                            <br><br>
                            <h4 id="resultpic" style="text-align:center" class="img-fluid"></h4>
+                           <a href="#" data-id='q10' class="submit scroll-link" type="button" button type="submit" data-aos="fade-up" data-aos-delay="100">Next Question</a>
 
                         </div>
                       </form>
@@ -300,7 +299,7 @@
   <section id="q10" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <h2 style="color: #f1c111; font-size:25px;">(10/10)</h2>
+                <h2 style="color: #057a8d; font-size:25px;">(10/10)</h2>
                 <h2 id="question" style="color:white; font-size:25px;">What is your alcohol consumption?</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
                         <img src="images/drinks.png" class="img-fluid" alt="drinks" height=800 width=350>
@@ -440,9 +439,14 @@
             }
 
     #test1 {
-        width:200px;
+        float:left;
+        width:200px
     }
 
+    #test2 {
+        float:right;
+        width:500px
+    }
     
 
     </style>
@@ -451,8 +455,21 @@
         <h1 class="text-white" style='color:white;' data-aos="fade-up"> Your Health Status </h1>
         <br><br>
         <div class="container">
-            <div id = 'test1' class='main'></div>
+            <div id = 'test1' class='main' data-aos="fade-up"></div>
         </div>
+        <div class="container">
+            <div id = 'test2'>
+
+                              <p align='justify' style='font-size:18px;'>
+                                    <body onload="displayVar('target');">
+                                        <span id="target" data-aos="fade-up" style='color:white;'></span>
+                                    </body>
+                                </p>
+                            <a href="#" data-id='diabetes' class="custom-btn btn-bg btn mt-3 scroll-link"  data-aos="fade-up">My Risks to Diabetes</a>
+                         <script type="text/javascript" src=js/main.js></script>
+               </div>
+         </div>
+        
 
         <script src="js/main.js"></script>
      </section>
@@ -464,16 +481,13 @@
           <div class="container">
                <div class="row">
                     <div class="col-lg-8 mx-auto col-md-10 col-12 text-center">
-                         <br><br>
+                        <h2 class="mb-4 text-center" data-aos="fade-up"><strong> Your Risk To Type 2 Diabetes</strong></h2>
+                         
                         <img style="display:none;" id="bigpic" src="bigpic" />
 
-                        <br>
-                           <h4 id="result" style="text-align:center;"></h4>
-                           <br>
-                           <h4 id="resultexplanation2" style="text-align:center;"></h4>
                            <br><br>
                            <h4 id="resultpic2" style="text-align:center" class="img-fluid"></h4>
-
+                           <h4 id="resultexplanation2" style="text-align:center;"></h4>
                         </div>
                       </form>
                     </div>
@@ -560,19 +574,18 @@
          <div class="container">
          <div class="row">
          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
-            <h1 class="text-white">
+            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">
             An Apple A Day
-               <h3 class="text-white">Let's keep the hospital away</h3>
+               <h3 class="text-white" data-aos="fade-up" data-aos-delay="100">Let's keep the hospital away</h3>
+
          </div>
-         <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+         <div class="col-lg-5 mx-lg-auto col-md-8 col-10" data-aos="fade-up" data-aos-delay="100">
             <br>
-               <li><a href="index">Home</a></li>
-               <li><a href="symptom-checker2">Risk Checker</a></li>
-               <li><a href="symptom-explainer">Diabetes Primer</a></li>
-               <li><a href="nutritional-guidelines">Nutritonal Guidelines</a></li>
-               <li><a href="healthcare-explainer">Healthcare Explainer</a></li>
-               <li><a href="map">Doctor Finder</a></li>
-               <li><a href="about">About us</a></li>
+               <li><a href="index.html">Home</a></li>
+               
+               <li><a href="symptom-explainer.html">Condition Explainer</a></li>
+              <li><a href="map.html">Doctor Finder</a></li>
+               <li><a href="about.html">About</a></li>
          </div>
       </footer>
 
