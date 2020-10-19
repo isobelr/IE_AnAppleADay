@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-     <title>An Apple A Day</title>
+     <title>An Apple A Day | Risk Checker</title>
 
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -17,8 +17,11 @@
      <link rel="stylesheet" href="css/owl.carousel.min.css">
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
      <link rel="shortcut icon" href="images/favicon.png">
-     <link href="css/english.css" rel="stylesheet" type="text/css">
+      <link href="css/english.css" rel="stylesheet" type="text/css">
       <link href="css/simplified_chinese.css" rel="alternate stylesheet" type="text/css" title="alternate">
+
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/templatemo-digital-trend.css">
@@ -27,13 +30,12 @@
 </head>
 <body>
 
-      <!-- MENU BAR -->
-      <!-- MENU BAR -->
+     <!-- MENU BAR -->
       <nav class="navbar navbar-expand-lg">
          <div class="container">
             <a class="navbar-brand" href="index">
                AN APPLE A DAY
-              <h4>让我们远离医院</h4>
+              <h4>Let’s keep the hospital away</h4>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                aria-label="Toggle navigation">
@@ -45,21 +47,22 @@
                      <a href="index" class="nav-link smoothScroll">主页</a>
                   </li>
                   <li class="nav-item">
-                     <a href="diabetes-primer" class="nav-link smoothScroll">糖尿病入门</a>
+                     <a href="diabetes-primer" class="nav-link smoothScroll">疾病说明</a>
                   </li>
                   <li class="nav-item">
-                     <a href="map-chinese" class="nav-link smoothScroll">医生查找工具</a>
+                     <a href="map" class="nav-link smoothScroll">医生查找工具</a>
                   </li>
                   <li class="nav-item">
-                     <a href="about" class="nav-link smoothScroll">关于我们</a>
+                     <a href="about" class="nav-link smoothScroll">关于</a>
                   </li>
                   <li class="nav-item">
-                    <span onclick="chooseStyle('none', 1)"><a href="map" class="nav-link smoothScroll">English</a>
+                    <span onclick="chooseStyle('alternate', 1)"><a href="symptom-checker3" class="nav-link smoothScroll">English</a>
                    </li>
                </ul>
             </div>
          </div>
       </nav>
+
 
 
       <!-- HERO -->
@@ -68,9 +71,11 @@
             <div class="row">
                <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                   <div class="hero-text">
-                        <h1 class="text-white" data-aos="fade-up">症状检查器</h1>
-                        <p class="text-white" data-aos="fade-up">是否想检查症状以了解是否有患慢性病的风险？</p>
+                        <h1 class="text-white" data-aos="fade-up">风险检查器</h1>
+                        <p class="text-white" data-aos="fade-up">是否想检查症状以了解是否有患糖尿病的风险？</p>
+                        <!-- <a href="#q1" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Start the Quiz!</a> -->
                         <a href="#" data-id='q1' class="custom-btn btn-bg btn mt-3 scroll-link" data-aos="fade-up" data-aos-delay="100">开始测试</a>
+
                   </div>
                </div>
                <div class="col-lg-6 col-12">
@@ -83,15 +88,16 @@
       </section>
   <br><br>  <br><br>  <br><br>
 
-<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+      <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
 
      <!-- PROJECT DETAIL -->
 
-     <section id="q1" class="page-section">
+      <section id="q1" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                 <h2 style="color: #f1c111; font-size:25px;">(1/10)</h2>
-                <h2 id="question" style="font-size:25px;">您一周健身几次？</h2>
+              <h2 style="color: #f1c111; font-size:25px;">(1/10)</h2>
+                <h2 id="question" style="color: white; font-size:25px;">您一周健身几次？</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
                         <img src="images/running.png" class="img-fluid" alt="running" height=800 width=350>
                     </div>
@@ -115,9 +121,9 @@
     <section id="q2" class = "page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <br><br>
+                
                  <h2 style="color: #057a8d; font-size:25px;">(2/10)</h2>
-                <h2 id="question" style="font-size:25px;">如何描述您大部分的饮食？</h2>
+                <h2 id="question" style="color: white; font-size:25px;">如何描述您大部分的饮食？</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
                         <img src="images/food2.png" class="img-fluid" alt="running" height=800 width=350>
                     </div>
@@ -141,10 +147,10 @@
     <section id="q3" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                 <h2 style="color: #f1c111; font-size:25px;">(3/10)</h2>
-                <h2 id="question" style="font-size:25px;">您上个月有头晕的迹象吗？</h2>
+                <h2 style="color: #f1c111; font-size:25px;">(3/10)</h2>
+                <h2 id="question" style=" font-size:25px;">您是否感到口渴？</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/dizzy2.png" class="img-fluid" alt="dizzy" height=800 width=350>
+                        <img src="images/water.png" class="img-fluid" alt="water" height=800 width=350>
                     </div>
                     <div class="choice-container">
                         <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q4" onclick='q3(this)' value='1'>是</p>
@@ -157,13 +163,14 @@
         </div>
     </section>
 
-<section id="q4" class="page-section">
+    <section id="q4" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                 <h2 style="color: #057a8d; font-size:25px;">(4/10)</h2>
-                <h2 id="question" style="font-size:25px;">通常会感到疲倦或虚弱吗？</h2>
-                <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/tired.png" class="img-fluid" alt="dizzy" height=800 width=350>
+                <h2 style="color: #f1c111; font-size:25px;">(4/10)</h2>
+
+                <h2 id="question" style="color: white; font-size:25px;">您通常感到疲倦或嗜睡吗？</h2>
+                    <div class="full-image text-center" data-aos="zoom-in">
+                        <img src="images/tired.png" class="img-fluid" alt="tired" height=800 width=350>
                     </div>
                     <div class="choice-container">
                         <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q5" onclick='q4(this)' value='1'>是</p>
@@ -176,13 +183,13 @@
         </div>
     </section>
 
-    <section id="q5" class="page-section">
+<section id="q5" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                 <h2 style="color: #f1c111; font-size:25px;">(5/10)</h2>
-                <h2 id="question" style="font-size:25px;">在进行日常活动时您是否感到呼吸急促？</h2>
-                    <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/breath.png" class="img-fluid" alt="breath" height=800 width=350>
+                <h2 style="color: #057a8d; font-size:25px;">(5/10)</h2>
+                <h2 id="question" style="color: white; font-size:25px;"> 您的视力是否模糊？</h2>
+                <div class="full-image text-center" data-aos="zoom-in">
+                        <img src="images/blur.png" class="img-fluid" alt="blur" height=800 width=350>
                     </div>
                     <div class="choice-container">
                         <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q6" onclick='q5(this)' value='1'>是</p>
@@ -198,10 +205,10 @@
     <section id="q6" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                 <h2 style="color: #057a8d; font-size:25px;">(6/10)</h2>
-                <h2 id="question" style="font-size:25px;">您近期有感到严重的头痛？</h2>
+               <h2 style="color: #f1c111; font-size:25px;">(6/10)</h2>
+                <h2 id="question" style="font-size:25px;">您需要经常使用洗手间吗？</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/headache2.png" class="img-fluid" alt="breath" height=800 width=350>
+                        <img src="images/restroom2.png" class="img-fluid" alt="restroom" height=800 width=350>
                     </div>
                     <div class="choice-container">
                         <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q7" onclick='q6(this)' value='1'>是</p>
@@ -217,10 +224,10 @@
     <section id="q7" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                 <h2 style="color: #f1c111; font-size:25px;">(7/10)</h2>
-                <h2 id="question" style="font-size:25px;">您有感觉脚，腿，脚踝或胃部的体重增加了吗？</h2>
+                <h2 style="color: #f1c111; font-size:25px;">(7/10)</h2>
+                <h2 id="question" style="color: white; font-size:25px;">您家中有人有过糖尿病史吗？</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/weight.png" class="img-fluid" alt="breath" height=800 width=350>
+                        <img src="images/family.png" class="img-fluid" alt="family" height=800 width=350>
                     </div>
                     <div class="choice-container">
                         <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q8" onclick='q7(this)' value='1'>是</p>
@@ -233,218 +240,314 @@
         </div>
     </section>
 
-  <section id="q8" class="page-section">
+    <section id="q8" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                 <h2 style="color: #057a8d; font-size:25px;">(8/10)</h2>
-                <h2 id="question" style="font-size:25px;">如何评价您的抽烟习惯？</h2>
+              <h2 style="color: #057a8d; font-size:25px;">(8/10)</h2>
+                <h2 id="question" style="color: white; font-size:25px;">你有伤口愈合缓慢的情况吗？</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/smoke2.png" class="img-fluid" alt="smoke" height=800 width=350>
+                        <img src="images/injury.png" class="img-fluid" alt="wounds" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q9" onclick='q8(this)' value='1'>每天2-4次</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q9" onclick='q8(this)' value='1'>是</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q9" onclick='q8(this)' value='2'>每天6-10次</p>
-                    </div>
-                    <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:20px' data-id="q9" onclick='q8(this)' value='3'>一周偶尔几次</p>
-                    </div>
-                    <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:20px' data-id="q9" onclick='q8(this)' value='4'>从不</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q9" onclick='q8(this)' value='2'>否</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
         </div>
     </section>
+
 
   <section id="q9" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                 <h2 style="color: #f1c111; font-size:25px;">(9/10)</h2>
-                <h2 id="question" style="font-size:25px;">">如何评价您的喝酒程度？</h2>
+                <h2 style="color: #f1c111; font-size:25px;">(9/10)</h2>
+                <h2 id="question" style=" font-size:25px;">如何评价您的喝酒程度？</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
                         <img src="images/drinks.png" class="img-fluid" alt="drinks" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q10" onclick='q9(this)' value='1'>只在社交时</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='1'>只在社交时</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q10" onclick='q9(this)' value='2'>一周偶尔几次</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='2'>一周偶尔几次</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:20px' data-id="q10" onclick='q9(this)' value='3'>经常喝</p>
+                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='3'>经常喝</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:20px' data-id="q10" onclick='q9(this)' value='4'>我不喝酒</p>
+                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='4'>我不喝酒</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
         </div>
     </section>
+    <!-- CALCULATOR -->
+     <section id="bmi" class="page-section">
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-8 mx-auto col-md-10 col-12 text-center">
+                    <h2 style="color: #057a8d; font-size:25px;">(10/10)</h2><br>
 
-    <section id="q10" class="page-section">
-        <div class="container">
-            <div id="game" class="justify-center flex-column">
-                 <h2 style="color: #057a8d;  font-size:25px;">(10/10)</h2>
-                <h2 id="question" style="font-size:25px;">您有高血压吗？</h2>
-                    <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/pressure2.png" class="img-fluid" alt="pressure" height=800 width=350>
+                     <h3 class="mb-4" data-aos="fade-up" style="text-align:center;">请输入身高和体重来计算您的BMI:</h3><br>
+                      <form action="#" method="post" class="contact-form" data-aos="fade-up" data-aos-delay="300" role="form">
+                        <div class="row">
+                          <div class="col-lg-5 mx-auto col-7">
+                            <input id="height" type="text"  class="form-control" name="height" placeholder="Height (cm)">
+                          </div>
+                          <div class="col-lg-5 mx-auto col-7">
+                            <input id="weight" type="text" class="form-control" name="weight" placeholder="Weight (kg)">
+                          </div>
+                         </div>
+                         <br><br>
+                        <img style="display:none;" id="bigpic" src="bigpic" />
+
+                        <input class="submit" type="button" button type="submit" style="text-align:center;" value="查看我的BMI" onclick="bmi()" onclick="showPicture()"/>
+                        <br>
+                           <h4 id="result" style="text-align:center;"></h4>
+                           <br>
+                           <h4 id="resultexplanation" style="text-align:center;"></h4>
+                           <br><br>
+                           <h4 id="resultpic" style="text-align:center" class="img-fluid"></h4>
+
+                        </div>
+                      </form>
                     </div>
-                    <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="check-results" onclick='q10(this)' value='1'>有</p>
-                    </div>
-                    <div class="choice-container">
-                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="check-results" onclick='q10(this)' value='2'>无</p>
-                    </div>
-            </div>
-            <script src="js/main2.js"></script>
-        </div>
-    </section>
+
+               </div>
+          </div>
+          <script src="js/bmi-calc.js" type="text/javascript"></script>
+     </section>
 
 
 
     <section id="check-results" class="parallax-content baner-content2" >
         <div class="container">
                   <div class="text-content ">
-                    <!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
                     <h2 class="mb-4 text-center" data-aos="fade-up"><strong> 测验 完成! </strong></h2>
                     <p style='font-size:25px'>单击下面的按钮以查找结果.</p>
                     <br><br>
-                        <a href="#graph" class="custom-btn2 btn2-bg btn2 mt-3" data-aos="fade-up" data-aos-delay="100" onclick="displayVar('target')">显示结果</a>
+                        <a href="#" data-id="graph" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-aos="fade-up" data-aos-delay="100" value="Show Div" onclick="displayVar('target');" onclick="showPicture()">显示结果</a>
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
 
-<!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
-
-<!-- 
-                    <div class="primary-white-button" >
-                      <script type="text/javascript" src=js/main.js></script>
-                      <a href="#" class="scroll-link" data-id="graph" onclick="displayVar('target');">Show results</a>
-                    </div> -->
                   </div>
           </div>
     </section>
 
 
-    <section id="graph" class="parallax-content baner-content3">
-        <div class='container'>
-             <div class="text-content">
-               <div class='container'>
-                    <script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-                    <div style="width: 100%; ">
-                         <div style="width: 50%; height: 100px; float: left; " class = 'text-content'>
-                            <h2 class="mb-4 text-center" data-aos="fade-up"><strong> 您的健康指标 </strong></h2>
-                         <!-- <h1>Health Metrics</h1> --> 
-                         <canvas id="marksChart" width="250" height="100" style="background-color: #ffffff" ></canvas>
-                         </div>
-                         <div style="margin-left: 50%; height: 100px;"> 
-                         <!-- <h1>Your Risks</h1>  -->
-                         <h2 class="mb-4 text-center" data-aos="fade-up"><strong> 您的风险 </strong></h2> 
 
-                         <canvas id="barChart" width="250" height="100" style="background-color: #ffffff"></canvas>
-                         </div>
-                        <div style="margin-top:33%;">
-                         <!-- <a href="#" class="scroll-link" data-id="results">Scroll Down</a> -->
-                         <a href="#" data-id='results' class="custom-btn3 btn3-bg btn3 mt-3 scroll-link" data-aos="fade-up" data-aos-delay="100">点击这里</a>
-                        </div>
-                    </div>
-                </div>
-             </div>
+    <section id="graph" class="parallax-content baner-content3">
+       <style>
+      body {
+      background: white;
+      font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      margin: 2px 10px;
+    }
+
+    hr {
+      border-color: #565656;
+    }
+
+    svg {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .container {
+      margin: 0 auto;
+    }
+
+    .main  svg {
+      width: 65vw;
+      max-width: 500px;
+    }
+
+    .week {
+      text-align: center;
+    }
+
+    ul.week li svg {
+      width: 8vw;
+      max-width: 80px;
+    }
+
+    .date {
+      color: white;
+      font-size: 25px;
+      font-weight: 100;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .circle {
+      margin: 3px auto;
+      border-radius: 50%;
+      width: 27px;
+      height: 27px;
+      line-height: 27px;
+      text-align: center;
+      color: #565656;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    li:hover .circle {
+      color: white;
+      background-color: #565656;
+
+    }
+
+    .active {
+      color: white;
+      background-color: #fa1654 !important;
+    }
+
+    .rbc-label-start {
+      font-family: fontawesome;
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    .tooltip {
+                position: absolute;
+                text-align: center;
+                pointer-events: none;
+                z-index: 100;
+                padding:10px;
+                background-color:white;
+                border-radius:10px;
+                visibility:hidden
+          
+            }
+
+    #test1 {
+        float:left;
+        width:200px
+    }
+
+    #test2 {
+        float:right;
+        width:500px
+    }
+    
+
+    </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.0/d3.js"></script>
+        <script src="js/radial-progress-chart.js"></script>
+        <h1 class="text-white" style='color:white;' data-aos="fade-up"> 您的健康状况 </h1>
+        <br><br>
+        <div class="container">
+            <div id = 'test1' class='main' data-aos="fade-up"></div>
         </div>
+        <div class="container">
+            <div id = 'test2'>
+
+                              <p align='justify' style='font-size:18px;'>
+                                    <body onload="displayVar('target');">
+                                        <span id="target" data-aos="fade-up" style='color:white;'></span>
+                                    </body>
+                                </p>
+                            <a href="#" data-id='diabetes' class="custom-btn btn-bg btn mt-3 scroll-link"  data-aos="fade-up">我患糖尿病的风险</a><br><br><br><br><br><br><br><br><br><br><br><br>
+                         <script type="text/javascript" src=js/main2.js></script>
+               </div>
+         </div>
+        
+
+        <script src="js/main2.js"></script>
      </section>
 
 <!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
 
-     
-<!-- RESULTS -->
-      <section class="about section-padding pb-0" id="results">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-7 mx-auto col-md-10 col-12">
-<!--                   <div class="about-info text-center" >
- -->                        <h2 class="mb-4 text-center" data-aos="fade-up"><strong>您的健康状况和预防措施</strong></h2>
-                              <p align='justify' style='font-size:15px;'>
-                                    <body onload="displayVar('target');">
-                                        <span id="target"></span>
-                                    </body>
-                                </p>
-                        <br>
-                         <script type="text/javascript" src=js/main2.js></script>
-<!--                         <div class="full-image text-center" data-aos="zoom-in">
-                                        <img src="images/questionnaire.png" class="img-fluid" alt="breath" height=600 width=500>
-                                    </div> -->
-                        <div width=500>
-                                <p align='justify' style='font-size:15px;'>
-                                    <body onload="displayVar('target');">
-                                        <span id="target"></span>
-                                    </body>
-                                </p>
+<!-- Diabetes Results -->
+     <section id="diabetes" class="contact section-padding">
+          <div class="container">
+               <div class="row">
+                    <div class="col-lg-8 mx-auto col-md-10 col-12 text-center">
+                        <h2 class="mb-4 text-center" data-aos="fade-up"><strong>您患2型糖尿病的风险</strong></h2>
+
+                        <img style="display:none;" id="bigpic" src="bigpic" />
+
+                           <br><br>
+                           <h4 id="resultpic2" style="text-align:center" class="img-fluid"></h4>
+                           <h4 id="resultexplanation2" style="text-align:center;"></h4>
                         </div>
-<!--                   </div>
- -->               </div>
-            </div>
-         </div>
-      </section>
-
-
-
-<!-- <section id="results" class="parallax-content baner-content4" >
-        <div class="container">
-                        <h1>Your Health Status</h1>
-                        <script type="text/javascript" src=js/main.js></script>
-        <div class="full-image text-center" data-aos="zoom-in">
-                        <img src="images/questionnaire.png" class="img-fluid" alt="breath" height=600 width=500>
+                      </form>
                     </div>
-        <div width=500>
-                <p align='justify' style='font-size:25px;'>
-                    <body onload="displayVar('target');">
-                        <span id="target"></span>
-                    </body>
-                </p>
-        </div>
+
+               </div>
           </div>
-    </section>
-
- -->
-
-      <!-- FIND A DOCTOR -->
-      <section class="hero2 hero2-bg d-flex justify-content-center align-items-center">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
-                  <div class="hero-text">
-                        <h1 class="text-white" data-aos="fade-up">想找到更多关于这些条件的信息？</h1>
-                        <a href="symptom-explainer.html" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">看看我们的病情解释器！</a>
-                  </div>
-               </div>
-               <div class="col-lg-6 col-12">
-                  <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
-                     <img src="images/hero_image_transparent.png" class="img-fluid" alt="working girl">
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
+          <script src="js/main2.js" type="text/javascript"></script>
+     </section>
 
 
 
-            <!-- FOOTER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CALL TO ACTION -->
+
+<div id="lowrisktarget"></div>
+<div id="moderaterisktarget"></div>
+<div id="highrisktarget"></div>
+
+
+
+      <!-- FOOTER -->
       <footer class="site-footer">
          <div class="container">
          <div class="row">
          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
             <h1 class="text-white">
-            >一天一个苹果
-               <h3 class="text-white">让我们远离医院</h3>
+            An Apple A Day
+               <h3 class="text-white">Let's keep the hospital away</h3>
          </div>
          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
             <br>
-               <li><a href="index">主页</a></li>
-               <li><a href="symptom-checker2">风险检查器</a></li>
-               <li><a href="diabetes-primer">糖尿病入门</a></li>
-               <li><a href="nutritional-guidelines">营养指南</a></li>
-               <li><a href="healthcare-explainer">健康保健讲解器</a></li>
-               <li><a href="map-chinese">交互式医生查找工具</a></li>
-               <li><a href="about">关于我们</a></li>
+               <li><a href="index">Home</a></li>
+               <li><a href="symptom-checker2">Risk Checker</a></li>
+               <li><a href="diabetes-primer">Diabetes Primer</a></li>
+               <li><a href="nutritional-guidelines">Nutritional Guidelines</a></li>
+               <li><a href="healthcare-explainer">Healthcare Explainer</a></li>
+               <li><a href="map">Doctor Finder</a></li>
+               <li><a href="about">About us</a></li>
          </div>
       </footer>
 
@@ -459,7 +562,7 @@
      <script src="js/plugins.js"></script>
     <script src="js/main2.js"></script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
     $(document).ready(function() {
         // navigation click actions 
@@ -496,8 +599,70 @@
         };
     }
     </script>
-     <script src="js/backtotop.js"></script>
-      <script src="js/styleswitch.js" type="text/javascript"></script> 
+      <script src="js/backtotop.js"></script>
+
+      <script id="lowrisk" type="text/html">
+      <section class="hero2 hero2-bg d-flex justify-content-center align-items-center">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                  <div class="hero-text">
+                        <h1 class="text-white" data-aos="fade-up">Want to find out more about type 2 diabetes?</h1>
+                        <a href="diabetes-primer" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Check out our diabetes primer page!</a>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-12">
+                  <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+                     <img src="images/symptoms-risks.png" class="img-fluid" alt="working girl">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    </script>
+
+      <script id="moderaterisk" type="text/html">
+      <section class="hero2 hero2-bg d-flex justify-content-center align-items-center">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                  <div class="hero-text">
+                        <h1 class="text-white" data-aos="fade-up">Want to find out more about type 2 diabetes?</h1>
+                        <a href="diabetes-primer" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Check out our diabetes primer page!</a>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-12">
+                  <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+                     <img src="images/symptoms-risks.png" class="img-fluid" alt="working girl">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    </script>
+
+      <script id="highrisk" type="text/html">
+      <section class="hero2 hero2-bg d-flex justify-content-center align-items-center">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                  <div class="hero-text">
+                        <h1 class="text-white" data-aos="fade-up">Worried about your risk of type 2 diabetes?</h1>
+                        <a href="map" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Check out our doctor finder!</a>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-12">
+                  <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+                     <img src="images/doctor-finder.svg"  class="img-fluid" alt="working girl">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    </script>
+          <script src="js/styleswitch.js" type="text/javascript"></script> 
+
+
 
 </body>
 </html>
