@@ -124,6 +124,7 @@ var i11 = 0;
 var i12 = 0;
 var i13 = 0;
 var i14 = 0;
+var keyy = 0;
 
 
 function q1(el) {
@@ -139,10 +140,12 @@ function q1(el) {
     if (arr[0] === '1') {
       exercise = 100;
       lifestyle = 33.34;
+      diabetes = -12.5;
 
     } else if (arr[0] === '2') {
       exercise = 75;
       lifestyle = 25;
+      diabetes = -9.375;
 
     } else if (arr[0] === '3') {
       exercise = 50;
@@ -171,10 +174,12 @@ function q2(el) {
     if (arr[1] === '1') {
       diet = 50;
       lifestyle += 33.34;
+      diabetes -= 12.5;
 
     } else if (arr[1] === '2') {
       diet = 37.5;
       lifestyle += 25;
+      diabetes -= 9.375;
 
     } else if (arr[1] === '3') {
       diet += 25;
@@ -374,6 +379,7 @@ function displayVar(variable) {
   var z = diet;
 
   if (i10 == 1) {
+
   var testCanvas = document.getElementById('test1');
 
   var data = [x,y,z];
@@ -385,9 +391,9 @@ function displayVar(variable) {
   var mainChart = new RadialProgressChart(testCanvas, {
     diameter: 120,
     series: [
-      { labelStart: '\uF106', value: z },
-      { labelStart: '\uF101', value: y },
-      { labelStart: '\uF105', value: x }
+      { labelStart: '\uF106', label: 'Diet', value: z },
+      { labelStart: '\uF101', label: 'Exercise', value: y },
+      { labelStart: '\uF105', label: 'Lifestyle', value: x }
     ]
   }
   
@@ -425,15 +431,16 @@ function displayVar(variable) {
           .style("visibility", "hidden")
       })
       .on("mousemove", function (d) {
-        div.html(`  Score :` + Math.round(d.value))
+        div.html(d.label + ` Score :` + Math.round(d.value))
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY) + "px");
+
       })
 
 
 }
 
-  if (diabetes <= 33.34 && i10 ==1) {
+  if (diabetes <= 33.34 && i10 == 1 || lifestyle >= 75) {
     document.getElementById("resultexplanation2").innerHTML = "<br>You are at Low risk of Type 2 Diabetes<br>";
     var el = document.getElementById("resultpic2");
 
@@ -443,7 +450,7 @@ function displayVar(variable) {
     document.getElementById('lowrisktarget').appendChild(div);
 
     el.innerHTML = "<img src=\"images/questionnaire-low-risk.svg\">";
-  } else if (diabetes <= 66.67 && i10 == 1) {
+  } else if (diabetes < 75 && i10 == 1 && lifestyle < 75) {
     document.getElementById("resultexplanation2").innerHTML = "<br>You are at Moderate risk of Type 2 Diabetes<br>";
     var el = document.getElementById("resultpic2");
     el.innerHTML = "<img src=\"images/questionnaire-medium-risk.svg\">";
@@ -453,7 +460,7 @@ function displayVar(variable) {
     div.innerHTML = document.getElementById('moderaterisk').innerHTML;
     document.getElementById('moderaterisktarget').appendChild(div);
 
-  } else if (diabetes > 66.67 && i10 == 1) {
+  } else if (diabetes >= 75 && i10 == 1 && lifestyle < 75 ) {
     document.getElementById("resultexplanation2").innerHTML = "<br>You are at High risk of Type 2 Diabetes<br>";
     var el = document.getElementById("resultpic2");
     el.innerHTML = "<img src=\"images/questionnaire-high-risk.svg\">";
@@ -469,8 +476,9 @@ function displayVar(variable) {
 
 
 
-
 }
+
+
 
 
 
