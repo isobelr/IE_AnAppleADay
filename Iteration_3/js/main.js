@@ -431,9 +431,10 @@ function displayVar(variable) {
           .style("visibility", "hidden")
       })
       .on("mousemove", function (d) {
-        div.html(d.label + ` Score :` + Math.round(d.value))
+        div.html(` Score :` + Math.round(d.value))
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY) + "px");
+	    console.log(d);
 
       })
 
