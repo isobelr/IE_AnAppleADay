@@ -895,7 +895,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  background-color: #057a8d;
+  /*background-color: #057a8d;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -952,50 +952,13 @@
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  background-color: #f1c111;
+  /*background-color: #f1c111;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-#q1 .service-item {
-  text-align: center;
-}
 
-#q1 .service-item .icon {
-  width: 110px;
-  height: 110px;
-  display: inline-block;
-  text-align: center;
-  line-height: 104px;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  background-color: red;
-}
-
-#q1 .service-item h4 {
-  margin-bottom: 30px;
-  margin-top: 45px;
-  font-size: 17px;
-  font-weight: 500;
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-#q1 .service-item .line-dec {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(250, 250, 250, 0.5);
-}
-
-#q1 .service-item p {
-  color: #fff;
-  margin-top: 30px;
-}
-
-#q1 .service-item .primary-blue-button {
-  margin-top: 35px;
-}
 
 
 #q2 {
@@ -1067,7 +1030,7 @@
   padding: 150px 0px;
   min-height: 100vh;
   text-align: center;
-  background-color: #057a8d;
+  /*background-color: #057a8d;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -1116,8 +1079,8 @@
   padding: 150px 0px;
   min-height: 100vh;
   text-align: center;
-  background-color: #f1c111;
-  background-repeat: no-repeat;
+/*  background-color: #f1c111;
+*/  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1214,7 +1177,7 @@
   padding: 150px 0px;
   min-height: 100vh;
   text-align: center;
-  background-color: #057a8d;
+  /*background-color: #057a8d;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -1265,7 +1228,7 @@
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  background-color: #f1c111;
+  /*background-color: #f1c111;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -1283,7 +1246,7 @@
   line-height: 104px;
   border: 3px solid #fff;
   border-radius: 50%;
-  background-color: #f7c552;
+  /*background-color: #f7c552;*/
 }
 
 #q8 .service-item h4 {
@@ -1365,7 +1328,7 @@
   padding: 150px 0px;
   min-height: 100vh;
   text-align: center;
-  background-color: #057a8d;
+  /*background-color: #057a8d;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
