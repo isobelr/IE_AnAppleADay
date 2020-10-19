@@ -7,24 +7,24 @@
 
 
         if(result < 18.5){
-         document.getElementById("result").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Your BMI score is:  <br></h2>" + Math.round(result);
+         document.getElementById("result").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Your BMI score is:  <br></h2>" + "<h2>" + Math.round(result) + "</h2>";
           document.getElementById("resultexplanation").innerHTML = "<br>Your BMI is classified as Underweight<br>";
           
           var el = document.getElementById("resultpic");
           el.innerHTML="<img src=\"images/result_underweight.svg\">";
 
         }else if (result < 25){
-         document.getElementById("result").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Your BMI score is:  <br></h2>" + Math.round(result);
+         document.getElementById("result").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Your BMI score is:  <br></h2>" + "<h2>" + Math.round(result) + "</h2>";
           document.getElementById("resultexplanation").innerHTML = "<br>Your BMI is classified as Normal<br>";
           var el = document.getElementById("resultpic");
           el.innerHTML="<img src=\"images/result_normal.svg\">";
         }else if (result < 30){
-          document.getElementById("result").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Your BMI score is:  <br></h2>" + Math.round(result);
+          document.getElementById("result").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Your BMI score is:  <br></h2>" + "<h2>" + Math.round(result) + "</h2>";
           document.getElementById("resultexplanation").innerHTML = "<br>Your BMI is classified as Overweight<br>";
           var el = document.getElementById("resultpic");
           el.innerHTML="<img src=\"images/result_overweight.svg\">";
         }else if (result > 30){
-          document.getElementById("result").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Your BMI score is:  <br></h2>" + Math.round(result);
+          document.getElementById("result").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Your BMI score is:  <br></h2>" + "<h2>" + Math.round(result) + "</h2>";
           document.getElementById("resultexplanation").innerHTML = "<br>Your BMI is classified as Obese<br>";
           var el = document.getElementById("resultpic");
           el.innerHTML="<img src=\"images/result_obese.svg\">";
