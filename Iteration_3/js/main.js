@@ -368,7 +368,7 @@ function displayVar(variable) {
 
     if (lifestyle >= 75) {
     document.getElementById(variable).innerHTML = text4;
-  } else if (lifestyle >= 50 ) {
+  } else if (lifestyle <75 ) {
     document.getElementById(variable).innerHTML = text5;
   } else {
     document.getElementById(variable).innerHTML = text6;
@@ -380,24 +380,24 @@ function displayVar(variable) {
 
   if (i10 == 1) {
 
-  var testCanvas = document.getElementById('test1');
+    var testCanvas = document.getElementById('test1');
 
-  var data = [x,y,z];
+    var data = [x, y, z];
 
-    var div = d3.select("body").append("div")
+    var div1 = d3.select("body").append("div")
       .attr("class", "tooltip")
       .style("opacity", 0);
 
-  var mainChart = new RadialProgressChart(testCanvas, {
-    diameter: 120,
-    series: [
-      { labelStart: '\uF106', label: 'Diet', value: z },
-      { labelStart: '\uF101', label: 'Exercise', value: y },
-      { labelStart: '\uF105', label: 'Lifestyle', value: x }
-    ]
-  }
-  
-  );
+    var mainChart = new RadialProgressChart(testCanvas, {
+      diameter: 120,
+      series: [
+        { labelStart: '\uF106', label: 'Diet', value: z },
+        { labelStart: '\uF101', label: 'Exercise', value: y },
+        { labelStart: '\uF105', label: 'Lifestyle', value: x }
+      ]
+    }
+
+    );
 
     d3.selectAll('g').on('mouseover', function (d, i) {
       var current = this;
@@ -410,7 +410,7 @@ function displayVar(variable) {
       d3.select(this).transition()
         .duration('50')
         .attr('opacity', '.85');
-      div.transition()
+      div1.transition()
         .duration(200)
         .style("opacity", .8)
         .style("visibility", "visible");
@@ -425,17 +425,18 @@ function displayVar(variable) {
         });
         others.selectAll("g").style('opacity', '1');
         d3.select(this).style('opacity', '1');
-        div.transition()
+        div1.transition()
           .duration(200)
           .style("opacity", .8)
           .style("visibility", "hidden")
       })
       .on("mousemove", function (d) {
-        div.html(d.label + ` Score :` + Math.round(d.value))
+        div1.html(d.label + ` Score :` + Math.round(d.value))
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY) + "px");
 
       })
+
 
 
 }
@@ -459,6 +460,7 @@ function displayVar(variable) {
   if (diabetes <= 33.34 && i10 == 1 || lifestyle >= 75) {
     document.getElementById("resultexplanation2").innerHTML = "<br>You are at Low risk of Type 2 Diabetes<br>";
     var el = document.getElementById("resultpic2");
+    document.getElementById("hidden2").style.display = "block";
 
     var div = document.createElement('div');
     div.setAttribute('class', 'someClass');
@@ -470,6 +472,7 @@ function displayVar(variable) {
     document.getElementById("resultexplanation2").innerHTML = "<br>You are at Moderate risk of Type 2 Diabetes<br>";
     var el = document.getElementById("resultpic2");
     el.innerHTML = "<img src=\"images/questionnaire-medium-risk.svg\">";
+    document.getElementById("hidden").style.display = "block";
 
     var div = document.createElement('div');
     div.setAttribute('class', 'someClass');
@@ -480,7 +483,7 @@ function displayVar(variable) {
     document.getElementById("resultexplanation2").innerHTML = "<br>You are at High risk of Type 2 Diabetes<br>";
     var el = document.getElementById("resultpic2");
     el.innerHTML = "<img src=\"images/questionnaire-high-risk.svg\">";
-
+    document.getElementById("hidden").style.display = "block";
     var div = document.createElement('div');
     div.setAttribute('class', 'someClass');
     div.innerHTML = document.getElementById('highrisk').innerHTML;
