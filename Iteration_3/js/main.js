@@ -382,6 +382,12 @@ function displayVar(variable) {
   if (i10 == 1) {
   var testCanvas = document.getElementById('test1');
 
+  var data = [x,y,z];
+
+    var div = d3.select("body").append("div")
+      .attr("class", "tooltip")
+      .style("opacity", 0);
+
   var mainChart = new RadialProgressChart(testCanvas, {
     diameter: 120,
     series: [
@@ -392,6 +398,45 @@ function displayVar(variable) {
   }
   
   );
+
+    d3.selectAll('g').on('mouseover', function (d, i) {
+      var current = this;
+      var others = d3.selectAll("g").filter(function (el) {
+        return this != current
+      });
+      others.selectAll("g").style('opacity', '0.40');
+      d3.select(this).style('opacity', '1');
+
+      d3.select(this).transition()
+        .duration('50')
+        .attr('opacity', '.85');
+      div.transition()
+        .duration(200)
+        .style("opacity", .8)
+        .style("visibility", "visible");
+
+
+
+    })
+      .on('mouseout', function (d, i) {
+        var current = this;
+        var others = d3.selectAll("g").filter(function (el) {
+          return this != current
+        });
+        others.selectAll("g").style('opacity', '1');
+        d3.select(this).style('opacity', '1');
+        div.transition()
+          .duration(200)
+          .style("opacity", .8)
+          .style("visibility", "hidden")
+      })
+      .on("mousemove", function (d) {
+        div.html(`  Score :` + d.value)
+          .style("left", (d3.event.pageX) + "px")
+          .style("top", (d3.event.pageY) + "px");
+      })
+
+
 }
 
   if (diabetes <= 33.34 && i10 ==1) {
