@@ -1658,11 +1658,11 @@ overflow-wrap: break-word;
     border-radius: var(--border-radius-large);*/
 }
 
-.choice-prefix {
+/*.choice-prefix {
   padding: 1.5rem 2.5rem;
   background-color: #f1c111;
   color: red;
-}
+}*/
 
 /*.choice-text {
   padding: 0.25rem;
@@ -1670,34 +1670,6 @@ overflow-wrap: break-word;
   margin-bottom: 0;
 }
 */
-
-  /* BUTTON 2 */
-  .custom-btn2 {
-    background: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    border-color: var(--primary-color);
-    border-radius: var(--border-radius-large);
-    padding: 12px 26px 14px 26px;
-    color: #ffff;
-    font-family: var(--title-font-family);
-    font-size: var(--p-font-size);
-    white-space: nowrap;
-  }
-
-  .custom-btn2.btn2-bg {
-    background: var(--white-color);
-    color: var(--primary-color);
-    border-color: var(--dark-color);
-    transition: all .3s ease;
-  }
-  
-  .custom-btn2:hover,
-  .custom-btn2:focus {
-    background: #f1c111;
-    color: #fffff;
-    border-color: var(--primary-color);
-  }
-
 
 
 
