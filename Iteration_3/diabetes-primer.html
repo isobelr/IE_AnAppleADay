@@ -106,7 +106,7 @@
                <div id="outer">
                   <div class="inner">
                      <div id="symptoms" style="padding-bottom: 50px"; style="padding-top: 50px";>
-                     <a class="custom-btn2 btn2-bg btn2 mt-3" data-aos="fade-up" data-aos-delay="100">Symptoms</a>
+                     <a class="custom-btn2 btn2-bg btn2 mt-3" style=" color:#171819" data-aos="fade-up" data-aos-delay="100">Symptoms</a>
                   </div>
                </div>
          </div>
@@ -130,7 +130,7 @@
          <div id="outer">
          <div class="inner">
          <div id="risks" style="padding-bottom: 50px"; style="padding-top: 50px";>
-         <a class="custom-btn2 btn2-bg btn2 mt-3"  data-aos="fade-up" data-aos-delay="100">Risk Factors</a>
+         <a class="custom-btn2 btn2-bg btn2 mt-3" style=" color:#171819" data-aos="fade-up" data-aos-delay="100">Risk Factors</a>
          </div>
          </div>
          </div> 
@@ -147,7 +147,7 @@
          <div id="outer">
          <div class="inner">
          <div id="myths" style="padding-bottom: 50px"; style="padding-top: 50px";>
-         <a class="custom-btn2 btn2-bg btn2 mt-3"  data-aos="fade-up" data-aos-delay="100">Myths</a>
+         <a class="custom-btn2 btn2-bg btn2 mt-3" style=" color:#171819" data-aos="fade-up" data-aos-delay="100" >Myths</a>
          </div>
          </div>
          </div> 
@@ -163,12 +163,12 @@
          <span class="simplified_chinese">
             <div id="outer">
                <div class="inner">
-                  <div id="symptoms" style="padding-bottom: 50px"; style="padding-top: 50px";>
-                  <a class="custom-btn2 btn2-bg btn2 mt-3" data-aos="fade-up" data-aos-delay="100">症状</a>
+                  <div id="symptomssc" style="padding-bottom: 50px"; style="padding-top: 50px";>
+                  <a class="custom-btn2 btn2-bg btn2 mt-3" style=" color:#171819" data-aos="fade-up" data-aos-delay="100">症状</a>
                </div>
             </div>
             </div>
-            <div id="symptomsinfo" style="padding-bottom: 50px"; style="padding-top: 100px";>
+            <div id="symptomsinfosc" style="padding-bottom: 50px"; style="padding-top: 100px";>
             <h2 class="mb-4" data-aos="fade-up">症状</h2>
             <p class="mb-0" data-aos="fade-up">2型糖尿病的症状通常发展缓慢，可能难以识别。 实际上，许多人患有2型糖尿病已有多年，并且还不知道。 但是，有一些关键症状：</p>
             <ul class="list-detail py-3" data-aos="fade-up">
@@ -187,12 +187,12 @@
             </div>
             <div id="outer">
                <div class="inner">
-                  <div id="risks" style="padding-bottom: 50px"; style="padding-top: 50px";>
-                  <a class="custom-btn2 btn2-bg btn2 mt-3"  data-aos="fade-up" data-aos-delay="100">风险因素</a>
+                  <div id="riskssc" style="padding-bottom: 50px"; style="padding-top: 50px";>
+                  <a class="custom-btn2 btn2-bg btn2 mt-3" style=" color:#171819" data-aos="fade-up" data-aos-delay="100">风险因素</a>
                </div>
             </div>
             </div> 
-            <div id="risksinfo" style="padding-bottom: 50px"; style="padding-top: 100px";>
+            <div id="risksinfosc" style="padding-bottom: 50px"; style="padding-top: 100px";>
             <h2 class="mb-4" data-aos="fade-up">风险因素</h2>
             <ul class="list-detail py-3" data-aos="fade-up">
                <li><span><strong>年龄</strong> <br>随着年龄的增长，尤其是如果您年满45岁，则2型糖尿病的风险会增加。</span></li>
@@ -204,12 +204,12 @@
             </div>
             <div id="outer">
                <div class="inner">
-                  <div id="myths" style="padding-bottom: 50px"; style="padding-top: 50px";>
-                  <a class="custom-btn2 btn2-bg btn2 mt-3"  data-aos="fade-up" data-aos-delay="100">真相</a>
+                  <div id="mythssc" style="padding-bottom: 50px"; style="padding-top: 50px";>
+                  <a class="custom-btn2 btn2-bg btn2 mt-3" style=" color:#171819" data-aos="fade-up" data-aos-delay="100">真相</a>
                </div>
             </div>
             </div> 
-            <div id="mythsinfo" style="padding-bottom: 50px"; style="padding-top: 100px";>
+            <div id="mythsinfosc" style="padding-bottom: 50px"; style="padding-top: 100px";>
             <h2 class="mb-4" data-aos="fade-up">真相</h2>
             <ul class="list-detail py-3" data-aos="fade-up">
                <li><span><strong> 2型糖尿病仅影响老年人</strong> <br> 2型糖尿病通常在45岁以上的人群中发展，但在包括儿童，青少年和年轻人的年轻人群中越来越多</span></li>
@@ -305,6 +305,27 @@
              function() {
                  $("#myths").click(function() {
                      $("#mythsinfo").fadeToggle();
+                 });
+             });
+
+         $(document).ready(
+             function() {
+                 $("#symptomssc").click(function() {
+                     $("#symptomsinfosc").fadeToggle();
+                 });
+             });
+             
+         $(document).ready(
+             function() {
+                 $("#riskssc").click(function() {
+                     $("#risksinfosc").fadeToggle();
+                 });
+             });
+         
+         $(document).ready(
+             function() {
+                 $("#mythssc").click(function() {
+                     $("#mythsinfosc").fadeToggle();
                  });
              });
       </script>

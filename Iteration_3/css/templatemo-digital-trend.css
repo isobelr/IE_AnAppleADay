@@ -107,6 +107,7 @@
 
   ul li { 
     font-family: var(--base-font-family);
+    color: var(--p-color);
   }
 
 
@@ -167,13 +168,21 @@
   }
 
 
+
+
+
+
+
+
+
   /* BUTTON 2 */
   .custom-btn2 {
-    background: transparent;
-    border: 2px solid var(--dark-color);
+    background: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-color: var(--primary-color);
     border-radius: var(--border-radius-large);
     padding: 12px 26px 14px 26px;
-    color: var(--dark-color);
+    color: #ffff;
     font-family: var(--title-font-family);
     font-size: var(--p-font-size);
     white-space: nowrap;
@@ -183,15 +192,23 @@
     background: var(--white-color);
     color: var(--primary-color);
     border-color: var(--dark-color);
-  transition: all .3s ease;
+    transition: all .3s ease;
   }
   
   .custom-btn2:hover,
   .custom-btn2:focus {
-    background: var(--dark-color);
-    color: var(--white-color);
-    border-color: transparent;
+    background: #f1c111;
+    color: #fffff;
+    border-color: var(--primary-color);
   }
+
+
+
+
+
+
+
+
 
   /* BUTTON 3 */
   .custom-btn3 {
@@ -209,7 +226,7 @@
     background: #f1c111;
     color: var(--white-color);
     border-color: #f1c111;
-  transition: all .3s ease;
+    transition: all .3s ease;
   }
   
   .custom-btn3:hover,
@@ -1918,6 +1935,23 @@
 
 
 
+#proteininfosc {
+    display: none;
+}
+#wholegrainsinfosc {
+    display: none;
+}
+#fandvinfosc {
+    display: none;
+}
+#oilsinfosc {
+    display: none;
+}
+#drinksinfosc {
+    display: none;
+}
+
+
 
 
 #symptomsinfo {
@@ -1931,6 +1965,15 @@
 }
 
 
+#symptomsinfosc {
+    display: none;
+}
+#risksinfosc {
+    display: none;
+}
+#mythsinfosc { 
+    display: none;
+}
 
 
 
@@ -1938,6 +1981,33 @@
 
 
 
+#privateinfo {
+    display: none;
+}
+#publicinfo {
+    display: none;
+}
+
+#gpinfo {
+    display: none;
+}
+#endocrinologistinfo {
+    display: none;
+}
+#dieticianinfo {
+    display: none;
+}
+#podiatristinfo {
+    display: none;
+}
+
+
+#medicareinfo {
+    display: none;
+}
+#phsinfo {
+    display: none;
+}
 
 
 
@@ -1945,10 +2015,33 @@
 
 
 
+#privateinfosc {
+    display: none;
+}
+#publicinfosc {
+    display: none;
+}
+
+#gpinfosc {
+    display: none;
+}
+#endocrinologistinfosc {
+    display: none;
+}
+#dieticianinfosc {
+    display: none;
+}
+#podiatristinfosc {
+    display: none;
+}
 
 
-
-
+#medicareinfosc {
+    display: none;
+}
+#phsinfosc {
+    display: none;
+}
 
 
 
