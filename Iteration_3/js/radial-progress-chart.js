@@ -203,6 +203,8 @@ RadialProgressChart.prototype.update = function (data) {
       var item = series[i];
       if (typeof item === 'number') {
         this.options.series[i].value = item;
+      }else if(typeof item == 'string'){
+        this.options.series[i].label = item;
       } else if (typeof item === 'object') {
         this.options.series[i].value = item.value;
       }
@@ -270,6 +272,8 @@ RadialProgressChart.prototype.update = function (data) {
         return "url(#gradient" + item.index + ')';
       }
     });
+
+
 };
 
 /**
@@ -315,11 +319,14 @@ RadialProgressChart.normalizeOptions = function (options) {
     // convert number to object
     if (typeof item === 'number') {
       item = {value: item};
+    } else if(typeof item =='string'){
+      item = {label: item};
     }
 
     _options.series[i] = {
       index: i,
       value: item.value,
+      label: item.label,
       labelStart: item.labelStart,
       color: RadialProgressChart.normalizeColor(item.color, defaultColorsIterator)
     };
