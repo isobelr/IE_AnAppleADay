@@ -9,8 +9,6 @@
       <link rel="stylesheet" href="css/font-awesome.min.css">
       <link rel="stylesheet" href="css/aos.css">
       <link rel="shortcut icon" href="images/favicon.png">
-      <link href="css/english.css" rel="stylesheet" type="text/css">
-      <link href="css/simplified_chinese.css" rel="alternate stylesheet" type="text/css" title="alternate">
       <!-- MAIN CSS -->
       <link rel="stylesheet" href="css/templatemo-digital-trend.css">
       <!-- <link rel="stylesheet" href="css/map.css"> -->
@@ -50,13 +48,19 @@
       </nav>
 
       <!-- HERO -->
-      <section class="hero hero-bg d-flex justify-content-center align-items-center">
+            <section class="hero hero-bg d-flex justify-content-center align-items-center">
          <div class="container">
             <div class="row">
                <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                   <div class="hero-text">
-            <h1 style="color: white;text-align:left;">医生查找工具</h1>
-            <h3>使用下面的地图查找离您最近的医生</h3>
+                        <h1 class="text-white">医生查找工具</h1>
+                        <p class="text-white" class="mb-4">使用下面的地图查找离您最近的医生</p>
+
+                  </div>
+               </div>
+               <div class="col-lg-6 col-12">
+                  <div class="hero-image">
+                     <img src="images/doctor-finder.svg" class="img-fluid" alt="working girl">
                   </div>
                </div>
             </div>
@@ -67,6 +71,31 @@
       <div id="panel"></div>
       <!-- Map appears here -->
       <div id="map"></div>
+
+
+            <!-- FOOTER -->
+      <footer class="site-footer">
+         <div class="container">
+         <div class="row">
+         <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+            <h1 class="text-white">
+            >一天一个苹果
+               <h3 class="text-white">让我们远离医院</h3>
+         </div>
+         <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+            <br>
+               <li><a href="index">主页</a></li>
+               <li><a href="symptom-checker2">风险检查器</a></li>
+               <li><a href="symptom-explainer">糖尿病入门</a></li>
+               <li><a href="nutritional-guidelines">营养指南</a></li>
+               <li><a href="healthcare-explainer">健康保健讲解器</a></li>
+               <li><a href="map-chinese">交互式医生查找工具</a></li>
+               <li><a href="about">关于我们</a></li>
+         </div>
+      </footer>
+
+
+
       <script>
          let pos;
          let map;
@@ -165,7 +194,7 @@
                      let request = {
                          placeId: place.place_id,
                          fields: ['name', 'formatted_address', 'geometry', 'rating',
-                             'website', 'photos']
+                             'website']
                      };
          
                      /* Only fetch the details of a place when the user clicks on a marker to ensure we don't hit API rate limits. */
@@ -212,13 +241,13 @@
              }
          
              // Add the primary photo, if there is one
-             if (placeResult.photos) {
-                 let firstPhoto = placeResult.photos[0];
-                 let photo = document.createElement('img');
-                 photo.classList.add('hero2');
-                 photo.src = firstPhoto.getUrl();
-                 infoPane.appendChild(photo);
-             }
+             // if (placeResult.photos) {
+             //     let firstPhoto = placeResult.photos[0];
+             //     let photo = document.createElement('img');
+             //     photo.classList.add('hero2');
+             //     photo.src = firstPhoto.getUrl();
+             //     infoPane.appendChild(photo);
+             // }
          
              // Add place details with text formatting
              let name = document.createElement('h1');
@@ -251,7 +280,6 @@
          }
       </script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB899KkPVguq1bfhxG8YQuyCtI2TeLPjxQ&amp;libraries=places&amp;callback=initMap&language=zh-CN"></script>
-      <script src="js/styleswitch.js" type="text/javascript"></script> 
 
    </body>
 </html>
