@@ -104,7 +104,7 @@ var arr = [];
 var exercise = 0;
 var diet = 0 ;
 var health ;
-var lifestyle = 0;
+var lifestyle;
 var impregnability;
 var diabetes = 0;
 var hypertension = 0;
@@ -349,9 +349,9 @@ var text2 = "<br>You maybe at risk of hypertension. People who had similar condi
 
 var text3 = "<br>You maybe at risk of Chronic obstructive pulmonary disease(COPD). COPD refers to a group of diseases that cause airflow blockage and breathing-related problems. It includes emphysema and chronic bronchitis. <br><strong>What you can do to improve your condition:</strong> <br>1. Quit smoking. Avoid Tobacco Smoke and other air pollutants. <br>2. Visit a doctor for pulmonary rehabilitation. Coughing and wheezing can be treated with suitable medication prescribed by a doctor. <br>3. Navigate to our Condition Explainer page to learn more about your condition. Navigate to our Doctor Finder page to find a doctor."
 
-var text4 = "<br>You are in good shape ! Great work ! The key to a healthy lifestyle includes: <br>1. Healthy Diet - A healthy diet includes good consumption of fresh fruits, vegetables, whole grains and proteins. Restrict consumption of foods with saturated fats or high sodium to as minimum as possible. <br>2. Healthy Physical Activity - Regularly engage in some form of physical activity. Include exercises such as running, jogging and cycling as part of your daily routine. Exercise 30 minutes everyday or make sure you have at least four hours of physical exercise every week. <br>3. Healthy Body weight - Maintain a Body mass index(BMI) of 18 - 25 to stay healthy.Staying fit is really important to your health. <br>4. Moderate or no Alcohol intake - Moderate alcohol consumption is measured to be between 5 to 25 grams per day. One drink contains 14 grams of alcohol. Reduce the amount of alcohol consumption to occasional or even avoid consumption if possible. <br>Continue to our Condition Explainer page to learn more about potential preventable diseases and what you can do to avoid them."
+var text4 = "<br>You are in good shape ! Great work ! <br><strong>The key to a healthy lifestyle includes:</strong><br>1. Healthy Diet - A healthy diet includes good consumption of fresh fruits, vegetables, whole grains and proteins. Restrict consumption of foods with saturated fats or high sodium to as minimum as possible. <br>2. Healthy Physical Activity - Regularly engage in some form of physical activity. Include exercises such as running, jogging and cycling as part of your daily routine. <br>3. Moderate or no Alcohol intake - Moderate alcohol consumption is measured to be between 5 to 25 grams per day. Reduce the amount of alcohol consumption to occasional or even avoid consumption if possible."
 
-var text5 = "<br><strong>Your health needs more work ! The key to a healthy lifestyle includes:</strong> <br>1. Healthy Diet - A healthy diet includes good consumption of fresh fruits, vegetables, whole grains and proteins. Restrict consumption of foods with saturated fats or high sodium to as minimum as possible. <br>2. Healthy Physical Activity - Regularly engage in some form of physical activity. Include exercises such as running, jogging and cycling as part of your daily routine. Exercise 30 minutes everyday or make sure you have at least four hours of physical exercise every week. <br>3. Healthy Body weight - Maintain a Body mass index(BMI) of 18 - 25 to stay healthy.Staying fit is really important to your health. <br>4. Moderate or no Alcohol intake - Moderate alcohol consumption is measured to be between 5 to 25 grams per day. One drink contains 14 grams of alcohol. Reduce the amount of alcohol consumption to occasional or even avoid consumption if possible. <br>Continue to our Condition Explainer page to learn more about potential preventable diseases and what you can do to avoid them."
+var text5 = "<br>Your health needs more work ! <br><strong>The key to a healthy lifestyle includes: </strong><br>1. Healthy Diet - A healthy diet includes good consumption of fresh fruits, vegetables, whole grains and proteins. Restrict consumption of foods with saturated fats or high sodium to as minimum as possible. <br>2. Healthy Physical Activity - Regularly engage in some form of physical activity. Include exercises such as running, jogging and cycling as part of your daily routine. <br>3. Moderate or no Alcohol intake - Moderate alcohol consumption is measured to be between 5 to 25 grams per day. Reduce the amount of alcohol consumption to occasional or even avoid consumption if possible."
 
 var text6 ="<br> Finish the quiz and get back here."
 
@@ -361,15 +361,9 @@ var text6 ="<br> Finish the quiz and get back here."
 
 function displayVar(variable) {
 
-  if (heart >= hypertension && heart >= copd && heart >= 50) {
-    document.getElementById(variable).innerHTML = text1;
-  } else if (hypertension > heart && hypertension > copd && hypertension >= 50 ) {
-    document.getElementById(variable).innerHTML = text2;
-  } else if (copd > heart && copd > hypertension && copd >= 50) {
-    document.getElementById(variable).innerHTML = text3;
-  } else if (lifestyle >= 80) {
+    if (lifestyle >= 75) {
     document.getElementById(variable).innerHTML = text4;
-  } else if (lifestyle < 80) {
+  } else if (lifestyle >= 50 ) {
     document.getElementById(variable).innerHTML = text5;
   } else {
     document.getElementById(variable).innerHTML = text6;
@@ -431,7 +425,7 @@ function displayVar(variable) {
           .style("visibility", "hidden")
       })
       .on("mousemove", function (d) {
-        div.html(`  Score :` + d.value)
+        div.html(`  Score :` + Math.round(d.value))
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY) + "px");
       })
