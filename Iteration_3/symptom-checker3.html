@@ -50,13 +50,13 @@
                      <a href="diabetes-primer" class="nav-link smoothScroll">疾病说明</a>
                   </li>
                   <li class="nav-item">
-                     <a href="map-chinese" class="nav-link smoothScroll">医生查找工具</a>
+                     <a href="map" class="nav-link smoothScroll">医生查找工具</a>
                   </li>
                   <li class="nav-item">
                      <a href="about" class="nav-link smoothScroll">关于</a>
                   </li>
                   <li class="nav-item">
-                    <span onclick="chooseStyle('alternate', 1)"><a href="symptom-checker2" class="nav-link smoothScroll">English</a>
+                    <span onclick="chooseStyle('alternate', 1)"><a href="symptom-checker3" class="nav-link smoothScroll">English</a>
                    </li>
                </ul>
             </div>
@@ -73,7 +73,8 @@
                   <div class="hero-text">
                         <h1 class="text-white" data-aos="fade-up">风险检查器</h1>
                         <p class="text-white" data-aos="fade-up">是否想检查症状以了解是否有患糖尿病的风险？</p>
-                        <a href="#" data-id='q1' class="custom-btn btn-bg btn mt-3 scroll-link" data-aos="fade-up" data-aos-delay="100">开始测试</a>
+                        <!-- <a href="#q1" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Start the Quiz!</a> -->
+                        <a href="#" data-id='q1' class="custom-btn btn-bg btn mt-3 scroll-link" data-aos="fade-up" data-aos-delay="100">开始测试!</a>
 
                   </div>
                </div>
@@ -96,24 +97,24 @@
         <div class="container">
             <div id="game" class="justify-center flex-column">
               <h2 style="color: #f1c111; font-size:25px;">(1/10)</h2>
-                <h2 id="question" style="font-size:25px;">您一周健身几次？</h2>
+                <h2 id="question" style="color: white;font-size:25px;">您一周健身几次？</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
                         <img src="images/running.png" class="img-fluid" alt="running" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q2" onclick='q1(this)' value='1'>每天</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q2" onclick='q1(this)' value='1'>每天</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q2" onclick='q1(this)' value='2'>每周4次</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q2" onclick='q1(this)' value='2'>每周4次</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="3" style='font-size:20px' data-id="q2" onclick='q1(this)' value='3'>每周2次</p>
+                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:20px' data-id="q2" onclick='q1(this)' value='3'>每周2次</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="4" style='font-size:20px' data-id="q2" onclick='q1(this)' value='4'>从不</p>
+                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:20px' data-id="q2" onclick='q1(this)' value='4'>从不</p>
                     </div>
             </div>
-            <script src="js/main2.js"></script>
+            <script src="js/main.js"></script>
         </div>
     </section>
      
@@ -121,25 +122,25 @@
         <div class="container">
             <div id="game" class="justify-center flex-column">
                 
-                 <h2 style="color: #f1c111; font-size:25px;">(2/10)</h2>
-                <h2 id="question" style="font-size:25px;">如何描述您大部分的饮食？</h2>
+                 <h2 style="color: #057a8d; font-size:25px;">(2/10)</h2>
+                <h2 id="question" style="color: white; font-size:25px;">如何描述您大部分的饮食？</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
                         <img src="images/food2.png" class="img-fluid" alt="running" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q3" onclick='q2(this)' value='1'>水果和蔬菜</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q3" onclick='q2(this)' value='1'>水果和蔬菜</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q3" onclick='q2(this)' value='2'>奶，蛋，肉和奶制品</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q3" onclick='q2(this)' value='2'>奶，蛋，肉和奶制品</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="3" style='font-size:20px' data-id="q3" onclick='q2(this)' value='3'>饼干，蛋糕和其他高糖类产品</p>
+                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:20px' data-id="q3" onclick='q2(this)' value='3'>饼干，蛋糕和其他高糖类产品</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="4" style='font-size:20px' data-id="q3" onclick='q2(this)' value='4'>比萨饼，汉堡包和其他快餐类食品</p>
+                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:20px' data-id="q3" onclick='q2(this)' value='4'>比萨饼，汉堡包和其他快餐类食品</p>
                     </div>
             </div>
-  <script src="js/main2.js"></script>
+  <script src="js/main.js"></script>
         </div>
     </section>
 
@@ -152,13 +153,13 @@
                         <img src="images/water.png" class="img-fluid" alt="water" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q4" onclick='q3(this)' value='1'>是</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q4" onclick='q3(this)' value='1'>是</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q4" onclick='q3(this)' value='2'>否</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q4" onclick='q3(this)' value='2'>否</p>
                     </div>
             </div>
-            <script src="js/main2.js"></script>
+            <script src="js/main.js"></script>
         </div>
     </section>
 
@@ -167,37 +168,37 @@
             <div id="game" class="justify-center flex-column">
                 <h2 style="color: #f1c111; font-size:25px;">(4/10)</h2>
 
-                <h2 id="question" style="font-size:25px;">您通常感到疲倦或嗜睡吗？</h2>
+                <h2 id="question" style="color: white; font-size:25px;">您通常感到疲倦或嗜睡吗？</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
                         <img src="images/tired.png" class="img-fluid" alt="tired" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q5" onclick='q4(this)' value='1'>是</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q5" onclick='q4(this)' value='1'>是</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q5" onclick='q4(this)' value='2'>否</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q5" onclick='q4(this)' value='2'>否</p>
                     </div>
             </div>
-            <script src="js/main2.js"></script>
+            <script src="js/main.js"></script>
         </div>
     </section>
 
 <section id="q5" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <h2 style="color: #f1c111; font-size:25px;">(5/10)</h2>
-                <h2 id="question" style="font-size:25px;"> 您的视力是否模糊？</h2>
+                <h2 style="color: #057a8d; font-size:25px;">(5/10)</h2>
+                <h2 id="question" style="color: white; font-size:25px;"> 您的视力是否模糊？</h2>
                 <div class="full-image text-center" data-aos="zoom-in">
                         <img src="images/blur.png" class="img-fluid" alt="blur" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q6" onclick='q5(this)' value='1'>是</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q6" onclick='q5(this)' value='1'>是</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q6" onclick='q5(this)' value='2'>否</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q6" onclick='q5(this)' value='2'>否</p>
                     </div>
             </div>
-            <script src="js/main2.js"></script>
+            <script src="js/main.js"></script>
         </div>
     </section>
 
@@ -210,13 +211,13 @@
                         <img src="images/restroom2.png" class="img-fluid" alt="restroom" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q7" onclick='q6(this)' value='1'>是</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q7" onclick='q6(this)' value='1'>是</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q7" onclick='q6(this)' value='2'>否</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q7" onclick='q6(this)' value='2'>否</p>
                     </div>
             </div>
-            <script src="js/main2.js"></script>
+            <script src="js/main.js"></script>
         </div>
     </section>
 
@@ -224,37 +225,37 @@
         <div class="container">
             <div id="game" class="justify-center flex-column">
                 <h2 style="color: #f1c111; font-size:25px;">(7/10)</h2>
-                <h2 id="question" style="font-size:25px;">您家中有人有过糖尿病史吗？</h2>
+                <h2 id="question" style="color: white; font-size:25px;">您家中有人有过糖尿病史吗？</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
                         <img src="images/family.png" class="img-fluid" alt="family" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q8" onclick='q7(this)' value='1'>是</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q8" onclick='q7(this)' value='1'>是</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q8" onclick='q7(this)' value='2'>否</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q8" onclick='q7(this)' value='2'>否</p>
                     </div>
             </div>
-            <script src="js/main2.js"></script>
+            <script src="js/main.js"></script>
         </div>
     </section>
 
     <section id="q8" class="page-section">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-              <h2 style="color: #f1c111; font-size:25px;">(8/10)</h2>
-                <h2 id="question" style="font-size:25px;">你有伤口愈合缓慢的情况吗？</h2>
+              <h2 style="color: #057a8d; font-size:25px;">(8/10)</h2>
+                <h2 id="question" style="color: white; font-size:25px;">你有伤口愈合缓慢的情况吗？</h2>
                     <div class="full-image text-center" data-aos="zoom-in">
                         <img src="images/injury.png" class="img-fluid" alt="wounds" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q9" onclick='q8(this)' value='1'>是</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="q9" onclick='q8(this)' value='1'>是</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q9" onclick='q8(this)' value='2'>否</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="q9" onclick='q8(this)' value='2'>否</p>
                     </div>
             </div>
-            <script src="js/main2.js"></script>
+            <script src="js/main.js"></script>
         </div>
     </section>
 
@@ -268,19 +269,19 @@
                         <img src="images/drinks.png" class="img-fluid" alt="drinks" height=800 width=350>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='1'>只在社交时</p>
+                        <p href="#" class="choice-text scroll-link" data-number="1" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='1'>只在社交时</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='2'>一周偶尔几次</p>
+                        <p href="#" class="choice-text scroll-link" data-number="2" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='2'>一周偶尔几次</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="3" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='3'>经常喝</p>
+                        <p href="#" class="choice-text scroll-link" data-number="3" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='3'>经常喝</p>
                     </div>
                     <div class="choice-container">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="4" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='4'>我不喝酒</p>
+                        <p href="#" class="choice-text scroll-link" data-number="4" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='4'>我不喝酒</p>
                     </div>
             </div>
-            <script src="js/main2.js"></script>
+            <script src="js/main.js"></script>
         </div>
     </section>
     <!-- CALCULATOR -->
@@ -288,7 +289,7 @@
           <div class="container">
                <div class="row">
                     <div class="col-lg-8 mx-auto col-md-10 col-12 text-center">
-                    <h2 style="color: #f1c111; font-size:25px;">(10/10)</h2><br>
+                    <h2 style="color: #057a8d; font-size:25px;">(10/10)</h2><br>
 
                      <h3 class="mb-4" data-aos="fade-up" style="text-align:center;">请输入身高和体重来计算您的BMI:</h3><br>
                       <form action="#" method="post" class="contact-form" data-aos="fade-up" data-aos-delay="300" role="form">
@@ -446,7 +447,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.0/d3.js"></script>
         <script src="js/radial-progress-chart.js"></script>
         <h1 class="text-white" style='color:white;' data-aos="fade-up"> 您的健康状况 </h1>
-        <br><br>
+        <br>
         <div class="container">
             <div id = 'test1' class='main' data-aos="fade-up"></div>
         </div>
@@ -459,12 +460,12 @@
                                     </body>
                                 </p>
                             <a href="#" data-id='diabetes' class="custom-btn btn-bg btn mt-3 scroll-link"  data-aos="fade-up">我患糖尿病的风险</a><br><br><br><br><br><br><br><br><br><br><br><br>
-                         <script type="text/javascript" src=js/main2.js></script>
+                         <script type="text/javascript" src=js/main.js></script>
                </div>
          </div>
         
 
-        <script src="js/main2.js"></script>
+        <script src="js/main.js"></script>
      </section>
 
 <!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
@@ -475,33 +476,30 @@
                <div class="row">
                     <div class="col-lg-8 mx-auto col-md-10 col-12 text-center">
                         <h2 class="mb-4 text-center" data-aos="fade-up"><strong>您患2型糖尿病的风险</strong></h2>
-
+                         
                         <img style="display:none;" id="bigpic" src="bigpic" />
 
                            <br><br>
                            <h4 id="resultpic2" style="text-align:center" data-aos="fade-up" class="img-fluid"></h4>
                            <h4 id="resultexplanation2" style="text-align:center;"></h4>
                            <div id = "hidden2" style="display:none;">
-                            <h2 class="mb-4" data-aos="fade-up" >您在<br> <strong>良好的身材中</strong></h2>
+                            <h2 class="mb-4" data-aos="fade-up" >您在<br><strong>良好的身材中</strong></h2>
                             <p class="mb-0" data-aos="fade-up">继续浏览我们的糖尿病入门页面，以查找更多有关2型糖尿病的信息。</p>
                            </div>
                            <div id="hidden" style="display:none;">
-                           <h2 class="mb-4" data-aos="fade-up" >
-这是您可以<br> <strong>预防 </strong>类型2糖尿病的方法</h2>
-                            <p class="mb-0" data-aos="fade-up">
-您可以通过了解自己的风险并改变自己的生活方式来帮助降低2型糖尿病的风险。 常见的危险因素包括体重增加，血压，胆固醇和甘油三酸酯（脂肪）水平升高。 改变生活习惯并非易事，但值得付出努力。</p>
+                           <h2 class="mb-4" data-aos="fade-up" >这是您可以<br><strong>预防</strong> 类型2糖尿病的方法</h2>
+                            <p class="mb-0" data-aos="fade-up">您可以通过了解自己的风险并改变自己的生活方式来帮助降低2型糖尿病的风险。 常见的危险因素包括体重增加，血压，胆固醇和甘油三酸酯（脂肪）水平升高。 改变生活习惯并非易事，但值得付出努力。</p>
          <ul class="list-detail py-3" data-aos="fade-up">
-         <li><span><strong>定期进行锻炼。</strong>在一周的大部分时间进行适度的体育锻炼有助于管理体重，降低血糖水平，并且还可以改善血压和胆固醇。 <br></span></li>
-         <li><span><strong>吃均衡，健康的饮食。 </strong>减少您饮食中的脂肪含量，尤其是饱和脂肪和反式脂肪。 多吃水果，蔬菜和高纤维食物。 减少盐分的摄入<br></span></li>
-         <li><span><strong>限制外卖和加工食品。</strong>“方便餐”的盐，脂肪和千焦耳含量通常很高。 最好在可能的情况下使用新鲜的食材为自己做饭。<br></span></li>
-         <li><span><strong>限制饮酒量。</strong>。饮酒量过多会导致体重增加，并且可能会增加血压和甘油三酸酯水平。 男士每天最多只能喝两种标准饮料，而女士最多只能喝一种。<br></span></li>
-         <li><span><strong>控制血压。</strong>大多数人都可以通过定期锻炼，均衡饮食和保持健康体重来做到这一点。 在某些情况下，您可能需要医生规定的药物治疗。<br></span></li>
-         <li><span><strong>定期检查，请咨询您的医生。</strong>。随着年龄的增长，定期检查您的血糖，血糖和血压水平是一个好主意。<br></span></li>
+         <li><span><strong>定期进行锻炼。</strong> 在一周的大部分时间进行适度的体育锻炼有助于管理体重，降低血糖水平，并且还可以改善血压和胆固醇。<br></span></li>
+         <li><span><strong>吃均衡，健康的饮食。 </strong> 减少您饮食中的脂肪含量，尤其是饱和脂肪和反式脂肪。 多吃水果，蔬菜和高纤维食物。 减少盐分的摄入<br></span></li>
+         <li><span><strong>限制外卖和加工食品。</strong> “方便餐”的盐，脂肪和千焦耳含量通常很高。 最好在可能的情况下使用新鲜的食材为自己做饭。<br></span></li>
+         <li><span><strong>限制饮酒量。</strong> 饮酒量过多会导致体重增加，并且可能会增加血压和甘油三酸酯水平。 男士每天最多只能喝两种标准饮料，而女士最多只能喝一种。<br></span></li>
+         <li><span><strong>控制血压。</strong> 大多数人都可以通过定期锻炼，均衡饮食和保持健康体重来做到这一点。 在某些情况下，您可能需要医生规定的药物治疗。<br></span></li>
+         <li><span><strong>定期检查，请咨询您的医生。</strong> 随着年龄的增长，定期检查您的血糖，血糖和血压水平是一个好主意。<br></span></li>
          <li><span><strong>经常感染</strong> <br></span></li>
          <li><span><strong>皮肤变暗的区域</strong> <br></span></li>
          </ul>
          </div>
-
 
                <br>
                         </div>
@@ -510,7 +508,7 @@
 
                </div>
           </div>
-          <script src="js/main2.js" type="text/javascript"></script>
+          <script src="js/main.js" type="text/javascript"></script>
      </section>
 
 
@@ -568,7 +566,7 @@
                <li><a href="diabetes-primer">糖尿病入门</a></li>
                <li><a href="nutritional-guidelines">营养指南</a></li>
                <li><a href="healthcare-explainer">健康保健讲解器</a></li>
-               <li><a href="map-chinese">交互式医生查找工具</a></li>
+               <li><a href="map">交互式医生查找工具</a></li>
                <li><a href="about">关于我们</a></li>
          </div>
       </footer>
@@ -582,7 +580,7 @@
      <script src="js/custom.js"></script>
 
      <script src="js/plugins.js"></script>
-    <script src="js/main2.js"></script>
+    <script src="js/main.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -630,7 +628,7 @@
                <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                   <div class="hero-text">
                         <h1 class="text-white" data-aos="fade-up">想更多地了解2型糖尿病吗？</h1>
-                        <a href="diabetes-primer" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">看看我们的糖尿病入门页面！/a>
+                        <a href="diabetes-primer" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">看看我们的糖尿病入门页面！</a>
                   </div>
                </div>
                <div class="col-lg-6 col-12">
@@ -650,8 +648,7 @@
                <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                   <div class="hero-text">
                         <h1 class="text-white" data-aos="fade-up">想更多地了解2型糖尿病吗？</h1>
-                        <a href="diabetes-primer" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">看看我们的糖尿病入门页面！
-</a>
+                        <a href="diabetes-primer" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">看看我们的糖尿病入门页面！</a>
                   </div>
                </div>
                <div class="col-lg-6 col-12">
@@ -671,7 +668,7 @@
                <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                   <div class="hero-text">
                         <h1 class="text-white" data-aos="fade-up">担心您患有2型糖尿病的风险？</h1>
-                        <a href="map-chinese" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">看看我们的医生查询器！</a>
+                        <a href="map" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">看看我们的医生查询器！</a>
                   </div>
                </div>
                <div class="col-lg-6 col-12">
