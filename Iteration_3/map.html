@@ -207,15 +207,26 @@
                  });
                  
                  var check = place.name.split(' ');
+                 check = check.map(v => v.toLowerCase());
                  console.log(check);
-                 if (check.indexOf('Diabetes') > -1) {
+                 if (check.indexOf('diabetes') > -1) {
                 icon_to_use =  iconFile1;
-                 }  else {
+                 }else if (check.indexOf('endocrinology') > -1) {
+                icon_to_use = iconFile1;
+                }else if (check.indexOf('endocrinology.') > -1) {
+                icon_to_use = iconFile1;
+                }else if (check.indexOf('diabetes.') > -1) {
+                icon_to_use = iconFile1;
+                }else if (check.indexOf('centre') > -1) {
+                icon_to_use = iconFile1;
+                }else if (check.indexOf('centre.') > -1) {
+                icon_to_use = iconFile1;
+                }else if (check.indexOf('endocrine') > -1) {
+                icon_to_use = iconFile1;
+                }else {
                 icon_to_use =  iconFile2;
                 }
-
-
-
+                        
                 marker.setIcon(icon_to_use);
          
                  // Add click listener to each marker
