@@ -1800,16 +1800,6 @@
 }
 
 
-  .choice-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-bottom: -1rem;
-    overflow-wrap: break-word;
-    width: 350px;
-    text-align: center;
-}
   .choice-2 {
     display: flex;
     justify-content: center;
