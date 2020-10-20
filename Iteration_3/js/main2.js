@@ -460,6 +460,7 @@ function displayVar(variable) {
   if (diabetes <= 33.34 && i10 == 1 || lifestyle >= 75) {
     document.getElementById("resultexplanation2").innerHTML = "<br>您患2型糖尿病的风险较低<br>";
     var el = document.getElementById("resultpic2");
+	 document.getElementById("hidden2").style.display = "block";
 
     var div = document.createElement('div');
     div.setAttribute('class', 'someClass');
@@ -471,6 +472,7 @@ function displayVar(variable) {
     document.getElementById("resultexplanation2").innerHTML = "<br>您处于2型糖尿病的中等风险<br>";
     var el = document.getElementById("resultpic2");
     el.innerHTML = "<img src=\"images/questionnaire-medium-risk.svg\">";
+	  document.getElementById("hidden").style.display = "block";
 
     var div = document.createElement('div');
     div.setAttribute('class', 'someClass');
@@ -481,6 +483,7 @@ function displayVar(variable) {
     document.getElementById("resultexplanation2").innerHTML = "<br>您患有2型糖尿病的高风险<br>";
     var el = document.getElementById("resultpic2");
     el.innerHTML = "<img src=\"images/questionnaire-high-risk.svg\">";
+	  document.getElementById("hidden").style.display = "block";
 
     var div = document.createElement('div');
     div.setAttribute('class', 'someClass');
