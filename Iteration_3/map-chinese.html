@@ -168,7 +168,7 @@
              let request = {
                  location: position,
                  rankBy: google.maps.places.RankBy.DISTANCE,
-                 keyword: 'doctor clinic'
+                 keyword: ['doctor clinic', 'diabetes centre']
              };
          
              service = new google.maps.places.PlacesService(map);
@@ -183,13 +183,41 @@
          }
          
          // Set markers at the location of each place result
+         base_icon_clinic = "<?php echo JURI::base();?>components/com_properties/includes/img/school.png";
+         base_icon_centre = "<?php echo JURI::base();?>components/com_properties/includes/img/mosque.png";  
+         
          function createMarkers(places) {
+            iconFile1 = 'http://maps.google.com/mapfiles/ms/icons/green-dot.png';
+              iconFile2 = 'http://maps.google.com/mapfiles/ms/icons/red-dot.png';
              places.forEach(place => {
                  let marker = new google.maps.Marker({
                      position: place.geometry.location,
                      map: map,
                      title: place.name
                  });
+                
+                var check = place.name.split(' ');
+                 check = check.map(v => v.toLowerCase());
+                 console.log(check);
+                 if (check.indexOf('diabetes') > -1) {
+                icon_to_use =  iconFile1;
+                 }else if (check.indexOf('endocrinology') > -1) {
+                icon_to_use = iconFile1;
+                }else if (check.indexOf('endocrinology.') > -1) {
+                icon_to_use = iconFile1;
+                }else if (check.indexOf('diabetes.') > -1) {
+                icon_to_use = iconFile1;
+                }else if (check.indexOf('centre') > -1) {
+                icon_to_use = iconFile1;
+                }else if (check.indexOf('centre.') > -1) {
+                icon_to_use = iconFile1;
+                }else if (check.indexOf('endocrine') > -1) {
+                icon_to_use = iconFile1;
+                }else {
+                icon_to_use =  iconFile2;
+                }
+
+                marker.setIcon(icon_to_use);
          
                  // Add click listener to each marker
                  google.maps.event.addListener(marker, 'click', () => {
