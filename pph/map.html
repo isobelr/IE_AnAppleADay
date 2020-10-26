@@ -212,8 +212,9 @@
                      map: map,
                      title: place.name,
                  });
-                 
-                 var check = place.name.split(' ');
+                 var punctRE = /[\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,\-.\/:;<=>?@\[\]^_`{|}~]/g;
+                 var check1 = place.name.replace(punctRE, '');
+                 var check = check1.split(' ');
                  check = check.map(v => v.toLowerCase());
                  console.log(check);
                  if (check.indexOf('diabetes') > -1) {
@@ -229,6 +230,10 @@
                 }else if (check.indexOf('centre.') > -1) {
                 icon_to_use = iconFile1;
                 }else if (check.indexOf('endocrine') > -1) {
+                icon_to_use = iconFile1;
+                }else if (check.indexOf('oncology') > -1) {
+                icon_to_use = iconFile1;
+                }else if (check.indexOf('pathology') > -1) {
                 icon_to_use = iconFile1;
                 }else {
                 icon_to_use =  iconFile2;
