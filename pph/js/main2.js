@@ -377,8 +377,10 @@ function displayVar(variable) {
   var x = lifestyle;
   var y = exercise;
   var z = diet;
+  console.log(i10);
 
   if (i10 == 1) {
+    i10++;
 
     var testCanvas = document.getElementById('test1');
 
