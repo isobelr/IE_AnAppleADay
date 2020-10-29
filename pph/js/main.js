@@ -458,7 +458,7 @@ function displayVar(variable) {
 //     document.getElementById("resultexplanation2").innerHTML = "<br><h2 class=\"mb\-\4\" data-aos=\"fade-up\">Oops! Please Finish the quiz and get back here.</h2>";
 //   }
 
-  if (diabetes <= 33.34 && i10 == 1 || lifestyle >= 75) {
+  if (diabetes <= 33.34 && i10 >= 1 || lifestyle >= 75) {
     document.getElementById("resultexplanation2").innerHTML = "<br>You are at Low risk of Type 2 Diabetes<br>";
     var el = document.getElementById("resultpic2");
     document.getElementById("hidden2").style.display = "block";
@@ -469,7 +469,7 @@ function displayVar(variable) {
     document.getElementById('lowrisktarget').appendChild(div);
 
     el.innerHTML = "<img src=\"images/questionnaire-low-risk.svg\">";
-  } else if (diabetes < 75 && i10 == 1 && lifestyle < 75) {
+  } else if (diabetes < 75 && i10 >= 1 && lifestyle < 75) {
     document.getElementById("resultexplanation2").innerHTML = "<br>You are at Moderate risk of Type 2 Diabetes<br>";
     var el = document.getElementById("resultpic2");
     el.innerHTML = "<img src=\"images/questionnaire-medium-risk.svg\">";
@@ -480,7 +480,7 @@ function displayVar(variable) {
     div.innerHTML = document.getElementById('moderaterisk').innerHTML;
     document.getElementById('moderaterisktarget').appendChild(div);
 
-  } else if (diabetes >= 75 && i10 == 1 && lifestyle < 75 ) {
+  } else if (diabetes >= 75 && i10 >= 1 && lifestyle < 75 ) {
     document.getElementById("resultexplanation2").innerHTML = "<br>You are at High risk of Type 2 Diabetes<br>";
     var el = document.getElementById("resultpic2");
     el.innerHTML = "<img src=\"images/questionnaire-high-risk.svg\">";
