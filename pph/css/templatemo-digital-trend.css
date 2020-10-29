@@ -1073,8 +1073,8 @@
 }
 
 #q5 {
-  padding: 150px 0px;
-  min-height: 100vh;
+  padding: 70px 0px;
+/*   min-height: 100vh; */
   text-align: center;
   /*background-color: #f1c111;*/
   background-repeat: no-repeat;
@@ -1122,7 +1122,7 @@
 }
 
 #q6 {
-  padding: 150px 0px;
+  padding: 100px 0px;
   min-height: 100vh;
   text-align: center;
   /*background-color: #f1c111;*/
@@ -1171,7 +1171,7 @@
 }
 
 #q7 {
-  padding: 150px 0px;
+  padding: 100px 0px;
   min-height: 100vh;
   text-align: center;
   /*background-color: #057a8d;*/
