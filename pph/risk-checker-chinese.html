@@ -56,7 +56,7 @@
                      <a href="about" class="nav-link smoothScroll">关于</a>
                   </li>
                   <li class="nav-item">
-                    <span onclick="chooseStyle('alternate', 1)"><a href="risk-checker" class="nav-link smoothScroll">English</a>
+                    <span onclick="chooseStyle('alternate', 1)"><a href="risk-checker-chinese" class="nav-link smoothScroll">English</a>
                    </li>
                </ul>
             </div>
@@ -91,6 +91,10 @@
       <a id="back2Top" title="Back to top" href="#">&#10148;</a>
 
 
+
+
+
+
      <!-- PROJECT DETAIL -->
 
       <section id="q1" class="page-section">
@@ -102,23 +106,22 @@
                         <img src="images/running.png" class="img-fluid" alt="running" height=800 width=350>
                     </div>
                     <div class="choice-1">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q2" onclick='q1(this)' value='1'>每天</p>
+                        <p href="#" id = 1 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q2" onclick='q1(this)' value='1'>每天</p>
                     </div>
                     <div class="choice-1">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link"  data-number="2" style='font-size:20px' data-id="q2" onclick='q1(this)' value='2'>每周4次</p>
+                        <p href="#" id = 2 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link"  data-number="2" style='font-size:20px' data-id="q2" onclick='q1(this)' value='2'>每周4次</p>
                     </div>
                     <div class="choice-1">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link"  data-number="3" style='font-size:20px' data-id="q2" onclick='q1(this)' value='3'>每周2次</p>
+                        <p href="#" id = 3 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link"  data-number="3" style='font-size:20px' data-id="q2" onclick='q1(this)' value='3'>每周2次</p>
                     </div>
                     <div class="choice-1">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link"  data-number="4" style='font-size:20px' data-id="q2" onclick='q1(this)' value='4'>从不</p>
+                        <p href="#" id = 4 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link"  data-number="4" style='font-size:20px' data-id="q2" onclick='q1(this)' value='4'>从不</p>
                     </div>
             </div>
-            <script src="js/main2.js"></script>
         </div>
     </section>
      
-    <section id="q2" class = "page-section">
+    <section id="q2" class = "page-section" style="display:none">
         <div class="container">
             <div id="game" class="justify-center flex-column">
                 
@@ -128,23 +131,22 @@
                         <img src="images/food2.png" class="img-fluid" alt="running" height=800 width=350>
                     </div>
                     <div class="choice-2">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q3" onclick='q2(this)' value='1'>水果和蔬菜</p>
+                        <p href="#" id = 5 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q3" onclick='q2(this)' value='1'>水果和蔬菜</p>
                     </div>
                     <div class="choice-2">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q3" onclick='q2(this)' value='2'>奶，蛋，肉和奶制品</p>
+                        <p href="#" id = 6 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q3" onclick='q2(this)' value='2'>奶，蛋，肉和奶制品</p>
                     </div>
                     <div class="choice-2">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="3" style='font-size:20px' data-id="q3" onclick='q2(this)' value='3'>饼干，蛋糕和其他高糖类产品</p>
+                        <p href="#" id = 7 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="3" style='font-size:20px' data-id="q3" onclick='q2(this)' value='3'>饼干，蛋糕和其他高糖类产品</p>
                     </div>
                     <div class="choice-2">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="4" style='font-size:20px' data-id="q3" onclick='q2(this)' value='4'>比萨饼，汉堡包和其他快餐类食品</p>
+                        <p href="#" id = 8 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="4" style='font-size:20px' data-id="q3" onclick='q2(this)' value='4'>比萨饼，汉堡包和其他快餐类食品</p>
                     </div>
             </div>
-  <script src="js/main2.js"></script>
         </div>
     </section>
 
-    <section id="q3" class="page-section">
+     <section id="q3" class="page-section" style="display:none">
         <div class="container">
             <div id="game" class="justify-center flex-column">
                 <h2 style="color: #f1c111; font-size:25px;">(3/10)</h2>
@@ -153,17 +155,16 @@
                         <img src="images/water.png" class="img-fluid" alt="water" height=800 width=350>
                     </div>
                     <div class="choice-3">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q4" onclick='q3(this)' value='1'>是</p>
+                        <p href="#" id = 9 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q4" onclick='q3(this)' value='1'>是</p>
                     </div>
                     <div class="choice-3">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q4" onclick='q3(this)' value='2'>否</p>
+                        <p href="#" id = 10 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q4" onclick='q3(this)' value='2'>否</p>
                     </div>
             </div>
-            <script src="js/main2.js"></script>
         </div>
     </section>
 
-    <section id="q4" class="page-section">
+    <section id="q4" class="page-section" style="display:none">
         <div class="container">
             <div id="game" class="justify-center flex-column">
                 <h2 style="color: #f1c111; font-size:25px;">(4/10)</h2>
@@ -173,17 +174,17 @@
                         <img src="images/tired.png" class="img-fluid" alt="tired" height=800 width=350>
                     </div>
                     <div class="choice-4">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q5" onclick='q4(this)' value='1'>是</p>
+                        <p href="#" id = 11 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q5" onclick='q4(this)' value='1'>是</p>
                     </div>
                     <div class="choice-4">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q5" onclick='q4(this)' value='2'>否</p>
+                        <p href="#" id = 12 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q5" onclick='q4(this)' value='2'>否</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
         </div>
     </section>
 
-<section id="q5" class="page-section">
+<section id="q5" class="page-section" style="display:none">
         <div class="container">
             <div id="game" class="justify-center flex-column">
                 <h2 style="color: #f1c111; font-size:25px;">(5/10)</h2>
@@ -192,17 +193,17 @@
                         <img src="images/blur.png" class="img-fluid" alt="blur" height=800 width=350>
                     </div>
                     <div class="choice-5">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q6" onclick='q5(this)' value='1'>是</p>
+                        <p href="#" id = 13 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q6" onclick='q5(this)' value='1'>是</p>
                     </div>
                     <div class="choice-5">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q6" onclick='q5(this)' value='2'>否</p>
+                        <p href="#" id = 14 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q6" onclick='q5(this)' value='2'>否</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
         </div>
     </section>
 
-    <section id="q6" class="page-section">
+    <section id="q6" class="page-section" style="display:none">
         <div class="container">
             <div id="game" class="justify-center flex-column">
                <h2 style="color: #f1c111; font-size:25px;">(6/10)</h2>
@@ -211,17 +212,17 @@
                         <img src="images/restroom2.png" class="img-fluid" alt="restroom" height=800 width=350>
                     </div>
                     <div class="choice-6">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q7" onclick='q6(this)' value='1'>是</p>
+                        <p href="#" id = 15 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q7" onclick='q6(this)' value='1'>是</p>
                     </div>
                     <div class="choice-6">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q7" onclick='q6(this)' value='2'>否</p>
+                        <p href="#" id = 16 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q7" onclick='q6(this)' value='2'>否</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
         </div>
     </section>
 
-    <section id="q7" class="page-section">
+    <section id="q7" class="page-section" style="display:none">
         <div class="container">
             <div id="game" class="justify-center flex-column">
                 <h2 style="color: #f1c111; font-size:25px;">(7/10)</h2>
@@ -230,17 +231,17 @@
                         <img src="images/family.png" class="img-fluid" alt="family" height=800 width=350>
                     </div>
                     <div class="choice-7">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q8" onclick='q7(this)' value='1'>是</p>
+                        <p href="#" id = 17 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q8" onclick='q7(this)' value='1'>是</p>
                     </div>
                     <div class="choice-7">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q8" onclick='q7(this)' value='2'>否</p>
+                        <p href="#" id = 18 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q8" onclick='q7(this)' value='2'>否</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
         </div>
     </section>
 
-    <section id="q8" class="page-section">
+    <section id="q8" class="page-section" style="display:none">
         <div class="container">
             <div id="game" class="justify-center flex-column">
               <h2 style="color: #f1c111; font-size:25px;">(8/10)</h2>
@@ -249,10 +250,10 @@
                         <img src="images/injury.png" class="img-fluid" alt="wounds" height=800 width=350>
                     </div>
                     <div class="choice-8">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q9" onclick='q8(this)' value='1'>是</p>
+                        <p href="#" id = 19 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="q9" onclick='q8(this)' value='1'>是</p>
                     </div>
                     <div class="choice-8">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q9" onclick='q8(this)' value='2'>否</p>
+                        <p href="#" id = 20 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="q9" onclick='q8(this)' value='2'>否</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
@@ -260,7 +261,7 @@
     </section>
 
 
-  <section id="q9" class="page-section">
+  <section id="q9" class="page-section" style="display:none">
         <div class="container">
             <div id="game" class="justify-center flex-column">
                 <h2 style="color: #f1c111; font-size:25px;">(9/10)</h2>
@@ -269,23 +270,24 @@
                         <img src="images/drinks.png" class="img-fluid" alt="drinks" height=800 width=350>
                     </div>
                     <div class="choice-9">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='1'>只在社交时</p>
+                        <p href="#" id = 21 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="1" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='1'>只在社交时</p>
                     </div>
                     <div class="choice-9">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='2'>一周偶尔几次</p>
+                        <p href="#" id = 22 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="2" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='2'>一周偶尔几次</p>
                     </div>
                     <div class="choice-9">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="3" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='3'>经常喝</p>
+                        <p href="#" id = 23 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="3" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='3'>经常喝</p>
                     </div>
                     <div class="choice-9">
-                        <p href="#" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="4" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='4'>我不喝酒</p>
+                        <p href="#" id = 24 class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-number="4" style='font-size:20px' data-id="bmi" onclick='q10(this)' value='4'>我不喝酒</p>
                     </div>
             </div>
             <script src="js/main2.js"></script>
         </div>
     </section>
+
     <!-- CALCULATOR -->
-     <section id="bmi" class="page-section">
+     <section id="bmi" class="page-section" style="display:none">
           <div class="container">
                <div class="row">
                     <div class="col-lg-8 mx-auto col-md-10 col-12 text-center">
@@ -295,16 +297,16 @@
                       <form action="#" method="post" class="contact-form" data-aos="fade-up" data-aos-delay="300" role="form">
                         <div class="row">
                           <div class="col-lg-5 mx-auto col-7">
-                            <input id="height" type="text"  class="form-control" name="height" placeholder="Height (cm)">
+                            <input id="height" type="text"  class="form-control" name="height" placeholder="身高（厘米）">
                           </div>
                           <div class="col-lg-5 mx-auto col-7">
-                            <input id="weight" type="text" class="form-control" name="weight" placeholder="Weight (kg)">
+                            <input id="weight" type="text" class="form-control" name="weight" placeholder="重量（公斤）">
                           </div>
                          </div>
                          <br><br>
-                        <img style="display:none;" id="bigpic" src="bigpic" />
+                        <img style="display:none;" id="bigpic" src="bigpic"/>
 
-                        <input class="submit" type="button" button type="submit" style="text-align:center;" value="查看我的BMI" onclick="bmi()" onclick="showPicture()"/>
+                        <input class="submit" id = 25 type="button" button type="submit" style="text-align:center;" value="查看我的BMI" onclick="bmi()" onclick="showPicture()"/>
                         <br>
                            <h4 id="result" style="text-align:center;"></h4>
                            <br>
@@ -315,22 +317,22 @@
                         </div>
                       </form>
                     </div>
-
                </div>
           </div>
-          <script src="js/bmi-calc.js" type="text/javascript"></script>
-     </section>
+          <script src="js/bmi-calc2.js" type="text/javascript"></script>
+     </section> 
 
 
 
-    <section id="check-results" class="parallax-content baner-content2" >
+
+    <section id="check-results" class="parallax-content baner-content3" style="display:none">
         <div class="container">
                   <div class="text-content ">
                     <br><br><br><br><br><br><br><br><br><br><br><br>
-                    <h2 class="mb-4 text-center" data-aos="fade-up"><strong> 测验 完成! </strong></h2>
+                    <h2 class="mb-4 text-center" data-aos="fade-up"><strong>测验 完成!</strong></h2>
                     <p style='font-size:25px'>单击下面的按钮以查找结果.</p>
                     <br><br>
-                        <a href="#" data-id="graph" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-aos="fade-up" data-aos-delay="100" value="Show Div" onclick="displayVar('target');" onclick="showPicture()">显示结果</a>
+                        <a href="#" id = 26 data-id="graph" class="custom-btn2 btn2-bg btn2 mt-3 scroll-link" data-aos="fade-up" data-aos-delay="100" value="Show Div" onclick="displayVar('target');" onclick="showPicture()">显示结果</a>
                     <br><br><br><br><br><br><br><br><br><br><br><br>
 
                   </div>
@@ -339,11 +341,11 @@
 
 
 
-    <section id="graph" class="parallax-content baner-content3">
+    <section id="graph" class="parallax-content baner-content3" style="display:none">
        <style>
       body {
       background: white;
-      font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+      /*font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;*/
     }
 
     ul {
@@ -351,11 +353,11 @@
       padding: 0;
     }
 
-    li {
+/*    li {
       display: inline-block;
       margin: 2px 10px;
     }
-
+*/
     hr {
       border-color: #565656;
     }
@@ -459,8 +461,8 @@
                                         <span id="target" data-aos="fade-up" style='color:white;'></span>
                                     </body>
                                 </p>
-                            <a href="#" data-id='diabetes' class="custom-btn btn-bg btn mt-3 scroll-link"  data-aos="fade-up">我患糖尿病的风险</a><br><br><br><br><br><br><br><br><br><br><br><br>
-                         <script type="text/javascript" src=js/main2.js></script>
+                            <a href="#" id = 27 data-id='diabetes' class="custom-btn btn-bg btn mt-3 scroll-link"  data-aos="fade-up">我患糖尿病的风险</a><br><br><br><br><br><br><br><br><br><br><br><br>
+                         <script type="text/javascript" src="js/main2.js"></script>
                </div>
          </div>
         
@@ -468,14 +470,13 @@
         <script src="js/main2.js"></script>
      </section>
 
-<!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
 
 <!-- Diabetes Results -->
-     <section id="diabetes" class="contact section-padding">
+     <section id="diabetes" class="contact section-padding" style="display:none">
           <div class="container">
                <div class="row">
                     <div class="col-lg-8 mx-auto col-md-10 col-12 text-center">
-                        <h2 class="mb-4 text-center" data-aos="fade-up"><strong> 您患2型糖尿病的风险</strong></h2>
+                        <h2 class="mb-4 text-center" data-aos="fade-up"><strong> 您患2型糖尿病的风险 </strong></h2>
                          
                         <img style="display:none;" id="bigpic" src="bigpic" />
 
@@ -483,7 +484,7 @@
                            <h4 id="resultpic2" style="text-align:center" data-aos="fade-up" class="img-fluid"></h4>
                            <h4 id="resultexplanation2" style="text-align:center;"></h4>
                            <div id = "hidden2" style="display:none;">
-                            <h2 class="mb-4" data-aos="fade-up" >您在<br><strong>良好的身材中</strong></h2>
+                            <h2 class="mb-4" data-aos="fade-up" >您在 <br><strong>良好的身材中</strong></h2>
                             <p class="mb-0" data-aos="fade-up">继续浏览我们的糖尿病入门页面，以查找更多有关2型糖尿病的信息。</p>
                            </div>
                            <div id="hidden" style="display:none;">
@@ -491,11 +492,12 @@
                             <p class="mb-0" data-aos="fade-up">您可以通过了解自己的风险并改变自己的生活方式来帮助降低2型糖尿病的风险。 常见的危险因素包括体重增加，血压，胆固醇和甘油三酸酯（脂肪）水平升高。 改变生活习惯并非易事，但值得付出努力。</p>
          <ul class="list-detail py-3" data-aos="fade-up">
          <li><span><strong>定期进行锻炼。</strong> 在一周的大部分时间进行适度的体育锻炼有助于管理体重，降低血糖水平，并且还可以改善血压和胆固醇。 <br></span></li>
-         <li><span><strong>吃均衡，健康的饮食。 </strong> 减少您饮食中的脂肪含量，尤其是饱和脂肪和反式脂肪。 多吃水果，蔬菜和高纤维食物。 减少盐分的摄入 <br></span></li>
-         <li><span><strong>限制外卖和加工食品。</strong> “方便餐”的盐，脂肪和千焦耳含量通常很高。 最好在可能的情况下使用新鲜的食材为自己做饭。<br></span></li>
+         <li><span><strong>吃均衡，健康的饮食。 </strong>  减少您饮食中的脂肪含量，尤其是饱和脂肪和反式脂肪。 多吃水果，蔬菜和高纤维食物。 减少盐分的摄入 <br></span></li>
+         <li><span><strong>限制外卖和加工食品</strong> “方便餐”的盐，脂肪和千焦耳含量通常很高。 最好在可能的情况下使用新鲜的食材为自己做饭。<br></span></li>
          <li><span><strong>限制饮酒量。</strong> 饮酒量过多会导致体重增加，并且可能会增加血压和甘油三酸酯水平。 男士每天最多只能喝两种标准饮料，而女士最多只能喝一种。 <br></span></li>
-         <li><span><strong>控制血压。</strong> 大多数人都可以通过定期锻炼，均衡饮食和保持健康体重来做到这一点。 在某些情况下，您可能需要医生规定的药物治疗。<br></span></li>
-         <li><span><strong>定期检查，请咨询您的医生。</strong>  随着年龄的增长，定期检查您的血糖，血糖和血压水平是一个好主意。<br></span></li>
+         <li><span><strong>控制血压。</strong>  大多数人都可以通过定期锻炼，均衡饮食和保持健康体重来做到这一点。 在某些情况下，您可能需要医生规定的药物治疗。<br></span></li>
+         <li><span><strong>定期检查，请咨询您的医生。</strong> 随着年龄的增长，定期检查您的血糖，血糖和血压水平是一个好主意。<br></span></li>
+       
          </ul>
          </div>
 
@@ -568,7 +570,6 @@
                <li><a href="about">关于我们</a></li>
          </div>
       </footer>
-
 
 
      <!-- SCRIPTS -->
@@ -647,7 +648,7 @@
                <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                   <div class="hero-text">
                         <h1 class="text-white" data-aos="fade-up">想更多地了解2型糖尿病吗？</h1>
-                        <a href="diabetes-primer" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">看看我们的糖尿病入门页面！</a>
+                        <a href="diabetes-primer" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">看看我们的糖尿病入门页面</a>
                   </div>
                </div>
                <div class="col-lg-6 col-12">
@@ -667,7 +668,7 @@
                <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                   <div class="hero-text">
                         <h1 class="text-white" data-aos="fade-up">担心您患有2型糖尿病的风险？</h1>
-                        <a href="map" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">看看我们的医生查询器！</a>
+                        <a href="map-chinese" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">看看我们的医生查询器！</a>
                   </div>
                </div>
                <div class="col-lg-6 col-12">
@@ -681,7 +682,46 @@
     </script>
           <script src="js/styleswitch.js" type="text/javascript"></script> 
 
+<script type="text/javascript">
 
+  $('#1, #2, #3, #4').on('click',function(){
+    $('#q2').fadeIn();
+});
+  $('#5, #6, #7, #8').on('click',function(){
+    $('#q3').fadeIn();
+});
+  $('#9, #10').on('click',function(){
+    $('#q4').fadeIn();
+});
+  $('#11, #12').on('click',function(){
+    $('#q5').fadeIn();
+});
+  $('#13, #14').on('click',function(){
+    $('#q6').fadeIn();
+});
+  $('#15, #16').on('click',function(){
+    $('#q7').fadeIn();
+});
+  $('#17, #18').on('click',function(){
+    $('#q8').fadeIn();
+});
+  $('#19, #20').on('click',function(){
+    $('#q9').fadeIn();
+});
+  $('#21, #22, #23, #24').on('click',function(){
+    $('#bmi').fadeIn();
+});
+  $('#25').on('click',function(){
+    $('#check-results').fadeIn();
+});
+  $('#26').on('click',function(){
+    $('#graph').fadeIn();
+});
+  $('#27').on('click',function(){
+    $('#diabetes').fadeIn();
+});
+</script>
 
 </body>
 </html>
+
